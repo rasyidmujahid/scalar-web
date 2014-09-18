@@ -1,17 +1,18 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'hnw'
 
-# Branch options
-# Prompts for the branch name (defaults to current branch)
-#ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }
+set :scm, :git
+set :repo_url, 'git@github.com:rasyidmujahid/scalar-web.git'
 
-# Hardcodes branch to always be master
-# This could be overridden in a stage config file
+set :ssh_options, {
+  forward_agent: true,
+  port: 3456
+}
+
 set :branch, :master
+set :deploy_to, -> { "/var/www/html/#{fetch(:application)}" }
+set :log_level, :debug
 
-set :deploy_to, -> { "/srv/www/#{fetch(:application)}" }
-
-set :log_level, :info
+SSHKit.config.command_map[:composer] = "php /var/local/composer/composer.phar"
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
