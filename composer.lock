@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9fc53b1215dd925c6a5be46ec0600962",
+    "hash": "14b05cdee6d947dbc54aee3cb39f0891",
     "packages": [
         {
             "name": "composer/installers",
@@ -216,15 +216,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "2.1.12",
+            "version": "2.2.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/2.1.12"
+                "reference": "tags/2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/woocommerce.2.1.12.zip",
+                "url": "http://downloads.wordpress.org/plugin/woocommerce.2.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -236,6 +236,29 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-importer",
+            "version": "0.6.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-importer/",
+                "reference": "tags/0.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-importer.0.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wordpress-importer": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wordpress-importer/"
         }
     ],
     "packages-dev": [

@@ -61,7 +61,8 @@
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "~1.0.6",
     "wpackagist-plugin/contact-form-7": "3.9.3",
-    "wpackagist-plugin/woocommerce": "2.1.12"
+    "wpackagist-plugin/woocommerce": "2.2.3",
+    "wpackagist-plugin/wordpress-importer": "0.6.1"
   },
   "extra": {
     "installer-paths": {
