@@ -1,5 +1,3 @@
-set :application, 'hnw'
-
 set :scm, :git
 set :repo_url, 'git@github.com:rasyidmujahid/scalar-web.git'
 

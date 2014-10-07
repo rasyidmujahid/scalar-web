@@ -1,5 +1,5 @@
-set :application, 'hnw'
-set :stage, :production
+set :application, 'westand'
+set :stage, :staging
 
 # Simple Role Syntax
 # ==================
@@ -21,5 +21,5 @@ server '128.199.195.225', user: 'deploy', roles: %w{web app db}
 #    auth_methods: %w(password)
 #  }
 
-fetch(:default_env).merge!(wp_env: :production)
+fetch(:default_env).merge!(wp_env: :staging)
 

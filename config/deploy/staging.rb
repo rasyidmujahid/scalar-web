@@ -1,3 +1,4 @@
+set :application, 'hnw'
 set :stage, :staging
 
 # Simple Role Syntax
