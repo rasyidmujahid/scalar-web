@@ -583,7 +583,19 @@
 		font-size:20px;
 	}
 	#sliderbanner .caption{
-		display:none;
+		display:block;
+	}
+	#sliderbanner .caption h2 {
+	 font-size:12px;
+	 line-height: 18px;
+	 margin-bottom: 8px;
+	}
+	#sliderbanner .caption {
+	 margin-left:-155px;
+	 width: 300px;
+	}
+	#sliderbanner .caption P {
+	 display: none;
 	}
 	.cs-blog.blog-grid.blog-carousel-view article{
 		margin-left:0;
@@ -1021,6 +1033,13 @@
 	.fc-view.fc-view-month.fc-grid > div {
     	display: none;
 	}
+	#sliderbanner .caption{display: block;}
+	#sliderbanner .caption:before, #sliderbanner .caption:after{
+	
+    width: 270px
+	
+	}
+	
 }
 /*============	   Media 940Px Start	============ */
 @media (min-width: 992px) and (max-width: 1199px){
