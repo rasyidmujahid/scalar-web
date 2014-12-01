@@ -8,5 +8,5 @@ require_once(dirname(__DIR__) . '/vendor/autoload.php');
 require_once(dirname(__DIR__) . '/config/application.php');
 require_once(ABSPATH . 'wp-settings.php');
 
-// define('WP_HOME','http://128.199.178.132/hnw/wp');
-// define('WP_SITEURL','http://128.199.178.132/hnw/wp');
+define('WP_HOME','http://128.199.178.132/wp');
+define('WP_SITEURL','http://128.199.178.132/wp');
