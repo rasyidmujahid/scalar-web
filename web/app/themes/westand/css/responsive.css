@@ -1,4 +1,4 @@
-@media (max-width: 1199px) {
+/*@media (max-width: 1199px) {
 	#sliderbanner .caption{
 		margin-left:464px;
 	}
@@ -9,7 +9,7 @@
 		left: 30px;
 		right: auto;
 	}
-}
+}*/
 /*============		Media 768Px Start	============ */
 @media (min-width: 768px) and (max-width: 991px) {
 	.container{
@@ -625,8 +625,20 @@
 		font-size:20px;
 	}
 	#sliderbanner .caption{
-		display:none;
-	}
+        display:block;
+    }
+    #sliderbanner .caption h2 {
+     font-size:12px;
+     line-height: 18px;
+     margin-bottom: 8px;
+    }
+    #sliderbanner .caption {
+     margin-left:-155px;
+     width: 300px;
+    }
+    #sliderbanner .caption P {
+     display: none;
+    }
 	.cs-blog.blog-grid.blog-carousel-view article{
 		margin-left:0;
 		margin-bottom:15px;
