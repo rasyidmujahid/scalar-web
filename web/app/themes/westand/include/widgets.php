@@ -45,7 +45,7 @@ class facebook_module extends WP_Widget
 
 	  <label for="<?php echo $this->get_field_id('title'); ?>">
 
-		  Title: 
+		 <?php _e('Title','WeStand');?>  
 
 		  <input class="upcoming" id="<?php echo $this->get_field_id('title'); ?>" size='40' name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
 
@@ -57,13 +57,13 @@ class facebook_module extends WP_Widget
 
 	  <label for="<?php echo $this->get_field_id('pageurl'); ?>">
 
-		  Page URL: 
+		  <?php _e('Button','WeStand');?>Page URL: 
 
 		  <input class="upcoming" id="<?php echo $this->get_field_id('pageurl'); ?>" size='40' name="<?php echo $this->get_field_name('pageurl'); ?>" type="text" value="<?php echo esc_attr($pageurl); ?>" />
 
 		<br />
 
-		  <small>Please enter your page or User profile url example: http://www.facebook.com/profilename OR <br />
+		  <small><?php _e('Please enter your page or User profile url example:','WeStand');?> http://www.facebook.com/profilename OR <br />
 
 		  https://www.facebook.com/pages/wxyz/123456789101112
 
@@ -79,7 +79,7 @@ class facebook_module extends WP_Widget
 
  	  <label for="<?php echo $this->get_field_id('showfaces'); ?>">
 
-		  Show Faces: 
+		 <?php _e('Show Faces','WeStand');?> 
 
 		  <input class="upcoming" id="<?php echo $this->get_field_id('showfaces'); ?>" name="<?php echo $this->get_field_name('showfaces'); ?>" type="checkbox" <?php if(esc_attr($showfaces) != '' ){echo 'checked';}?> />
 
@@ -91,7 +91,7 @@ class facebook_module extends WP_Widget
 
 	  <label for="<?php echo $this->get_field_id('showstream'); ?>">
 
-		  Show Stream: 
+		 <?php _e('Show Stream','WeStand');?> 
 
 		  <input class="upcoming" id="<?php echo $this->get_field_id('showstream'); ?>" name="<?php echo $this->get_field_name('showstream'); ?>" type="checkbox" <?php if(esc_attr($showstream) != '' ){echo 'checked';}?> />
 
@@ -115,7 +115,7 @@ class facebook_module extends WP_Widget
 
 	  <label for="<?php echo $this->get_field_id('likebox_height'); ?>">
 
-		  Like Box Height:
+		<?php _e('Like Box Height','WeStand');?>
 
 		  <input class="upcoming" id="<?php echo $this->get_field_id('likebox_height'); ?>" size='2' name="<?php echo $this->get_field_name('likebox_height'); ?>" type="text" value="<?php echo esc_attr($likebox_height); ?>" />
 
@@ -127,7 +127,7 @@ class facebook_module extends WP_Widget
 
      <label for="<?php echo $this->get_field_id('fb_bg_color'); ?>">
 
-     	Background Color:
+     	<?php _e('Background Color','WeStand');?>
 
   		<input type="text" name="<?php echo $this->get_field_name('fb_bg_color'); ?>" size='4' id="<?php echo $this->get_field_id('fb_bg_color'); ?>"  value="<?php if(!empty($fb_bg_color)){ echo $fb_bg_color;}else{ echo "#fff";}; ?>" class="fb_bg_color upcoming"  />
 
@@ -327,7 +327,7 @@ class facebook_module extends WP_Widget
 
 	  <label for="<?php echo $this->get_field_id('title'); ?>">
 
-		  Title: 
+		 <?php _e('Title','WeStand');?>  
 
 		  <input class="upcoming" id="<?php echo $this->get_field_id('title'); ?>" size='40' name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
 
@@ -424,7 +424,7 @@ class facebook_module extends WP_Widget
 
 				<label for="<?php echo $this->get_field_id('title'); ?>">
 
-					Title: 
+					<?php _e('Title','WeStand');?>
 
 					<input class="upcoming" id="<?php echo $this->get_field_id('title'); ?>" size="40" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
 
@@ -436,7 +436,7 @@ class facebook_module extends WP_Widget
 
 				<label for="<?php echo $this->get_field_id('get_names_gallery'); ?>">
 
-					Select Gallery:
+					<?php _e('Button','WeStand');?>Select Gallery:
 
 					<select id="<?php echo $this->get_field_id('get_names_gallery'); ?>" name="<?php echo $this->get_field_name('get_names_gallery'); ?>" style="width:225px;">
 
@@ -486,7 +486,7 @@ class facebook_module extends WP_Widget
 
 				<label for="<?php echo $this->get_field_id('showcount'); ?>">
 
-					Number of Images: 
+					<?php _e('Number of Images','WeStand');?> 
 
 					<input class="upcoming" id="<?php echo $this->get_field_id('showcount'); ?>" size="2" name="<?php echo $this->get_field_name('showcount'); ?>" type="text" value="<?php echo esc_attr($showcount); ?>" />
 
@@ -689,7 +689,7 @@ class facebook_module extends WP_Widget
 
 			<label for="<?php echo $this->get_field_id('title'); ?>">
 
-				Title: 
+				<?php _e('Title','WeStand');?> 
 
 				<input class="upcoming" id="<?php echo $this->get_field_id('title'); ?>" size="40" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
 
@@ -701,7 +701,7 @@ class facebook_module extends WP_Widget
 
 			<label for="<?php echo $this->get_field_id('select_category'); ?>">
 
-			  Select Category:            
+			 <?php _e('Select Category','WeStand');?>            
 
 			  <select id="<?php echo $this->get_field_id('select_category'); ?>" name="<?php echo $this->get_field_name('select_category'); ?>" style="width:225px">
 
@@ -729,7 +729,7 @@ class facebook_module extends WP_Widget
 
 			<label for="<?php echo $this->get_field_id('showcount'); ?>">
 
-				Number of Posts To Display:
+				<?php _e('Number of Posts To Display','WeStand');?>
 
 				<input class="upcoming" id="<?php echo $this->get_field_id('showcount'); ?>" size='2' name="<?php echo $this->get_field_name('showcount'); ?>" type="text" value="<?php echo esc_attr($showcount); ?>" />
 
@@ -741,7 +741,7 @@ class facebook_module extends WP_Widget
 
 			<label for="<?php echo $this->get_field_id('thumb'); ?>">
 
-				Display Thumbinals:
+				<?php _e('Display Thumbinals','WeStand');?>
 
 				<input class="upcoming" id="<?php echo $this->get_field_id('thumb'); ?>" size='2' name="<?php echo $this->get_field_name('thumb'); ?>" value="true" type="checkbox"  <?php if(isset($instance['thumb']) && $instance['thumb']=='true' ) echo 'checked="checked"'; ?> />
 
@@ -908,13 +908,13 @@ class facebook_module extends WP_Widget
 			$numoftweets = isset($instance['numoftweets']) ? esc_attr($instance['numoftweets']) : '';
  		?>
           	<label for="<?php echo $this->get_field_id('title'); ?>">
-				<span>Title: </span>
+				<span><?php _e('Title','WeStand');?> </span>
 				<input class="upcoming" id="<?php echo $this->get_field_id('title'); ?>" size="40" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
 			</label>
 			<label for="screen_name">User Name<span class="required">(*)</span>: </label>
 				<input class="upcoming" id="<?php echo $this->get_field_id('username'); ?>" size="40" name="<?php echo $this->get_field_name('username'); ?>" type="text" value="<?php echo esc_attr($username); ?>" />
             <label for="tweet_count">
-			<span>Num of Tweets: </span>
+			<span><?php _e('Num of Tweets','WeStand');?> </span>
 			<input class="upcoming" id="<?php echo $this->get_field_id('numoftweets'); ?>" size="2" name="<?php echo $this->get_field_name('numoftweets'); ?>" type="text" value="<?php echo esc_attr($numoftweets); ?>" />
 			<div class="clear"></div>
 			</label>
@@ -1090,7 +1090,7 @@ class upcoming_events extends WP_Widget
 
   <label for="<?php echo $this->get_field_id('title'); ?>">
 
-	  Title: 
+	  <?php _e('Button','WeStand');?>Title: 
 
 	  <input class="upcoming" id="<?php echo $this->get_field_id('title'); ?>" size="40" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
 
@@ -1136,7 +1136,7 @@ class upcoming_events extends WP_Widget
 
   <label for="<?php echo $this->get_field_id('showcount'); ?>">
 
-	  Number of Events: 
+	<?php _e('Button','WeStand');?>  Number of Events: 
 
 	  <input class="upcoming" id="<?php echo $this->get_field_id('showcount'); ?>" size="2" name="<?php echo $this->get_field_name('showcount'); ?>" type="text" value="<?php echo esc_attr($showcount); ?>" />
 
@@ -1349,17 +1349,17 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
 	public function chimp_MailChimp_Widget () {
 
-		$this->default_failure_message = __('There was a problem processing your submission.', 'Statfort');
+		$this->default_failure_message = __('There was a problem processing your submission.', 'WeStand');
 
-		$this->default_signup_text = __('Join now!', 'Statfort');
+		$this->default_signup_text = __('Join now!', 'WeStand');
 
-		$this->default_success_message = __('Thank you for joining our mailing list. Please check your email for a confirmation link.', 'Statfort');
+		$this->default_success_message = __('Thank you for joining our mailing list. Please check your email for a confirmation link.', 'WeStand');
 
-		$this->default_title = __('Sign up for our mailing list.', 'Statfort');
+		$this->default_title = __('Sign up for our mailing list.', 'WeStand');
 
-		$widget_options = array('classname' => 'widget_newsletter', 'description' => __( "Displays a sign-up form for a MailChimp mailing list.", 'Statfort'));
+		$widget_options = array('classname' => 'widget_newsletter', 'description' => __( "Displays a sign-up form for a MailChimp mailing list.", 'WeStand'));
 
-		$this->WP_Widget('chimp_MailChimp_Widget', __('Chimp: MailChimp List Signup', 'Statfort'), $widget_options);
+		$this->WP_Widget('chimp_MailChimp_Widget', __('Chimp: MailChimp List Signup', 'WeStand'), $widget_options);
 
 		$this->ns_mc_plugin = CHIMP_MC_Plugin::get_instance();
 
@@ -1417,11 +1417,11 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
 			?>
 
-					<h3><?php echo  __('General Settings', 'Statfort'); ?></h3>
+					<h3><?php echo  __('General Settings', 'WeStand'); ?></h3>
 
 					<p>
 
-						<label for="<?php echo $this->get_field_id('title'); ?>"><?php echo  __('Title :', 'Statfort'); ?></label>
+						<label for="<?php echo $this->get_field_id('title'); ?>"><?php echo  __('Title :', 'WeStand'); ?></label>
 
 						<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
 
@@ -1429,7 +1429,7 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
 					<p>
 
-						<label for="<?php echo $this->get_field_id('current_mailing_list'); ?>"><?php echo __('Select a Mailing List :', 'Statfort'); ?></label>
+						<label for="<?php echo $this->get_field_id('current_mailing_list'); ?>"><?php echo __('Select a Mailing List :', 'WeStand'); ?></label>
 
 						<select class="widefat" id="<?php echo $this->get_field_id('current_mailing_list');?>" name="<?php echo $this->get_field_name('current_mailing_list'); ?>">
 
@@ -1455,7 +1455,7 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
                     <p>
 
-						<label ><?php echo  __('Description :', 'Statfort'); ?></label>
+						<label ><?php echo  __('Description :', 'WeStand'); ?></label>
 
                         <textarea  class="widefat" name="<?php echo $this->get_field_name('description'); ?>"  rows="4" cols="8"><?php if(isset($description)){echo $description;} else { 'Enter Your Email';} ?></textarea>
 
@@ -1465,7 +1465,7 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
 					<p>
 
-						<label for="<?php echo $this->get_field_id('signup_text'); ?>"><?php echo __('Sign Up Button Text :', 'Statfort'); ?></label>
+						<label for="<?php echo $this->get_field_id('signup_text'); ?>"><?php echo __('Sign Up Button Text :', 'WeStand'); ?></label>
 
 						<input class="widefat" id="<?php echo $this->get_field_id('signup_text'); ?>" name="<?php echo $this->get_field_name('signup_text'); ?>" value="<?php echo $signup_text; ?>" />
 
@@ -1475,23 +1475,23 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
 						<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('collect_first'); ?>" name="<?php echo $this->get_field_name('collect_first'); ?>" <?php echo  checked($collect_first, true, false); ?> />
 
-						<label for="<?php echo $this->get_field_id('collect_first'); ?>"><?php echo  __('Collect first name.', 'Statfort'); ?></label>
+						<label for="<?php echo $this->get_field_id('collect_first'); ?>"><?php echo  __('Collect first name.', 'WeStand'); ?></label>
 
 						<br />
 
 						<input type="checkbox" class="checkbox" id="<?php echo  $this->get_field_id('collect_last'); ?>" name="<?php echo $this->get_field_name('collect_last'); ?>" <?php echo checked($collect_last, true, false); ?> />
 
-						<label><?php echo __('Collect last name.', 'Statfort'); ?></label>
+						<label><?php echo __('Collect last name.', 'WeStand'); ?></label>
 
 					</p>
 
-					<h3><?php echo __('Notifications', 'Statfort'); ?></h3>
+					<h3><?php echo __('Notifications', 'WeStand'); ?></h3>
 
-					<p><?php echo  __('Use these fields to customize what your visitors see after they submit the form', 'Statfort'); ?></p>
+					<p><?php echo  __('Use these fields to customize what your visitors see after they submit the form', 'WeStand'); ?></p>
 
 					<p>
 
-						<label for="<?php echo $this->get_field_id('success_message'); ?>"><?php echo __('Success :', 'Statfort'); ?></label>
+						<label for="<?php echo $this->get_field_id('success_message'); ?>"><?php echo __('Success :', 'WeStand'); ?></label>
 
 						<textarea class="widefat" id="<?php echo $this->get_field_id('success_message'); ?>" name="<?php echo $this->get_field_name('success_message'); ?>"><?php echo $success_message; ?></textarea>
 
@@ -1499,7 +1499,7 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
 					<p>
 
-						<label for="<?php echo $this->get_field_id('failure_message'); ?>"><?php echo __('Failure :', 'Statfort'); ?></label>
+						<label for="<?php echo $this->get_field_id('failure_message'); ?>"><?php echo __('Failure :', 'WeStand'); ?></label>
 
 						<textarea class="widefat" id="<?php echo $this->get_field_id('failure_message'); ?>" name="<?php echo $this->get_field_name('failure_message'); ?>"><?php echo $failure_message; ?></textarea>
 
@@ -1767,7 +1767,7 @@ class chimp_MailChimp_Widget extends WP_Widget {
 			
 		} else if(!isset($cs_theme_option['mailchimp_key']) && isset($_REQUEST[$this->id_base . '_email']) && $cs_theme_option['mailchimp_key'] == ''){
 			
-			echo '<div class="error">Invalid API key.</div>';	
+			echo '<div class="error">'.__('Invalid API key','WeStand').'</div>';	
 			
 			return false;
 			//echo '<div class="error">'  . $this->get_failure_message($_POST['ns_mc_number']) .  '</div>';	
@@ -2027,7 +2027,7 @@ class chimp_MailChimp_Widget extends WP_Widget {
 
 		$options = get_option($this->option_name);
 
-		return __('There was a problem processing your submission.', 'Statfort');
+		return __('There was a problem processing your submission.', 'WeStand');
 
 		//return $options[$number]['failure_message'];
 

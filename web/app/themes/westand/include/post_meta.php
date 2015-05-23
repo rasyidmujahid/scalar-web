@@ -56,44 +56,44 @@ function cs_meta_post( $post ) {
             <div class="clear"></div>
             <div class="opt-conts">
   				<ul class="form-elements noborder">
-                    <li class="to-label"><label>Thumbnail View</label></li>
+                    <li class="to-label"><label><?php _e('Thumbnail View','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="post_thumb_view" class="dropdown" onchange="javascript:new_toggle(this.value)">
-                            <option <?php if($post_thumb_view=="Single Image")echo "selected";?> >Single Image</option>
-                            <option <?php if($post_thumb_view=="Audio")echo "selected";?> >Audio</option>
-                            <option <?php if($post_thumb_view=="Video")echo "selected";?> value="Video">Video/Soundcloud</option>
-                            <option <?php if($post_thumb_view=="Slider")echo "selected";?> >Slider</option>
+                            <option <?php if($post_thumb_view=="Single Image")echo "selected";?> ><?php _e('Single Image','WeStand');?></option>
+                            <option <?php if($post_thumb_view=="Audio")echo "selected";?> ><?php _e('Audio','WeStand');?></option>
+                            <option <?php if($post_thumb_view=="Video")echo "selected";?> value="Video"><?php _e('Video/Soundcloud','WeStand');?></option>
+                            <option <?php if($post_thumb_view=="Slider")echo "selected";?> ><?php _e('Slider','WeStand');?></option>
                         </select>
-                        <p id="post_thumb_image" style="display:<?php if($post_thumb_view=="Single Image" or $post_thumb_view == "")echo 'inline"';else echo 'none';?>">Use Featured Image as Thumbnail</p>
+                        <p id="post_thumb_image" style="display:<?php if($post_thumb_view=="Single Image" or $post_thumb_view == "")echo 'inline"';else echo 'none';?>"><?php _e('Use Featured Image as Thumbnail','WeStand');?></p>
                     </li>
                         
                         <ul class="form-elements" id="post_thumb_audio" style="display:<?php if($post_thumb_view=="Audio")echo 'inline"';else echo 'none';?>" >
-                            <li class="to-label"><label>Audio URL</label></li>
+                            <li class="to-label"><label><?php _e('Audio URL','WeStand');?></label></li>
                             <li class="to-field">
                                 <input type="text" id="post_thumb_audio2" name="post_thumb_audio" value="<?php echo htmlspecialchars($post_thumb_audio)?>" class="txtfield" />
                                 <input type="button" id="post_thumb_audio2" name="post_thumb_audio2" class="uploadfile left" value="Browse"/>
-                                <p>Enter Specific Audio URL (Youtube, Vimeo and all otheres wordpress supported)</p>
+                                <p><?php _e('Enter Specific Audio URL (Youtube, Vimeo and all otheres wordpress supported)','WeStand');?></p>
                             </li>
                         </ul>
                         <ul class="form-elements" id="post_thumb_video" style="display:<?php if($post_thumb_view=="Video")echo 'inline"';else echo 'none';?>" >
-                            <li class="to-label"><label>Use featured image as video thumbnail</label></li>
+                            <li class="to-label"><label><?php _e('Use featured image as video thumbnail','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="post_featured_image_as_thumbnail" value="on" class="styled" <?php if($post_featured_image_as_thumbnail=='on')echo "checked"?> /></div>
-                                <p>It will work only for self hosted video</p>
+                                <p><?php _e('It will work only for self hosted video','WeStand');?></p>
                             </li>
                             <li class="full">&nbsp;</li>
-                            <li class="to-label"><label>Thumbnail Video URL</label></li>
+                            <li class="to-label"><label><?php _e('Thumbnail Video URL','WeStand');?></label></li>
                             <li class="to-field">
                                 <input id="post_thumb_video2" name="post_thumb_video" value="<?php echo $post_thumb_video?>" type="text" class="small" />
                                 <input id="post_thumb_video2" name="post_thumb_video2" type="button" class="uploadfile left" value="Browse"/>
-                                <p>Enter Specific Video URL (Youtube, Vimeo and all otheres wordpress supported) OR you can select it from your media library</p>
+                                <p><?php _e('Enter Specific Video URL (Youtube, Vimeo and all otheres wordpress supported) OR you can select it from your media library','WeStand');?></p>
                             </li>
                         </ul>
                         <ul class="form-elements noborder" id="post_thumb_slider" style="display:<?php if($post_thumb_view=="Slider")echo 'inline"';else echo 'none';?>" >
-                            <li class="to-label"><label>Select Slider</label></li>
+                            <li class="to-label"><label><?php _e('Select Slider','WeStand');?></label></li>
                             <li class="to-field">
                                 <select name="post_thumb_slider" class="dropdown">
-                                    <option value="0">-- Select Slider --</option>
+                                    <option value="0"><?php _e('-- Select Slider --','WeStand');?></option>
                                     <?php
                                         $query = array( 'posts_per_page' => '-1', 'post_type' => 'cs_slider', 'orderby'=>'ID', 'post_status' => 'publish' );
                                         $wp_query = new WP_Query($query);
@@ -109,44 +109,44 @@ function cs_meta_post( $post ) {
                          </ul>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Inside Post Thumbnail View</label></li>
+                    <li class="to-label"><label><?php _e('Inside Post Thumbnail View','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="inside_post_thumb_view" class="dropdown" onchange="javascript:new_toggle_inside_post(this.value)">
-                            <option <?php if($inside_post_thumb_view=="Single Image")echo "selected";?> >Single Image</option>
-                            <option <?php if($inside_post_thumb_view=="Audio")echo "selected";?> >Audio</option>
-                            <option <?php if($inside_post_thumb_view=="Video")echo "selected";?> value="Video">Video/Soundcloud</option>
-                            <option <?php if($inside_post_thumb_view=="Slider")echo "selected";?> >Slider</option>
+                            <option <?php if($inside_post_thumb_view=="Single Image")echo "selected";?> ><?php _e('Single Image','WeStand');?></option>
+                            <option <?php if($inside_post_thumb_view=="Audio")echo "selected";?> ><?php _e('Audio','WeStand');?></option>
+                            <option <?php if($inside_post_thumb_view=="Video")echo "selected";?> value="Video"><?php _e('Video/Soundcloud','WeStand');?></option>
+                            <option <?php if($inside_post_thumb_view=="Slider")echo "selected";?> ><?php _e('Slider','WeStand');?></option>
                         </select>
-                        <p id="inside_post_thumb_image" style="display:<?php if($inside_post_thumb_view=="Single Image" or $inside_post_thumb_view=="")echo 'inline"';else echo 'none';?>">Use Featured Image as Thumbnail</p>
+                        <p id="inside_post_thumb_image" style="display:<?php if($inside_post_thumb_view=="Single Image" or $inside_post_thumb_view=="")echo 'inline"';else echo 'none';?>"><?php _e('Use Featured Image as Thumbnail','WeStand');?></p>
                     </li>
                         
                         <ul class="form-elements" id="inside_post_thumb_audio" style="display:<?php if($inside_post_thumb_view=="Audio")echo 'inline"';else echo 'none';?>" >
-                            <li class="to-label"><label>Audio URL</label></li>
+                            <li class="to-label"><label><?php _e('Audio URL','WeStand');?></label></li>
                             <li class="to-field">
                                 <input type="text" id="inside_post_thumb_audio2" name="inside_post_thumb_audio" value="<?php echo htmlspecialchars($inside_post_thumb_audio)?>" class="txtfield" />
                                 <input type="button" id="inside_post_thumb_audio2" name="inside_post_thumb_audio2" class="uploadfile left" value="Browse"/>
-                                <p>Enter Specific Audio URL (Youtube, Vimeo and all otheres wordpress supported)</p>
+                                <p><?php _e('Enter Specific Audio URL (Youtube, Vimeo and all otheres wordpress supported)','WeStand');?></p>
                             </li>
                         </ul>
                         <ul class="form-elements" id="inside_post_thumb_video" style="display:<?php if($inside_post_thumb_view=="Video")echo 'inline"';else echo 'none';?>" >
-                            <li class="to-label"><label>Use featured image as video thumbnail</label></li>
+                            <li class="to-label"><label><?php _e('Use featured image as video thumbnail','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="inside_post_featured_image_as_thumbnail" value="on" class="styled" <?php if($inside_post_featured_image_as_thumbnail=='on')echo "checked"?> /></div>
-                                <p>It will work only for self hosted video</p>
+                                <p><?php _e('It will work only for self hosted video','WeStand');?></p>
                             </li>
                             <li class="full">&nbsp;</li>
-                            <li class="to-label"><label>Thumbnail Video URL</label></li>
+                            <li class="to-label"><label><?php _e('Thumbnail Video URL','WeStand');?></label></li>
                             <li class="to-field">
                                 <input id="inside_post_thumb_video2" name="inside_post_thumb_video" value="<?php echo $inside_post_thumb_video?>" type="text" class="small" />
                                 <input id="inside_post_thumb_video2" name="inside_post_thumb_video2" type="button" class="uploadfile left" value="Browse"/>
-                                <p>Enter Specific Video URL (Youtube, Vimeo and all otheres wordpress supported) OR you can select it from your media library</p>
+                                <p><?php _e('Enter Specific Video URL (Youtube, Vimeo and all otheres wordpress supported) OR you can select it from your media library','WeStand');?></p>
                             </li>
                         </ul>
                         <ul class="form-elements" id="inside_post_thumb_slider" style="display:<?php if($inside_post_thumb_view=="Slider")echo 'inline"';else echo 'none';?>" >
-                            <li class="to-label"><label>Select Slider</label></li>
+                            <li class="to-label"><label><?php _e('Select Slider','WeStand');?></label></li>
                             <li class="to-field">
                                 <select name="inside_post_thumb_slider" class="dropdown">
-                                    <option value="0">-- Select Slider --</option>
+                                    <option value="0"><?php _e('-- Select Slider --','WeStand');?></option>
                                     <?php
                                         $query = array( 'posts_per_page' => '-1', 'post_type' => 'cs_slider', 'orderby'=>'ID', 'post_status' => 'publish' );
                                         $wp_query = new WP_Query($query);
@@ -163,30 +163,30 @@ function cs_meta_post( $post ) {
                 </ul>
                 <div class="clear"></div>
                 <div class="opt-head">
-                    <h4>Other Option</h4>
+                    <h4><?php _e('Other Option','WeStand');?></h4>
                     <div class="clear"></div>
                 </div>
                 <ul class="form-elements noborder">
-                    <li class="to-label"><label>Social Sharing</label></li>
+                    <li class="to-label"><label><?php _e('Social Sharing','WeStand');?></label></li>
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="post_social_sharing" value="on" class="myClass" <?php if($post_social_sharing=='on')echo "checked"?> /></div>
                     </li>
                 </ul>
                 <ul class="form-elements noborder">
-                    <li class="to-label"><label>Post Author</label></li>
+                    <li class="to-label"><label><?php _e('Post Author','WeStand');?></label></li>
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="post_author_info_show" value="on" class="myClass" <?php if($post_author_info_show=='on')echo "checked"?> /></div>
                     </li>
                 </ul>
                 <ul class="form-elements noborder">
-                    <li class="to-label"><label>Tags</label></li>
+                    <li class="to-label"><label><?php _e('Tags','WeStand');?></label></li>
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="post_tags_show" value="on" class="myClass" <?php if(isset($post_tags_show) && $post_tags_show=='on')echo "checked"?> /></div>
                        
                     </li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Next Previous Button</label></li>
+                    <li class="to-label"><label><?php _e('Next Previous Button','WeStand');?></label></li>
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="post_pagination_show" value="on" class="myClass" <?php if(isset($post_pagination_show) && $post_pagination_show=='on')echo "checked"?> /></div>
                         

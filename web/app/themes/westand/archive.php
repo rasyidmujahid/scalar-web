@@ -1,6 +1,6 @@
 <?php
 get_header();
-	global  $cs_theme_option; 
+	global  $cs_theme_option;
 	if(isset($cs_theme_option['cs_layout'])){ $cs_layout = $cs_theme_option['cs_layout']; }else{ $cs_layout = '';} 
 	if(isset($cs_theme_option['default_excerpt_length']) && $cs_theme_option['default_excerpt_length'] <> ''){ $default_excerpt_length = $cs_theme_option['default_excerpt_length']; }else{ $default_excerpt_length = '255';}
 ?>
@@ -67,7 +67,17 @@ get_header();
 							$args_cat = array();
 							$post_type='post';
 						}
-					} elseif(is_category()){
+					}elseif(isset($wp_query->query_vars['post_type']) && !empty($wp_query->query_vars['post_type'])){
+						
+						if($wp_query->query_vars['post_type']=='events'){
+							$post_type='events';
+						}elseif($wp_query->query_vars['post_type']=='cs_cause'){
+							$post_type='cs_cause';
+						}else{
+							$post_type='post';
+						}
+						
+					}elseif(is_category()){
 						$taxonomy = 'category';
 						$args_cat = array();
 						$category_blog = $wp_query->query_vars['cat'];

@@ -1144,25 +1144,8 @@ function related_title_toggle_inside_post(id){
 					}
 				});
 			}
-            //return false;
 		}
-		/*if( checked_value == 'wrapper_boxed'){
-				jQuery("#layout-background-theme-options").show();
-			} else {
-				jQuery("#layout-background-theme-options").hide();
-				
-			}*/
-		/*
-		function boxed_layout_options(checked_value){
-			alert('ddd');
-			jQuery(document).ready(function() {
-			jQuery( "input" ).on( "click", function() {
-			
-			
-			});
-			
-		}*/
-		
+
 		
 			 jQuery(document).ready(function() {
 				 

@@ -43,7 +43,6 @@ get_header();
 		$inside_event_thumb_map_controls = '';
  	}
 	$event_address = $cs_xmlObject->event_address;
-	echo $event_address;
 	 
 	$cs_event_loc = get_post_meta("$event_address", "cs_event_loc_meta", true);
 	if ( $cs_event_loc <> "" ) {

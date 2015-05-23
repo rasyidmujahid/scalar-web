@@ -74,7 +74,7 @@ function cs_pb_gallery($die = 0){
 
             <div class="opt-head">
 
-                <h5>Edit Gallery Options</h5>
+                <h5><?php _e('Edit Gallery Options','WeStand');?></h5>
 
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
 
@@ -84,13 +84,13 @@ function cs_pb_gallery($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Gallery Header Title</label></li>
+                    <li class="to-label"><label><?php _e('Gallery Header Title','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_gal_header_title[]" class="txtfield" value="<?php echo htmlspecialchars($cs_gal_header_title_db)?>" />
 
-                        <p>Please enter gallery header title.</p>
+                        <p><?php _e('Please enter gallery header title','WeStand');?></p>
 
                     </li>                    
 
@@ -98,25 +98,25 @@ function cs_pb_gallery($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Choose Gallery Layout</label></li>
+                    <li class="to-label"><label><?php _e('Choose Gallery Layout','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_gal_layout[]" class="dropdown">
 
-                            <option value="gallery-four-col" <?php if($cs_gal_layout_db=="gallery-four-col")echo "selected";?> >4 Column</option>
+                            <option value="gallery-four-col" <?php if($cs_gal_layout_db=="gallery-four-col")echo "selected";?> ><?php _e('4 Column','WeStand');?></option>
 
-                            <option value="gallery-three-col" <?php if($cs_gal_layout_db=="gallery-three-col")echo "selected";?> >3 Column</option>
+                            <option value="gallery-three-col" <?php if($cs_gal_layout_db=="gallery-three-col")echo "selected";?> ><?php _e('3 Column','WeStand');?></option>
 
-                            <option value="gallery-two-col" <?php if($cs_gal_layout_db=="gallery-two-col")echo "selected";?> >2 Column</option>
+                            <option value="gallery-two-col" <?php if($cs_gal_layout_db=="gallery-two-col")echo "selected";?> ><?php _e('2 Column','WeStand');?></option>
 
-                            <option value="gallery-masonry" <?php if($cs_gal_layout_db=="gallery-masonry")echo "selected";?> >Masonry</option>
+                            <option value="gallery-masonry" <?php if($cs_gal_layout_db=="gallery-masonry")echo "selected";?> ><?php _e('Masonry','WeStand');?></option>
 
                         </select>
 
                         
 
-                        <p>Select gallery layout, single column, double column, thriple column or four column.</p>
+                        <p><?php _e('Select gallery layout, single column, double column, thriple column or four column','WeStand');?></p>
 
                     </li>
 
@@ -124,13 +124,13 @@ function cs_pb_gallery($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Choose Gallery/Album</label></li>
+                    <li class="to-label"><label><?php _e('Choose Gallery/Album','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_gal_album[]" class="dropdown">
 
-                        	<option value="0">-- Select Gallery --</option>
+                        	<option value="0"><?php _e('-- Select Gallery --','WeStand');?></option>
 
                             <?php
 
@@ -152,7 +152,7 @@ function cs_pb_gallery($die = 0){
 
                         </select>
 
-                        <p>Select gallery album to show images.</p>
+                        <p><?php _e('Select gallery album to show images','WeStand');?></p>
 
                     </li>
 
@@ -160,15 +160,15 @@ function cs_pb_gallery($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Pagination</label></li>
+                    <li class="to-label"><label><?php _e('Pagination','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_gal_pagination[]" class="dropdown" >
 
-                            <option <?php if($cs_gal_pagination_db=="Show Pagination")echo "selected";?> >Show Pagination</option>
+                            <option <?php if($cs_gal_pagination_db=="Show Pagination")echo "selected";?> ><?php _e('Show Pagination','WeStand');?></option>
 
-                            <option <?php if($cs_gal_pagination_db=="Single Page")echo "selected";?> >Single Page</option>
+                            <option <?php if($cs_gal_pagination_db=="Single Page")echo "selected";?> ><?php _e('Single Page','WeStand');?></option>
 
                         </select>
 
@@ -178,13 +178,13 @@ function cs_pb_gallery($die = 0){
 
 				<ul class="form-elements" >
 
-                    <li class="to-label"><label>No. of Media Per Page</label></li>
+                    <li class="to-label"><label><?php _e('No. of Media Per Page','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="cs_gal_media_per_page[]" class="txtfield" value="<?php echo $cs_gal_media_per_page_db; ?>" />
 
-                        <p>To display all the records, leave this field blank.</p>
+                        <p><?php _e('To display all the records, leave this field blank','WeStand');?></p>
 
                     </li>
 
@@ -316,23 +316,23 @@ function cs_pb_services($die = 0){
 
 									<a href='#' class='deleteit_node'>Delete it</a>
 
-									<label>Service Title:</label> <input class="txtfield" type="text" name="service_title[]" value="<?php echo $service->service_title ?>" />
+									<label><?php _e('Service Title','WeStand');?></label> <input class="txtfield" type="text" name="service_title[]" value="<?php echo $service->service_title ?>" />
                                     
-                                    <label>Service Type:</label> 
+                                    <label><?php _e('Service Type','WeStand');?></label> 
                                     <select name="service_type[]" class="dropdown">
-                                    	<option value="type1" <?php if($service->service_type == 'type1'){echo 'selected="selected"'; }?>>Type 1</option>
-                                    	<option value="type2" <?php if($service->service_type == 'type2'){echo 'selected="selected"'; }?>>Type 2</option>
+                                    	<option value="type1" <?php if($service->service_type == 'type1'){echo 'selected="selected"'; }?>><?php _e('Type 1','WeStand');?></option>
+                                    	<option value="type2" <?php if($service->service_type == 'type2'){echo 'selected="selected"'; }?>><?php _e('Type 2','WeStand');?></option>
                                     </select>
                                   
 
 									<label>Service Fontawsome Icon:</label> <input class="txtfield" type="text" name="service_icon[]" value="<?php echo $service->service_icon ?>" />
-                                    <p>You can get fontawsome icons from <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
+                                    <p><?php _e('You can get fontawsome icons from','WeStand');?> <a href="http://fortawesome.github.io/Font-Awesome/icons/"><?php _e('here','WeStand');?></a></p>
 
-									<label>Service Bg Image:</label> <input class="txtfield" type="text" name="service_bg_image[]" value="<?php echo $service->service_bg_image ?>" />
+									<label><?php _e('Service Bg Image','WeStand');?></label> <input class="txtfield" type="text" name="service_bg_image[]" value="<?php echo $service->service_bg_image ?>" />
 
-									<label>Service Link URL:</label> <input class="txtfield" type="text" name="service_link_url[]" value="<?php echo $service->service_link_url ?>" />
+									<label><?php _e('Service Link URL','WeStand');?></label> <input class="txtfield" type="text" name="service_link_url[]" value="<?php echo $service->service_link_url ?>" />
 
-									<label>Service Text:</label> <textarea class="txtfield" name="service_text[]"><?php echo $service->service_text ?></textarea>
+									<label><?php _e('Service Text','WeStand');?></label> <textarea class="txtfield" name="service_text[]"><?php echo $service->service_text ?></textarea>
 
 									
 
@@ -356,7 +356,7 @@ function cs_pb_services($die = 0){
 
                             <li class="to-label"><label></label></li>
 
-                            <li class="to-field"><a href="#" class="add_services">Add service</a></li>
+                            <li class="to-field"><a href="#" class="add_services"><?php _e('Add service','WeStand');?></a></li>
 
                         </ul>
 
@@ -476,7 +476,7 @@ function cs_pb_slider($die = 0){
 
             <div class="opt-head">
 
-                <h5>Edit Slider Options</h5>
+                <h5><?php _e('Edit Slider Options','WeStand');?></h5>
 
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
 
@@ -486,13 +486,13 @@ function cs_pb_slider($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Slider Header Title</label></li>
+                    <li class="to-label"><label><?php _e('Slider Header Title','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_slider_header_title[]" class="txtfield" value="<?php echo htmlspecialchars($cs_slider_header_title_db)?>" />
 
-                        <p>Please enter slider header title.</p>
+                        <p><?php _e('Please enter slider header title','WeStand');?></p>
 
                     </li>                    
 
@@ -500,15 +500,15 @@ function cs_pb_slider($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Choose SliderType</label></li>
+                    <li class="to-label"><label><?php _e('Choose SliderType','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_slider_type[]" class="dropdown" onchange="cs_toggle_height(this.value,'cs_slider_height<?php echo $name.$cs_counter?>')">
 
-                             <option <?php if($cs_slider_type_db=="Flex Slider"){echo "selected";}?> >Flex Slider</option>
+                             <option <?php if($cs_slider_type_db=="Flex Slider"){echo "selected";}?> ><?php _e('Flex Slider','WeStand');?></option>
 
-                             <option <?php if($cs_slider_type_db=="Custom Slider"){echo "selected";}?> >Custom Slider</option>
+                             <option <?php if($cs_slider_type_db=="Custom Slider"){echo "selected";}?> ><?php _e('Custom Slider','WeStand');?></option>
 
                         </select>
 
@@ -518,7 +518,7 @@ function cs_pb_slider($die = 0){
 
                 <ul class="form-elements" id="choose_slider" style="display:<?php if($cs_slider_type_db == "Custom Slider")echo "none"; else echo "inline"; ?>">
 
-                    <li class="to-label"><label>Choose Slider</label></li>
+                    <li class="to-label"><label><?php _e('Choose Slider','WeStand');?></label></li>
 
                     <li class="to-field">
 
@@ -550,15 +550,15 @@ function cs_pb_slider($die = 0){
 
                 <ul class="form-elements" >
 
-                    <li class="to-label"><label>Slider View</label></li>
+                    <li class="to-label"><label><?php _e('Slider View','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="slider_view[]" class="dropdown" >
 
-                            <option <?php if($slider_view=="content")echo "selected";?> >content</option>
+                            <option <?php if($slider_view=="content")echo "selected";?> ><?php _e('content','WeStand');?></option>
 
-                            <option <?php if($slider_view=="header")echo "selected";?> >header</option>
+                            <option <?php if($slider_view=="header")echo "selected";?> ><?php _e('header','WeStand');?></option>
 
                          </select>
 
@@ -570,7 +570,7 @@ function cs_pb_slider($die = 0){
 
                     <li class="to-label">
 
-                        <label>Use Short Code</label>
+                        <label><?php _e('Use Short Code','WeStand');?></label>
 
                     </li>
 
@@ -585,7 +585,7 @@ function cs_pb_slider($die = 0){
 
                     <li class="to-field">
 
-                        <p>Please enter the Revolution/Other Slider Short Code like [rev_slider WeStand]</p>
+                        <p><?php _e('Please enter the Revolution/Other Slider Short Code like [rev_slider WeStand]','WeStand');?></p>
 
                     </li>                                            
 
@@ -661,7 +661,7 @@ function add_gradiants_to_list(){
 
                 <div class="opt-head">
 
-                    <h5>Edit Donation</h5>
+                    <h5><?php _e('Edit Donation','WeStand');?></h5>
 
                     <a href="javascript:closepopedup('edit_track_form<?php echo $counter_track?>')" class="closeit">&nbsp;</a>
 
@@ -671,19 +671,9 @@ function add_gradiants_to_list(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Donar Name</label></li>
+                    <li class="to-label"><label><?php _e('Donar Name','WeStand');?></label></li>
 
-                    <li class="to-field"><input type="text" name="address_name[]" value="<?php echo htmlspecialchars($address_name)?>" id="address_name<?php echo $counter_track?>" /><p>Put Donar Name</p></li>
-
-                    
-
-                </ul>
-
-                <ul class="form-elements">
-
-                    <li class="to-label"><label>Email</label></li>
-
-                    <li class="to-field"><input type="text" name="payer_email[]" value="<?php echo htmlspecialchars($payer_email)?>" id="payer_email<?php echo $counter_track?>" /><p>Put Donor Email</p></li>
+                    <li class="to-field"><input type="text" name="address_name[]" value="<?php echo htmlspecialchars($address_name)?>" id="address_name<?php echo $counter_track?>" /><p><?php _e('Put Donar Name','WeStand');?></p></li>
 
                     
 
@@ -691,19 +681,10 @@ function add_gradiants_to_list(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Amount</label></li>
+                    <li class="to-label"><label><?php _e('Email','WeStand');?></label></li>
 
-                    <li class="to-field"><input type="text" name="payment_gross[]" value="<?php echo htmlspecialchars($payment_gross)?>" id="payment_gross<?php echo $counter_track?>" /><p>Put Donor Raised Amount</p></li>
-
-                    
-
-                </ul>
-
-                <ul class="form-elements">
-
-                    <li class="to-label"><label>Transaction ID</label></li>
-
-                    <li class="to-field"><input type="text" name="txn_id[]" value="<?php echo htmlspecialchars($txn_id)?>" id="txn_id<?php echo $counter_track?>" /><p>Put Donor Trasaction id</p></li>
+                    <li class="to-field"><input type="text" name="payer_email[]" value="<?php echo htmlspecialchars($payer_email)?>" id="payer_email<?php echo $counter_track?>" /><p>
+					<?php _e('Put Donor Email','WeStand');?></p></li>
 
                     
 
@@ -711,7 +692,28 @@ function add_gradiants_to_list(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Donation Date</label></li>
+                    <li class="to-label"><label><?php _e('Amount','WeStand');?></label></li>
+
+                    <li class="to-field"><input type="text" name="payment_gross[]" value="<?php echo htmlspecialchars($payment_gross)?>" id="payment_gross<?php echo $counter_track?>" /><p><?php _e('Put Donor Raised Amount','WeStand');?></p></li>
+
+                    
+
+                </ul>
+
+                <ul class="form-elements">
+
+                    <li class="to-label"><label><?php _e('Transaction ID','WeStand');?></label></li>
+
+                    <li class="to-field"><input type="text" name="txn_id[]" value="<?php echo htmlspecialchars($txn_id)?>" id="txn_id<?php echo $counter_track?>" /><p>
+					<?php _e('Put Donor Trasaction id','WeStand');?></p></li>
+
+                    
+
+                </ul>
+
+                <ul class="form-elements">
+
+                    <li class="to-label"><label><?php _e('Donation Date','WeStand');?></label></li>
 
                     <li class="to-field"><input type="text" name="payment_date[]" value="<?php echo htmlspecialchars($payment_date)?>" id="payment_date<?php echo $counter_track?>" /><p>Put Donation Date</p></li>
 
@@ -832,7 +834,7 @@ function cs_pb_blog($die = 0){
 
             <div class="opt-head">
 
-                <h5>Edit Blog Options</h5>
+                <h5><?php _e('Edit Blog Options','WeStand');?></h5>
 
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
 
@@ -842,13 +844,13 @@ function cs_pb_blog($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Blog Header Title</label></li>
+                    <li class="to-label"><label><?php _e('Blog Header Title','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_blog_title[]" class="txtfield" value="<?php echo htmlspecialchars($cs_blog_title_db)?>" />
 
-                        <p>Please enter Blog header title.</p>
+                        <p><?php _e('Please enter Blog header title','WeStand');?></p>
 
                     </li>                    
 
@@ -856,19 +858,19 @@ function cs_pb_blog($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Select View</label></li>
+                    <li class="to-label"><label><?php _e('Select View','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_blog_view[]" class="dropdown"  onchange="javascript:blog_toggle(this.value,<?php echo $cs_counter?>)">
 
-                         	<option <?php if($cs_blog_view_db=="blog-large")echo "selected";?> value="blog-large">Large</option>
+                         	<option <?php if($cs_blog_view_db=="blog-large")echo "selected";?> value="blog-large"><?php _e('Large','WeStand');?></option>
 
-                            <option <?php if($cs_blog_view_db=="blog-medium")echo "selected";?> value="blog-medium">Medium</option>
+                            <option <?php if($cs_blog_view_db=="blog-medium")echo "selected";?> value="blog-medium"><?php _e('Medium','WeStand');?></option>
 
-                         	<option <?php if($cs_blog_view_db=="blog-grid")echo "selected";?> value="blog-grid">Grid</option>
+                         	<option <?php if($cs_blog_view_db=="blog-grid")echo "selected";?> value="blog-grid"><?php _e('Grid','WeStand');?></option>
                             
-                            <option <?php if($cs_blog_view_db=="blog-carousel-view")echo "selected";?> value="blog-carousel-view">Carousal</option>
+                            <option <?php if($cs_blog_view_db=="blog-carousel-view")echo "selected";?> value="blog-carousel-view"><?php _e('Carousal','WeStand');?></option>
 
                         </select>
 
@@ -878,45 +880,45 @@ function cs_pb_blog($die = 0){
                 </ul>
 				<ul class="form-elements">
 
-                    <li class="to-label"><label>Choose Category</label></li>
+                    <li class="to-label"><label><?php _e('Choose Category','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_blog_cat[]" class="dropdown">
 
-                        	<option value="0">-- Select Category --</option>
+                        	<option value="0"><?php _e('-- Select Category --','WeStand');?></option>
 
 							<?php show_all_cats('', '', $cs_blog_cat_db, "category");?>
 
                         </select>
 
-                        <p>Please select category to show posts. If you dont select category it will display all posts.</p>
+                        <p><?php _e('Please select category to show posts. If you dont select category it will display all posts','WeStand');?></p>
 
                     </li>                                        
 
                 </ul>
 			<div id="Blog-listing<?php echo $cs_counter?>" <?php if($cs_blog_view_db=="blog-carousel-view")echo 'style="display:none"'?>>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Post Order</label></li>
+                    <li class="to-label"><label><?php _e('Post Order','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="cs_blog_orderby[]" class="dropdown" >
-                            <option <?php if($cs_blog_orderby_db=="ASC")echo "selected";?> value="ASC">ASC</option>
-                            <option <?php if($cs_blog_orderby_db=="DESC")echo "selected";?> value="DESC">DESC</option>
+                            <option <?php if($cs_blog_orderby_db=="ASC")echo "selected";?> value="ASC"><?php _e('ASC','WeStand');?></option>
+                            <option <?php if($cs_blog_orderby_db=="DESC")echo "selected";?> value="DESC"><?php _e('DESC','WeStand');?></option>
                         </select>
                     </li>
                 </ul>
                 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Post Description</label></li>
+                    <li class="to-label"><label><?php _e('Post Description','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_blog_description[]" class="dropdown" >
 
-                            <option <?php if($cs_blog_description_db=="yes")echo "selected";?> value="yes">Yes</option>
+                            <option <?php if($cs_blog_description_db=="yes")echo "selected";?> value="yes"><?php _e('Yes','WeStand');?></option>
 
-                            <option <?php if($cs_blog_description_db=="no")echo "selected";?> value="no">No</option>
+                            <option <?php if($cs_blog_description_db=="no")echo "selected";?> value="no"><?php _e('No','WeStand');?></option>
 
                         </select>
 
@@ -928,13 +930,13 @@ function cs_pb_blog($die = 0){
                 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Length of Excerpt</label></li>
+                    <li class="to-label"><label><?php _e('Length of Excerpt','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_blog_excerpt[]" class="txtfield" value="<?php echo $cs_blog_excerpt_db;?>" />
 
-                        <p>Enter number of character for short description text.</p>
+                        <p><?php _e('Enter number of character for short description text','WeStand');?></p>
 
                     </li>                         
 
@@ -942,15 +944,15 @@ function cs_pb_blog($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Pagination</label></li>
+                    <li class="to-label"><label><?php _e('Pagination','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_blog_pagination[]" class="dropdown" >
 
-                            <option <?php if($cs_blog_pagination_db=="Show Pagination")echo "selected";?> >Show Pagination</option>
+                            <option <?php if($cs_blog_pagination_db=="Show Pagination")echo "selected";?> ><?php _e('Show Pagination','WeStand');?></option>
 
-                            <option <?php if($cs_blog_pagination_db=="Single Page")echo "selected";?> >Single Page</option>
+                            <option <?php if($cs_blog_pagination_db=="Single Page")echo "selected";?> ><?php _e('Single Page','WeStand');?></option>
 
                             <!--<option <?php //if($cs_blog_pagination_db=="Load More")echo "selected";?> >Load More</option>-->
 
@@ -962,13 +964,13 @@ function cs_pb_blog($die = 0){
 			</div>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>No. of Post Per Page</label></li>
+                    <li class="to-label"><label><?php _e('No. of Post Per Page','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="cs_blog_num_post[]" class="txtfield" value="<?php echo $cs_blog_num_post_db; ?>" />
 
-                        <p>To display all the records, leave this field blank.</p>
+                        <p><?php _e('To display all the records, leave this field blank','WeStand');?></p>
 
                     </li>
 
@@ -1045,38 +1047,38 @@ function cs_pb_team($die = 0){
 		</div>
         <div class="poped-up" id="<?php echo $name.$counter?>" style="border:none; background:#f8f8f8;" >
             <div class="opt-head">
-                <h5>Edit Album Options</h5>
+                <h5><?php _e('Edit Album Options','WeStand');?></h5>
                 <a href="javascript:show_all('<?php echo $name.$counter?>')" class="closeit">&nbsp;</a>
             </div>
             <div class="opt-conts">
             	<ul class="form-elements">
-                    <li class="to-label"><label>Team Title</label></li>
+                    <li class="to-label"><label><?php _e('Team Title','WeStand');?></label></li>
                     <li class="to-field">
                         <input type="text" name="var_pb_team_title[]" class="txtfield" value="<?php echo htmlspecialchars($var_pb_team_title)?>" />
-                        <p>Team Page Title</p>
+                        <p><?php _e('Team Page Title','WeStand');?></p>
                     </li>                                            
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Choose Category</label></li>
+                    <li class="to-label"><label><?php _e('Choose Category','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="var_pb_team_cat[]" class="dropdown">
-                        	<option value="0">-- All Categories --</option>
+                        	<option value="0"><?php _e('-- All Categories --','WeStand');?></option>
                         	<?php show_all_cats('', '', $var_pb_team_cat, "team-category");?>
                         </select>
-                        <p>Choose category to show Team list</p>
+                        <p><?php _e('Choose category to show Team list','WeStand');?></p>
                     </li>
                 </ul>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Select View</label></li>
+                    <li class="to-label"><label><?php _e('Select View','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="var_pb_team_view[]" class="dropdown">
 
-                         	<option <?php if($var_pb_team_view=="listing")echo "selected";?> value="listing">Listing View</option>
-                         	<option <?php if($var_pb_team_view=="grid")echo "selected";?> value="grid">Large Grid View</option>
-                            <option <?php if($var_pb_team_view=="small")echo "selected";?> value="small">Small Grid View</option>
+                         	<option <?php if($var_pb_team_view=="listing")echo "selected";?> value="listing"><?php _e('Listing View','WeStand');?></option>
+                         	<option <?php if($var_pb_team_view=="grid")echo "selected";?> value="grid"><?php _e('Large Grid View','WeStand');?></option>
+                            <option <?php if($var_pb_team_view=="small")echo "selected";?> value="small"><?php _e('Small Grid View','WeStand');?></option>
 
                         </select>
 
@@ -1086,42 +1088,42 @@ function cs_pb_team($die = 0){
 
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Post Order</label></li>
+                    <li class="to-label"><label><?php _e('Post Order','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="cs_team_orderby[]" class="dropdown" >
-                            <option <?php if($cs_team_orderby=="ASC")echo "selected";?> value="ASC">ASC</option>
-                            <option <?php if($cs_team_orderby=="DESC")echo "selected";?> value="DESC">DESC</option>
+                            <option <?php if($cs_team_orderby=="ASC")echo "selected";?> value="ASC"><?php _e('ASC','WeStand');?></option>
+                            <option <?php if($cs_team_orderby=="DESC")echo "selected";?> value="DESC"><?php _e('DESC','WeStand');?></option>
                         </select>
                     </li>
                 </ul>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Length of Excerpt</label></li>
+                    <li class="to-label"><label><?php _e('Length of Excerpt','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_team_excerpt[]" class="txtfield" value="<?php echo $cs_team_excerpt;?>" />
 
-                        <p>Enter number of character for short description text.</p>
+                        <p><?php _e('Enter number of character for short description text','WeStand');?></p>
 
                     </li>                         
 
                 </ul>
                 
 				<ul class="form-elements">
-                    <li class="to-label"><label>Pagination</label></li>
+                    <li class="to-label"><label><?php _e('Pagination','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="var_pb_team_pagination[]" class="dropdown" >
-                            <option <?php if($var_pb_team_pagination=="Show Pagination")echo "selected";?> >Show Pagination</option>
-                            <option <?php if($var_pb_team_pagination=="Single Page")echo "selected";?> >Single Page</option>
+                            <option <?php if($var_pb_team_pagination=="Show Pagination")echo "selected";?> ><?php _e('Show Pagination','WeStand');?></option>
+                            <option <?php if($var_pb_team_pagination=="Single Page")echo "selected";?> ><?php _e('Single Page','WeStand');?></option>
                         </select>
                     </li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>No. of Team Per Page</label></li>
+                    <li class="to-label"><label><?php _e('No. of Team Per Page','WeStand');?></label></li>
                     <li class="to-field">
                         <input type="text" name="var_pb_team_per_page[]" class="txtfield" value="<?php echo $var_pb_team_per_page;?>" />
-                        <p>To display all the records, leave this field blank.</p>
+                        <p><?php _e('To display all the records, leave this field blank','WeStand');?></p>
                     </li>
                 </ul>
                 <ul class="form-elements noborder">
@@ -1281,57 +1283,57 @@ function cs_pb_parallax($die = 0){
 
        	<div class="poped-up" id="<?php echo $name.$cs_counter?>" style="border:none; background:#f8f8f8;" >
             <div class="opt-head">
-                <h5>Edit Parallax Options</h5>
+                <h5><?php _e('Edit Parallax Options','WeStand');?></h5>
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
             </div>
             <div class="opt-conts">
             		<ul class="form-elements">
-                        <li class="to-label"><label>Title</label></li>
+                        <li class="to-label"><label><?php _e('Title','WeStand');?></label></li>
                         <li class="to-field"><input type="text" name="parallax_title[]" class="txtfield" value="<?php echo $parallax_title?>" /></li>
                     </ul>
                 	<ul class="form-elements">
-                        <li class="to-label"><label>Height</label></li>
+                        <li class="to-label"><label><?php _e('Height','WeStand');?></label></li>
                         <li class="to-field"><input type="text" name="parallax_height[]" class="txtfield" value="<?php echo $parallax_height?>" /></li>
                     </ul>
                     <ul class="form-elements">
-                        <li class="to-label"><label>Paddding Top</label></li>
+                        <li class="to-label"><label><?php _e('Paddding Top','WeStand');?></label></li>
                         <li class="to-field"><input type="text" name="parallax_padding_top[]" class="txtfield" value="<?php echo $parallax_padding_top?>" />
-                        <p>Set the top paddding (In PX)</p>
+                        <p><?php _e('Set the top paddding (In PX)','WeStand');?></p>
                         </li>
                     </ul>
                     <ul class="form-elements">
-                        <li class="to-label"><label>Paddding Bottom</label></li>
+                        <li class="to-label"><label><?php _e('Paddding Bottom','WeStand');?></label></li>
                         <li class="to-field"><input type="text" name="parallax_padding_bottom[]" class="txtfield" value="<?php echo $parallax_padding_bottom?>" />
-                        <p>Set the bottom Paddding (In PX)</p>
+                        <p><?php _e('Set the bottom Paddding (In PX)','WeStand');?></p>
                         </li>
                     </ul>
                      <ul class="form-elements">
-                        <li class="to-label"><label>Margin Top</label></li>
+                        <li class="to-label"><label><?php _e('Button','WeStand');?></label></li>
                         <li class="to-field"><input type="text" name="parallax_margin_top[]" class="txtfield" value="<?php echo $parallax_margin_top?>" />
-                        <p>Set the top margin (In PX)</p>
+                        <p><?php _e('Set the top margin (In PX)','WeStand');?></p>
                         </li>
                     </ul>
                      <ul class="form-elements">
-                        <li class="to-label"><label>Margin Bottom</label></li>
+                        <li class="to-label"><label><?php _e('Button','WeStand');?>Margin Bottom</label></li>
                         <li class="to-field"><input type="text" name="parallax_margin_bottom[]" class="txtfield" value="<?php echo $parallax_margin_bottom?>" />
-                        <p>Set the bottom margin (In PX)</p>
+                        <p><?php _e('Set the bottom margin (In PX)','WeStand');?></p>
                         </li>
                     </ul>
                 
             
                         <ul class="form-elements">
-                            <li class="to-label"><label>Text</label></li>
+                            <li class="to-label"><label><?php _e('Text','WeStand');?></label></li>
                             <li class="to-field"><textarea name="parallax_custom_text[]"><?php echo $parallax_custom_text?></textarea></li>
                         </ul>
                         <ul class="form-elements">
-                            <li class="to-label"><label>Image Path</label></li>
+                            <li class="to-label"><label><?php _e('Image Path','WeStand');?></label></li>
                             <li class="to-field">
                                 <input type="text" name="parallax_custom_img[]" class="txtfield" value="<?php echo $parallax_custom_img?>" />
                                 <p>e.g. http://yourdomain.com/logo.png</p>
                             </li>
                         </ul>
                         <ul class="form-elements">
-                            <li class="to-label"><label>Background Color</label></li>
+                            <li class="to-label"><label><?php _e('Background Color','WeStand');?></label></li>
                             <li><input type="text"  name="parallax_custom_bgcolor[]" class="parallax_custom_bgcolor" value="<?php echo $parallax_custom_bgcolor?>" data-default-color=""  /></li>
                             <script type="text/javascript">
                                 jQuery(document).ready(function($){
@@ -1462,7 +1464,7 @@ function cs_pb_event($die = 0){
 
             <div class="opt-head">
 
-                <h5>Edit Event Options</h5>
+                <h5><?php _e('Edit Event Options','WeStand');?></h5>
 
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
 
@@ -1472,13 +1474,13 @@ function cs_pb_event($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Event Title</label></li>
+                    <li class="to-label"><label><?php _e('Event Title','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_event_title[]" class="txtfield" value="<?php echo htmlspecialchars($cs_event_title_db)?>" />
 
-                        <p>Event Page Title</p>
+                        <p><?php _e('Event Page Title','WeStand');?></p>
 
                     </li>
 
@@ -1486,21 +1488,21 @@ function cs_pb_event($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Event Types</label></li>
+                    <li class="to-label"><label><?php _e('Event Types','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_event_type[]" class="dropdown">
 
-                            <option <?php if($cs_event_type_db=="All Events")echo "selected";?> >All Events</option>
+                            <option <?php if($cs_event_type_db=="All Events")echo "selected";?> ><?php _e('All Events','WeStand');?></option>
 
-                            <option <?php if($cs_event_type_db=="Upcoming Events")echo "selected";?> >Upcoming Events</option>
+                            <option <?php if($cs_event_type_db=="Upcoming Events")echo "selected";?> ><?php _e('Upcoming Events','WeStand');?></option>
 
-                            <option <?php if($cs_event_type_db=="Past Events")echo "selected";?> >Past Events</option>
+                            <option <?php if($cs_event_type_db=="Past Events")echo "selected";?> ><?php _e('Past Events','WeStand');?></option>
 
                         </select>
 
-                        <p>Select event type</p>
+                        <p><?php _e('Select event type','WeStand');?></p>
 
                     </li>
 
@@ -1508,13 +1510,13 @@ function cs_pb_event($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Select Category</label></li>
+                    <li class="to-label"><label><?php _e('Select Category','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_event_category[]" class="dropdown">
 
-                        	<option value="0">-- All Categories Posts --</option>
+                        	<option value="0"><?php _e('-- All Categories Posts --','WeStand');?></option>
 
                             <?php show_all_cats('', '', $cs_event_category_db, "event-category");?>
 
@@ -1525,16 +1527,16 @@ function cs_pb_event($die = 0){
                 </ul>
 				<ul class="form-elements">
 
-                    <li class="to-label"><label>Select View</label></li>
+                    <li class="to-label"><label><?php _e('Select View','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_event_view[]" class="dropdown" onchange="javascript:event_toggle(this.value,'<?php echo $cs_counter;?>')">
 
-                         	<option <?php if($cs_event_view_db=="eventlisting")echo "selected";?> value="eventlisting">Listing View</option>
-                         	<option <?php if($cs_event_view_db=="event-gridview")echo "selected";?> value="event-gridview">Grid View</option>
-                            <option <?php if($cs_event_view_db=="event-calendarview")echo "selected";?> value="event-calendarview">Calendar View</option>
-                            <option <?php if($cs_event_view_db=="event-timeline")echo "selected";?> value="event-timeline">Timeline Listing</option>
+                         	<option <?php if($cs_event_view_db=="eventlisting")echo "selected";?> value="eventlisting"><?php _e('Listing View','WeStand');?></option>
+                         	<option <?php if($cs_event_view_db=="event-gridview")echo "selected";?> value="event-gridview"><?php _e('Grid View','WeStand');?></option>
+                            <option <?php if($cs_event_view_db=="event-calendarview")echo "selected";?> value="event-calendarview"><?php _e('Calendar View','WeStand');?></option>
+                            <option <?php if($cs_event_view_db=="event-timeline")echo "selected";?> value="event-timeline"><?php _e('Timeline Listing','WeStand');?></option>
 
                         </select>
 
@@ -1546,13 +1548,13 @@ function cs_pb_event($die = 0){
                 <div id="featured_timeline_event<?php echo $cs_counter;?>" <?php if($cs_event_view_db <> "event-timeline")echo 'style="display:none"'?>>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Featured Event Category</label></li>
+                    <li class="to-label"><label><?php _e('Featured Event Category','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_event_featured_category[]" class="dropdown">
 
-                        	<option value="0">-- Select Category --</option>
+                        	<option value="0"><?php _e('-- Select Category --','WeStand');?></option>
 
                             <?php show_all_cats('', '', $cs_event_featured_category, "event-category");?>
 
@@ -1563,15 +1565,15 @@ function cs_pb_event($die = 0){
                 </ul>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Show Thumbnail</label></li>
+                    <li class="to-label"><label><?php _e('Show Thumbnail','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_event_thumbnail[]" class="dropdown">
 
-                            <option value="Yes" <?php if($cs_event_thumbnail=="Yes")echo "selected";?> >Yes</option>
+                            <option value="Yes" <?php if($cs_event_thumbnail=="Yes")echo "selected";?> ><?php _e('Yes','WeStand');?></option>
 
-                            <option value="No" <?php if($cs_event_thumbnail=="No")echo "selected";?> >No</option>
+                            <option value="No" <?php if($cs_event_thumbnail=="No")echo "selected";?> ><?php _e('No','WeStand');?></option>
 
                         </select>
 
@@ -1583,15 +1585,15 @@ function cs_pb_event($die = 0){
                 <div id="event-lising<?php echo $cs_counter;?>"  <?php if($cs_event_view_db == "event-calendarview")echo 'style="display:none"'?>>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Show Time</label></li>
+                    <li class="to-label"><label><?php _e('Show Time','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cs_event_time[]" class="dropdown">
 
-                            <option value="Yes" <?php if($cs_event_time_db=="Yes")echo "selected";?> >Yes</option>
+                            <option value="Yes" <?php if($cs_event_time_db=="Yes")echo "selected";?> ><?php _e('Yes','WeStand');?></option>
 
-                            <option value="No" <?php if($cs_event_time_db=="No")echo "selected";?> >No</option>
+                            <option value="No" <?php if($cs_event_time_db=="No")echo "selected";?> ><?php _e('No','WeStand');?></option>
 
                         </select>
 
@@ -1600,7 +1602,7 @@ function cs_pb_event($die = 0){
                 </ul>
 				<ul class="form-elements">
     
-                    <li class="to-label"><label>View All Events Link</label></li>
+                    <li class="to-label"><label><?php _e('View All Events Link','WeStand');?></label></li>
 
                     <li class="to-field">
 
@@ -1614,13 +1616,13 @@ function cs_pb_event($die = 0){
                 
                     <ul class="form-elements">
     
-                        <li class="to-label"><label>Length of Excerpt</label></li>
+                        <li class="to-label"><label><?php _e('Length of Excerpt','WeStand');?></label></li>
     
                         <li class="to-field">
     
                             <input type="text" name="cs_event_excerpt[]" class="txtfield" value="<?php echo $cs_event_excerpt;?>" />
     
-                            <p>Enter number of character for short description text.</p>
+                            <p><?php _e('Enter number of character for short description text','WeStand');?></p>
     
                         </li>                         
     
@@ -1628,15 +1630,15 @@ function cs_pb_event($die = 0){
 
                      <ul class="form-elements">
     
-                        <li class="to-label"><label>Filterables</label></li>
+                        <li class="to-label"><label><?php _e('Filterables','WeStand');?></label></li>
     
                         <li class="to-field">
     
                             <select name="cs_event_filterables[]" class="dropdown" >
     
-                                <option value="No" <?php if($cs_event_filterables_db=="No")echo "selected";?> >No</option>
+                                <option value="No" <?php if($cs_event_filterables_db=="No")echo "selected";?> ><?php _e('No','WeStand');?></option>
     
-                                <option value="Yes" <?php if($cs_event_filterables_db=="Yes")echo "selected";?> >Yes</option>
+                                <option value="Yes" <?php if($cs_event_filterables_db=="Yes")echo "selected";?> ><?php _e('Yes','WeStand');?></option>
     
                             </select>
     
@@ -1646,21 +1648,21 @@ function cs_pb_event($die = 0){
 
                     <ul class="form-elements">
     
-                        <li class="to-label"><label>Pagination</label></li>
+                        <li class="to-label"><label><?php _e('Pagination','WeStand');?></label></li>
     
                         <li class="to-field">
     
                             <select name="cs_event_pagination[]" class="dropdown" >
     
-                                <option <?php if($cs_event_pagination_db=="Show Pagination")echo "selected";?> >Show Pagination</option>
+                                <option <?php if($cs_event_pagination_db=="Show Pagination")echo "selected";?> ><?php _e('Show Pagination','WeStand');?></option>
     
                                 <!--<option <?php //if($cs_event_pagination_db=="Load More")echo "selected";?> >Load More</option>-->
     
-                                <option <?php if($cs_event_pagination_db=="Single Page")echo "selected";?> >Single Page</option>
+                                <option <?php if($cs_event_pagination_db=="Single Page")echo "selected";?> ><?php _e('Single Page','WeStand');?></option>
     
                             </select>
     
-                            <p>Show navigation only at List View.</p>
+                            <p><?php _e('Show navigation only at List View.','WeStand');?></p>
     
                         </li>
     
@@ -1669,13 +1671,13 @@ function cs_pb_event($die = 0){
 			</div>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>No. of Events Per Page</label></li>
+                    <li class="to-label"><label><?php _e('No. of Events Per Page','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_event_per_page[]" class="txtfield" value="<?php echo $cs_event_per_page_db; ?>" />
 
-                        <p>To display all the records, leave this field blank.</p>
+                        <p><?php _e('To display all the records, leave this field blank','WeStand');?></p>
 
                     </li>
 
@@ -1801,7 +1803,7 @@ function cs_pb_cause($die = 0){
 
             <div class="opt-head">
 
-                <h5>Edit Menu Options</h5>
+                <h5><?php _e('Edit Menu Options','WeStand');?></h5>
 
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
 
@@ -1811,13 +1813,13 @@ function cs_pb_cause($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Cause Title</label></li>
+                    <li class="to-label"><label><?php _e('Cause Title','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cause_title[]" class="txtfield" value="<?php echo htmlspecialchars($cause_title)?>" />
 
-                        <p>Cause Section Title</p>
+                        <p><?php _e('Cause Section Title','WeStand');?></p>
 
                     </li>                                            
 
@@ -1825,33 +1827,33 @@ function cs_pb_cause($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Choose Category</label></li>
+                    <li class="to-label"><label><?php _e('Choose Category','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cause_cat[]" class="dropdown">
 
-                        	<option value="">-- All Categories Posts --</option>
+                        	<option value=""><?php _e('-- All Categories Posts --','WeStand');?></option>
 
                              <?php show_all_cats('', '', $cause_cat, "cs_cause-category");?>
 
                         </select>
 
-                        <p>Choose category to show Cause list</p>
+                        <p><?php _e('Choose category to show Cause list','WeStand');?></p>
 
                     </li>
 
                 </ul>
 			<ul class="form-elements">
 
-                    <li class="to-label"><label>Select View</label></li>
+                    <li class="to-label"><label><?php _e('Select View','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="cause_view[]" class="dropdown">
 
-                         	<option <?php if($cause_view=="listing")echo "selected";?> value="listing">Listing View</option>
-                         	<option <?php if($cause_view=="small")echo "selected";?> value="small">Grid View</option>
+                         	<option <?php if($cause_view=="listing")echo "selected";?> value="listing"><?php _e('Listing View','WeStand');?></option>
+                         	<option <?php if($cause_view=="small")echo "selected";?> value="small"><?php _e('Grid View','WeStand');?></option>
                             
 
                         </select>
@@ -1864,21 +1866,21 @@ function cs_pb_cause($die = 0){
                 
                 <ul class="form-elements">
 
-                        <li class="to-label"><label>Cause Types</label></li>
+                        <li class="to-label"><label><?php _e('Cause Types','WeStand');?></label></li>
 
                         <li class="to-field">
 
                             <select name="cause_type[]" class="dropdown" onchange="cs_toggle_cause_last_miles(this.value, '<?php echo $cs_counter?>')">
 
-                                <option <?php if($cause_type=="All")echo "selected";?> >All</option>
+                                <option <?php if($cause_type=="All")echo "selected";?> ><?php _e('All','WeStand');?></option>
 
-                                <option <?php if($cause_type=="Upcoming Causes")echo "selected";?> >Upcoming Causes</option>
+                                <option <?php if($cause_type=="Upcoming Causes")echo "selected";?> ><?php _e('Upcoming Causes','WeStand');?></option>
                                 
-                                <option <?php if($cause_type=="Past Causes")echo "selected";?> >Past Causes</option>
+                                <option <?php if($cause_type=="Past Causes")echo "selected";?> ><?php _e('Past Causes','WeStand');?></option>
                                 
-                                <option <?php if($cause_type=="cause-succesfully")echo "selected";?> value="cause-succesfully" >Successfully Funded</option>
+                                <option <?php if($cause_type=="cause-succesfully")echo "selected";?> value="cause-succesfully" ><?php _e('Successfully Funded','WeStand');?></option>
                                 
-                                <option value="cause-last-miles" <?php if($cause_type == 'cause-last-miles'){echo 'selected="selected"'; }?>>Last Miles</option>
+                                <option value="cause-last-miles" <?php if($cause_type == 'cause-last-miles'){echo 'selected="selected"'; }?>><?php _e('Last Miles','WeStand');?></option>
 
                             </select>
 
@@ -1890,7 +1892,7 @@ function cs_pb_cause($die = 0){
 
                     <ul class="form-elements  noborder">
 
-                        <li class="to-label"><label>Percentage for last miles</label></li>
+                        <li class="to-label"><label><?php _e('Percentage for last miles','WeStand');?></label></li>
 
                         <li class="to-field">
 
@@ -1908,15 +1910,15 @@ function cs_pb_cause($die = 0){
 
                         <ul class="form-elements">
 
-                            <li class="to-label"><label>Pagination</label></li>
+                            <li class="to-label"><label><?php _e('Pagination','WeStand');?></label></li>
 
                             <li class="to-field">
 
                                 <select name="cause_pagination[]" class="dropdown">
 
-                                    <option <?php if($cause_pagination=="Show Pagination")echo "selected";?> >Show Pagination</option>
+                                    <option <?php if($cause_pagination=="Show Pagination")echo "selected";?> ><?php _e('Show Pagination','WeStand');?></option>
 
-                                    <option <?php if($cause_pagination=="Single Page")echo "selected";?> >Single Page</option>
+                                    <option <?php if($cause_pagination=="Single Page")echo "selected";?> ><?php _e('Single Page','WeStand');?></option>
 
                                 </select>
 
@@ -1929,13 +1931,13 @@ function cs_pb_cause($die = 0){
 					</div>
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Length of Excerpt</label></li>
+                    <li class="to-label"><label><?php _e('Length of Excerpt','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_cause_excerpt[]" class="txtfield" value="<?php echo $cs_cause_excerpt; ?>" />
 
-                        <p>Enter number of character for short description text.</p>
+                        <p><?php _e('Enter number of character for short description text','WeStand');?></p>
 
                     </li>
 
@@ -1943,13 +1945,13 @@ function cs_pb_cause($die = 0){
                 
 				<ul class="form-elements">
 
-                        <li class="to-label"><label>No. of record Per Page</label></li>
+                        <li class="to-label"><label><?php _e('No. of record Per Page','WeStand');?></label></li>
     
                         <li class="to-field">
     
                             <input type="text" name="cause_per_page[]" class="txtfield" value="<?php echo $cause_per_page; ?>" />
     
-                            <p>To display all the records, leave this field blank.</p>
+                            <p><?php _e('To display all the records, leave this field blank','WeStand');?></p>
     
                         </li>
     
@@ -2043,7 +2045,7 @@ function cs_pb_contact($die = 0){
 
             <div class="opt-head">
 
-                <h5>Edit Contact Form</h5>
+                <h5><?php _e('Edit Contact Form','WeStand');?></h5>
 
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
 
@@ -2053,13 +2055,13 @@ function cs_pb_contact($die = 0){
 
 				<ul class="form-elements">
 
-                    <li class="to-label"><label>Contact Email</label></li>
+                    <li class="to-label"><label><?php _e('Contact Email','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="cs_contact_email[]" class="txtfield" value="<?php if($cs_contact_email_db=="") echo get_option("admin_email"); else echo $cs_contact_email_db;?>" />
 
-                        <p>Please enter Contact email Address.</p>
+                        <p><?php _e('Please enter Contact email Address','WeStand');?></p>
 
                     </li>                    
 
@@ -2067,7 +2069,7 @@ function cs_pb_contact($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Successful Message</label></li>
+                    <li class="to-label"><label><?php _e('Successful Message','WeStand');?></label></li>
 
                     <li class="to-field"><textarea name="cs_contact_succ_msg[]"><?php if($cs_contact_succ_msg_db=="")echo "Email Sent Successfully.\nThank you, your message has been submitted to us."; else echo $cs_contact_succ_msg_db;?></textarea></li>
 
@@ -2171,13 +2173,13 @@ function cs_pb_column($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Column Text</label></li>
+                    <li class="to-label"><label><?php _e('Column Text','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<textarea name="column_text[]"><?php echo $column_text?></textarea>
 
-                        <p>Shortcodes and HTML tags allowed.</p>
+                        <p><?php _e('Shortcodes and HTML tags allowed','WeStand');?></p>
 
                     </li>                  
 
@@ -2245,23 +2247,23 @@ function cs_pb_video($die = 0){
 		</div>
        	<div class="poped-up" id="<?php echo $name.$counter?>" style="border:none; background:#f8f8f8;" >
             <div class="opt-head">
-                <h5>Edit Video Options</h5>
+                <h5><?php _e('Edit Video Options','WeStand');?></h5>
                 <a href="javascript:show_all('<?php echo $name.$counter?>')" class="closeit">&nbsp;</a>
             </div>
             <div class="opt-conts">
                 <ul class="form-elements">
-                    <li class="to-label"><label>Video URL</label></li>
+                    <li class="to-label"><label><?php _e('Video URL','WeStand');?></label></li>
                     <li class="to-field">
                     	<input type="text" name="video_url[]" class="txtfield" value="<?php echo $video_url?>" />
-                        <p>Enter Video URL (Youtube, Vimeo or any other supported by wordpress)</p>
+                        <p><?php _e('Enter Video URL (Youtube, Vimeo or any other supported by wordpress)','WeStand');?></p>
                     </li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Width</label></li>
+                    <li class="to-label"><label><?php _e('Width','WeStand');?></label></li>
                     <li class="to-field"><input type="text" name="video_width[]" class="txtfield" value="<?php echo $video_width?>" /></li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Height</label></li>
+                    <li class="to-label"><label><?php _e('Height','WeStand');?></label></li>
                     <li class="to-field"><input type="text" name="video_height[]" class="txtfield" value="<?php echo $video_height?>" /></li>
                 </ul>
                 <ul class="form-elements noborder">
@@ -2412,7 +2414,7 @@ function cs_pb_map($die = 0){
 
             <div class="opt-head">
 
-                <h5>Edit Map Options</h5>
+                <h5><?php _e('Edit Map Options','WeStand');?></h5>
 
                 <a href="javascript:show_all('<?php echo $name.$cs_counter?>')" class="closeit">&nbsp;</a>
 
@@ -2422,7 +2424,7 @@ function cs_pb_map($die = 0){
 
             	<ul class="form-elements">
 
-                    <li class="to-label"><label>Title</label></li>
+                    <li class="to-label"><label><?php _e('Title','WeStand');?></label></li>
 
                     <li class="to-field"><input type="text" name="map_title[]" class="txtfield" value="<?php echo $map_title?>" /></li>
 
@@ -2430,13 +2432,13 @@ function cs_pb_map($die = 0){
 
 				<ul class="form-elements">
 
-                    <li class="to-label"><label>Map Height</label></li>
+                    <li class="to-label"><label><?php _e('Button','WeStand');?>Map Height</label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="map_height[]" class="txtfield" value="<?php echo $map_height?>" />
 
-                        <p>Info Max Height in PX (Default is 200)</p>
+                        <p><?php _e('Info Max Height in PX (Default is 200)','WeStand');?></p>
 
                     </li>
 
@@ -2444,13 +2446,13 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Latitude</label></li>
+                    <li class="to-label"><label><?php _e('Latitude','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="map_lat[]" class="txtfield" value="<?php echo $map_lat?>" />
 
-                        <p>Put Latitude (Default is 0)</p>
+                        <p><?php _e('Put Latitude (Default is 0)','WeStand');?></p>
 
                     </li>
 
@@ -2458,13 +2460,13 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Longitude</label></li>
+                    <li class="to-label"><label><?php _e('Longitude','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="map_lon[]" class="txtfield" value="<?php echo $map_lon?>" />
 
-                        <p>Put Longitude (Default is 0)</p>
+                        <p><?php _e('Put Longitude (Default is 0)','WeStand');?></p>
 
                     </li>
 
@@ -2472,13 +2474,13 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Zoom</label></li>
+                    <li class="to-label"><label><?php _e('Zoom','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="map_zoom[]" class="txtfield" value="<?php echo $map_zoom?>" />
 
-                        <p>Put Zoom Level (Default is 11)</p>
+                        <p><?php _e('Put Zoom Level (Default is 11)','WeStand');?></p>
 
                     </li>
 
@@ -2486,19 +2488,19 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Map Types</label></li>
+                    <li class="to-label"><label><?php _e('Map Types','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="map_type[]" class="dropdown" >
 
-                            <option <?php if($map_type=="ROADMAP")echo "selected";?> >ROADMAP</option>
+                            <option <?php if($map_type=="ROADMAP")echo "selected";?> ><?php _e('ROADMAP','WeStand');?></option>
 
-                            <option <?php if($map_type=="HYBRID")echo "selected";?> >HYBRID</option>
+                            <option <?php if($map_type=="HYBRID")echo "selected";?> ><?php _e('HYBRID','WeStand');?></option>
 
-                            <option <?php if($map_type=="SATELLITE")echo "selected";?> >SATELLITE</option>
+                            <option <?php if($map_type=="SATELLITE")echo "selected";?> ><?php _e('SATELLITE','WeStand');?></option>
 
-                            <option <?php if($map_type=="TERRAIN")echo "selected";?> >TERRAIN</option>
+                            <option <?php if($map_type=="TERRAIN")echo "selected";?> ><?php _e('TERRAIN','WeStand');?></option>
 
                         </select>
 
@@ -2508,7 +2510,7 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Info Text</label></li>
+                    <li class="to-label"><label><?php _e('Info Text','WeStand');?></label></li>
 
                     <li class="to-field"><input type="text" name="map_info[]" class="txtfield" value="<?php echo $map_info?>" /></li>
 
@@ -2516,13 +2518,13 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Info Max Width</label></li>
+                    <li class="to-label"><label><?php _e('Info Max Width','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="map_info_width[]" class="txtfield" value="<?php echo $map_info_width?>" />
 
-                        <p>Info Max Width in PX (Default is 200)</p>
+                        <p><?php _e('Info Max Width in PX (Default is 200)','WeStand');?></p>
 
                     </li>
 
@@ -2530,13 +2532,13 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Info Max Height</label></li>
+                    <li class="to-label"><label><?php _e('Info Max Height','WeStand');?></label></li>
 
                     <li class="to-field">
 
                     	<input type="text" name="map_info_height[]" class="txtfield" value="<?php echo $map_info_height?>" />
 
-                        <p>Info Max Height in PX (Default is 100)</p>
+                        <p><?php _e('Info Max Height in PX (Default is 100)','WeStand');?></p>
 
                     </li>
 
@@ -2544,7 +2546,7 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Marker Icon Path</label></li>
+                    <li class="to-label"><label><?php _e('Marker Icon Path','WeStand');?></label></li>
 
                     <li class="to-field">
 
@@ -2558,15 +2560,15 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Show Marker</label></li>
+                    <li class="to-label"><label><?php _e('Show Marker','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="map_show_marker[]" class="dropdown" >
 
-                            <option value="true" <?php if($map_show_marker=="true")echo "selected";?> >On</option>
+                            <option value="true" <?php if($map_show_marker=="true")echo "selected";?> ><?php _e('On','WeStand');?></option>
 
-                            <option value="false" <?php if($map_show_marker=="false")echo "selected";?> >Off</option>
+                            <option value="false" <?php if($map_show_marker=="false")echo "selected";?> ><?php _e('Off','WeStand');?></option>
 
                         </select>
 
@@ -2576,15 +2578,15 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Disable Map Controls</label></li>
+                    <li class="to-label"><label><?php _e('Disable Map Controls','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="map_controls[]" class="dropdown" >
 
-                            <option value="false" <?php if($map_controls=="false")echo "selected";?> >Off</option>
+                            <option value="false" <?php if($map_controls=="false")echo "selected";?> ><?php _e('Off','WeStand');?></option>
 
-                            <option value="true" <?php if($map_controls=="true")echo "selected";?> >On</option>
+                            <option value="true" <?php if($map_controls=="true")echo "selected";?> ><?php _e('On','WeStand');?></option>
 
                         </select>
 
@@ -2594,15 +2596,15 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Draggable</label></li>
+                    <li class="to-label"><label><?php _e('Draggable','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="map_draggable[]" class="dropdown" >
 
-                            <option value="true" <?php if($map_draggable=="true")echo "selected";?> >On</option>
+                            <option value="true" <?php if($map_draggable=="true")echo "selected";?> ><?php _e('On','WeStand');?></option>
 
-                            <option value="false" <?php if($map_draggable=="false")echo "selected";?> >Off</option>
+                            <option value="false" <?php if($map_draggable=="false")echo "selected";?> ><?php _e('Off','WeStand');?></option>
 
                         </select>
 
@@ -2612,7 +2614,7 @@ function cs_pb_map($die = 0){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Scroll Wheel</label></li>
+                    <li class="to-label"><label><?php _e('Scroll Wheel','WeStand');?></label></li>
 
                     <li class="to-field">
 
@@ -2620,9 +2622,9 @@ function cs_pb_map($die = 0){
 
                         <select name="map_scrollwheel[]" class="dropdown" >
 
-                            <option value="true" <?php if($map_scrollwheel=="true")echo "selected";?> >On</option>
+                            <option value="true" <?php if($map_scrollwheel=="true")echo "selected";?> ><?php _e('On','WeStand');?></option>
 
-                            <option value="false" <?php if($map_scrollwheel=="false")echo "selected";?> >Off</option>
+                            <option value="false" <?php if($map_scrollwheel=="false")echo "selected";?> ><?php _e('Off','WeStand');?></option>
 
                         </select>
 
@@ -2632,15 +2634,15 @@ function cs_pb_map($die = 0){
 
                  <ul class="form-elements">
 
-                    <li class="to-label"><label>Map View</label></li>
+                    <li class="to-label"><label><?php _e('Map View','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="map_view[]" class="dropdown"  onchange="map_contactus_element(this.value,<?php echo $cs_counter; ?>)">
 
-                            <option <?php if($map_view=="content")echo "selected";?> value="content" >Boxed View</option>
+                            <option <?php if($map_view=="content")echo "selected";?> value="content" ><?php _e('Boxed View','WeStand');?></option>
 
-                            <option <?php if($map_view=="header")echo "selected";?> value="header" >Full View</option>
+                            <option <?php if($map_view=="header")echo "selected";?> value="header" ><?php _e('Full View','WeStand');?></option>
 
                          </select>
 
@@ -2708,7 +2710,7 @@ function cs_pb_accordion($die = 0){
 		</div>
        	<div class="poped-up" id="<?php echo $name.$counter?>" style="border:none; background:#f8f8f8;" >
             <div class="opt-head">
-                <h5>Edit Accordion Options</h5>
+                <h5><?php _e('Edit Accordion Options','WeStand');?></h5>
                 <a href="javascript:show_all('<?php echo $name.$counter?>')" class="closeit">&nbsp;</a>
             </div>
 				<div class="wrapptabbox">
@@ -2734,7 +2736,7 @@ function cs_pb_accordion($die = 0){
                     <div class="opt-conts">
                         <ul class="form-elements">
                             <li class="to-label"><label></label></li>
-                            <li class="to-field"><a href="#" class="add_accordion">Add Tab</a></li>
+                            <li class="to-field"><a href="#" class="add_accordion"><?php _e('Add Tab','WeStand');?></a></li>
                         </ul>
                         <ul class="form-elements noborder">
                             <li class="to-label"></li>
@@ -2785,7 +2787,7 @@ function cs_pb_tabs($die = 0){
 		</div>
        	<div class="poped-up" id="<?php echo $name.$counter?>" style="border:none; background:#f8f8f8;" >
             <div class="opt-head">
-                <h5>Edit Tabs Options</h5>
+                <h5><?php _e('Edit Tabs Options','WeStand');?></h5>
                 <a href="javascript:show_all('<?php echo $name.$counter?>')" class="closeit">&nbsp;</a>
             </div>
 				<div class="wrapptabbox">
@@ -2811,7 +2813,7 @@ function cs_pb_tabs($die = 0){
                     <div class="opt-conts">
                         <ul class="form-elements">
                             <li class="to-label"><label></label></li>
-                            <li class="to-field"><a href="#" class="addedtab">Add Tab</a></li>
+                            <li class="to-field"><a href="#" class="addedtab"><?php _e('Add Tab','WeStand');?></a></li>
                         </ul>
                         <ul class="form-elements noborder">
                             <li class="to-label"></li>
@@ -2863,29 +2865,29 @@ function cs_pb_quote($die = 0){
 		</div>
        	<div class="poped-up" id="<?php echo $name.$counter?>" style="border:none; background:#f8f8f8;" >
             <div class="opt-head">
-                <h5>Edit Quote Options</h5>
+                <h5><?php _e('Edit Quote Options','WeStand');?></h5>
                 <a href="javascript:show_all('<?php echo $name.$counter?>')" class="closeit">&nbsp;</a>
             </div>
             <div class="opt-conts">
             	<ul class="form-elements">
-                    <li class="to-label"><label>Text Color</label></li>
+                    <li class="to-label"><label><?php _e('Text Color','WeStand');?></label></li>
                     <li class="to-field">
                     	<input type="text" name="quote_text_color[]" class="txtfield" value="<?php echo $quote_text_color?>" />
-                        <p>Enter the color code like #000000</p>
+                        <p><?php _e('Enter the color code like','WeStand');?> #000000</p>
                     </li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Align</label></li>
+                    <li class="to-label"><label><?php _e('Align','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="quote_align[]" class="dropdown" >
-                            <option <?php if($quote_align=="left")echo "selected";?> >left</option>
-                            <option <?php if($quote_align=="right")echo "selected";?> >right</option>
-                            <option <?php if($quote_align=="center")echo "selected";?> >center</option>
+                            <option <?php if($quote_align=="left")echo "selected";?> ><?php _e('left','WeStand');?></option>
+                            <option <?php if($quote_align=="right")echo "selected";?> ><?php _e('right','WeStand');?></option>
+                            <option <?php if($quote_align=="center")echo "selected";?> ><?php _e('center','WeStand');?></option>
                         </select>
                     </li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Quote Content</label></li>
+                    <li class="to-label"><label><?php _e('Quote Content','WeStand');?></label></li>
                     <li class="to-field"><textarea name="quote_content[]"><?php echo $quote_content?></textarea></li>
                 </ul>
                 <ul class="form-elements noborder">
@@ -3011,16 +3013,12 @@ function theme_option_import_export() {
 add_action('wp_ajax_theme_option_import_export', 'theme_option_import_export');
 // saving theme options import export end
 
-
-
 // restoring default theme options start
 function theme_option_restore_default() {
 
-	update_option( "cs_theme_option", get_option('cs_theme_option_restore') );
+	update_option("cs_theme_option", get_option('cs_theme_option_restore'));
 	echo "Default Theme Options Restored";
-
 	die();
-
 }
 
 add_action('wp_ajax_theme_option_restore_default', 'theme_option_restore_default');
@@ -3099,7 +3097,7 @@ function add_social_icon(){
 
 			<ul class="form-elements">
 
-				<li class="to-label"><label>Icon Path</label></li>
+				<li class="to-label"><label>'.__('Icon Path','WeStand').'</label></li>
 
 				<li class="to-field">
 
@@ -3111,7 +3109,7 @@ function add_social_icon(){
 
 				<li class="full">&nbsp;</li>
 
-				<li class="to-label"><label>Awesome Font</label></li>
+				<li class="to-label"><label>'.__('Awesome Font','WeStand').'</label></li>
 
 				<li class="to-field">
 
@@ -3123,25 +3121,25 @@ function add_social_icon(){
 
 				<li class="full">&nbsp;</li>
 
-				<li class="to-label"><label>URL</label></li>
+				<li class="to-label"><label>'.__('URL','WeStand').'</label></li>
 
 				<li class="to-field">
 
 				  <input class="small" type="text" id="social_net_url" name="social_net_url[]" value="'.$_POST['social_net_url'].'" style="width:420px;" />
 
-				  <p>Please enter full URL.</p>
+				  <p>'.__('Please enter full URL','WeStand').'</p>
 
 				</li>
 
 				<li class="full">&nbsp;</li>
 
-				<li class="to-label"><label>Title</label></li>
+				<li class="to-label"><label>'.__('Title','WeStand').'</label></li>
 
 				<li class="to-field">
 
 				  <input class="small" type="text" id="social_net_tooltip" name="social_net_tooltip[]" value="'.$_POST['social_net_tooltip'].'" style="width:420px;" />
 
-				  <p>Please enter text for icon tooltip..</p>
+				  <p>'.__('Please enter text for icon tooltip','WeStand').'</p>
 
 				</li>
 
@@ -3163,7 +3161,7 @@ function media_pagination(){
 
 	foreach ( $_REQUEST as $keys=>$values) {
 
-		$$keys = $values;
+		$keys = $values;
 
 	}
 
@@ -3192,19 +3190,12 @@ function media_pagination(){
         $images = array();
 
         foreach ( $query_images->posts as $image) {
-
-        	$image_path = wp_get_attachment_image_src( $image->ID, array( get_option("thumbnail_size_w"),get_option("thumbnail_size_h") ) );
-
+        	$image_path = wp_get_attachment_image_src((int) $image->ID, array( get_option("thumbnail_size_w"),get_option("thumbnail_size_h") ) );
         ?>
-
         	<li style="cursor:pointer"><img src="<?php echo $image_path[0]?>" onclick="javascript:clone('<?php echo $image->ID?>')" alt="" /></li>
-
          <?php
-
          }
-
          ?>
-
       </ul>
 
       <br />
@@ -3279,7 +3270,7 @@ function cs_slider_clone(){
 
         <div class="thumb-secs">
 
-            <?php $image_path = wp_get_attachment_image_src( $cs_node->path, array( get_option("thumbnail_size_w"),get_option("thumbnail_size_h") ) );?>
+            <?php $image_path = wp_get_attachment_image_src((int) $cs_node->path, array( get_option("thumbnail_size_w"),get_option("thumbnail_size_h") ) );?>
 
             <img src="<?php echo $image_path[0]?>" alt="">
 
@@ -3299,7 +3290,7 @@ function cs_slider_clone(){
 
             <div class="opt-head">
 
-                <h5>Edit Options</h5>
+                <h5><?php _e('Edit Options','WeStand');?></h5>
 
                 <a href="javascript:slideclose(<?php echo $cs_counter?>)" class="closeit">&nbsp;</a>
 
@@ -3311,7 +3302,7 @@ function cs_slider_clone(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Image Title</label></li>
+                    <li class="to-label"><label><?php _e('Image Title','WeStand');?></label></li>
 
                     <li class="to-field"><input type="text" name="cs_slider_title[]" value="<?php echo htmlspecialchars($cs_node->title)?>" class="txtfield" /></li>
 
@@ -3319,7 +3310,7 @@ function cs_slider_clone(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Image Description</label></li>
+                    <li class="to-label"><label><?php _e('Image Description','WeStand');?></label></li>
 
                     <li class="to-field"><textarea class="txtarea" name="cs_slider_description[]"><?php echo htmlspecialchars($cs_node->description)?></textarea></li>
 
@@ -3327,7 +3318,7 @@ function cs_slider_clone(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Link</label></li>
+                    <li class="to-label"><label><?php _e('Link','WeStand');?></label></li>
 
                     <li class="to-field"><input type="text" name="cs_slider_link[]" value="<?php echo htmlspecialchars($cs_node->link)?>" class="txtfield" /></li>
 
@@ -3335,7 +3326,7 @@ function cs_slider_clone(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Link Target</label></li>
+                    <li class="to-label"><label><?php _e('Link Target','WeStand');?></label></li>
 
                     <li class="to-field">
 
@@ -3347,7 +3338,7 @@ function cs_slider_clone(){
 
                         </select>
 
-                        <p>Please select image target.</p>
+                        <p><?php _e('Please select image target','WeStand');?></p>
 
                     </li>
 
@@ -3421,7 +3412,7 @@ function cs_gallery_clone(){
 
         <div class="thumb-secs">
 
-            <?php $image_path = wp_get_attachment_image_src( $cs_node->path, array( get_option("thumbnail_size_w"),get_option("thumbnail_size_h") ) );?>
+            <?php $image_path = wp_get_attachment_image_src((int) $cs_node->path, array( get_option("thumbnail_size_w"),get_option("thumbnail_size_h") ) );?>
 
             <img src="<?php echo $image_path[0]?>" alt="">
 
@@ -3441,7 +3432,7 @@ function cs_gallery_clone(){
 
             <div class="opt-head">
 
-                <h5>Edit Options</h5>
+                <h5><?php _e('Edit Options','WeStand');?></h5>
 
                 <a href="javascript:galclose(<?php echo $cs_counter?>)" class="closeit">&nbsp;</a>
 
@@ -3451,7 +3442,7 @@ function cs_gallery_clone(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Image Title</label></li>
+                    <li class="to-label"><label><?php _e('Image Title','WeStand');?></label></li>
 
                     <li class="to-field"><input type="text" name="title[]" value="<?php echo htmlspecialchars($cs_node->title)?>" class="txtfield" /></li>
 
@@ -3459,21 +3450,21 @@ function cs_gallery_clone(){
 
                 <ul class="form-elements">
 
-                    <li class="to-label"><label>Use Image As</label></li>
+                    <li class="to-label"><label><?php _e('Use Image As','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <select name="use_image_as[]" class="select_dropdown" onchange="cs_toggle_gal(this.value, <?php echo $cs_counter?>)">
 
-                            <option <?php if($cs_node->use_image_as=="0")echo "selected";?> value="0">LightBox to current thumbnail</option>
+                            <option <?php if($cs_node->use_image_as=="0")echo "selected";?> value="0"><?php _e('LightBox to current thumbnail','WeStand');?></option>
 
-                            <option <?php if($cs_node->use_image_as=="1")echo "selected";?> value="1">LightBox to Video</option>
+                            <option <?php if($cs_node->use_image_as=="1")echo "selected";?> value="1"><?php _e('LightBox to Video','WeStand');?></option>
 
-                            <option <?php if($cs_node->use_image_as=="2")echo "selected";?> value="2">Link URL</option>
+                            <option <?php if($cs_node->use_image_as=="2")echo "selected";?> value="2"><?php _e('Link URL','WeStand');?></option>
 
                         </select>
 
-                        <p>Please select Image link where it will go.</p>
+                        <p><?php _e('Please select Image link where it will go','WeStand');?></p>
 
                     </li>
 
@@ -3481,13 +3472,13 @@ function cs_gallery_clone(){
 
                 <ul class="form-elements" id="video_code<?php echo $cs_counter?>" <?php if($cs_node->use_image_as=="0" or $cs_node->use_image_as=="" or $cs_node->use_image_as=="2")echo 'style="display:none"';?> >
 
-                    <li class="to-label"><label>Video URL</label></li>
+                    <li class="to-label"><label><?php _e('Video URL','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="video_code[]" value="<?php echo htmlspecialchars($cs_node->video_code)?>" class="txtfield" />
 
-                        <p>(Enter Specific Video URL Youtube or Vimeo)</p>
+                        <p><?php _e('(Enter Specific Video URL Youtube or Vimeo)','WeStand');?></p>
 
                     </li>
 
@@ -3495,13 +3486,13 @@ function cs_gallery_clone(){
 
                 <ul class="form-elements" id="link_url<?php echo $cs_counter?>" <?php if($cs_node->use_image_as=="0" or $cs_node->use_image_as=="" or $cs_node->use_image_as=="1")echo 'style="display:none"';?> >
 
-                    <li class="to-label"><label>Link URL</label></li>
+                    <li class="to-label"><label><?php _e('Link URL','WeStand');?></label></li>
 
                     <li class="to-field">
 
                         <input type="text" name="link_url[]" value="<?php echo htmlspecialchars($cs_node->link_url)?>" class="txtfield" />
 
-                        <p>(Enter Specific Link URL)</p>
+                        <p><?php _e('(Enter Specific Link URL)','WeStand');?></p>
 
                     </li>
 
@@ -3554,27 +3545,27 @@ function cs_add_social_to_list(){
             <a onclick="javascript:return confirm('Are you sure! You want to delete this social icon')" href="javascript:cs_div_remove('edit_track<?php echo $counter_social?>')" class="actions delete">&nbsp;</a>
             <div class="poped-up" id="edit_track_form<?php echo $counter_social?>">
                 <div class="opt-head">
-                    <h5>Settings</h5>
+                    <h5><?php _e('Settings','WeStand');?></h5>
                     <a href="javascript:closepopedup('edit_track_form<?php echo $counter_social?>')" class="closeit">&nbsp;</a>
                     <div class="clear"></div>
                 </div>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Title</label></li>
+                    <li class="to-label"><label><?php _e('Title','WeStand');?></label></li>
                     <li class="to-field">
                         <input type="text" name="var_cp_title[]" value="<?php echo htmlspecialchars($var_cp_title)?>" id="var_cp_title<?php echo $counter_social?>" />
                         
                     </li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>icon/image URL</label></li>
+                    <li class="to-label"><label><?php _e('icon/image URL','WeStand');?></label></li>
                     <li class="to-field">
                         <input id="var_cp_image_url<?php echo $counter_social?>" name="var_cp_image_url[]" value="<?php echo htmlspecialchars($var_cp_image_url)?>" type="text" class="small" />
                         <input id="var_cp_image_url<?php echo $counter_social?>" name="var_cp_image_url<?php echo $counter_track?>" type="button" class="uploadfile left" value="Browse"/>
-                        <p>Put Fontawsome icon/image url. You can get fontawsome icons from <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
+                        <p><?php _e('Put Fontawsome icon/image url. You can get fontawsome icons from ','WeStand');?><a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
                     </li>
                 </ul>
                 <ul class="form-elements">
-                    <li class="to-label"><label>Text</label></li>
+                    <li class="to-label"><label><?php _e('Text','WeStand');?></label></li>
                     <li class="to-field">
                    
                         <textarea name="var_cp_team_text[]" rows="5" cols="20"><?php echo htmlspecialchars($var_cp_team_text)?></textarea>
@@ -3622,41 +3613,41 @@ function subheader_meta_layout($default_theme_options_check = ''){
 
     	<div class="theme-help">
 
-            <h4 style="padding-bottom:0px;">Subheader Options</h4>
+            <h4 style="padding-bottom:0px;"><?php _e('Subheader Options','WeStand');?></h4>
 
             <div class="clear"></div>
 
         </div>
         <ul class="form-elements noborder">
-            <li class="to-label"><label>Sub Header Style</label></li>
+            <li class="to-label"><label><?php _e('Sub Header Style','WeStand');?></label></li>
             <li class="to-field">
                 <select name="header_banner_style" class="dropdown" onchange="javascript:home_slider_header_toggle(this.value)">
-                	<option <?php if(isset($header_banner_style) and $header_banner_style=="default_header"){echo "selected";}?> value="default_header" >Default Header Style</option>
-                	<option <?php if(isset($header_banner_style) and $header_banner_style=="breadcrumbs"){echo "selected";}?> value="breadcrumbs" >Breadcrumbs</option>
-                    <option <?php if(isset($header_banner_style) and $header_banner_style=="no-header"){echo "selected";}?> value="no-header" >No Subheader</option>
-                     <option <?php if(isset($header_banner_style) and $header_banner_style=="flex_slider"){echo "selected";}?> value="flex_slider" >Flex Slider</option>
-                     <option <?php if(isset($header_banner_style) and $header_banner_style=="custom_slider"){echo "selected";}?> value="custom_slider" >Custom Slider</option>
+                	<option <?php if(isset($header_banner_style) and $header_banner_style=="default_header"){echo "selected";}?> value="default_header" ><?php _e('Default Header Style','WeStand');?></option>
+                	<option <?php if(isset($header_banner_style) and $header_banner_style=="breadcrumbs"){echo "selected";}?> value="breadcrumbs" ><?php _e('Breadcrumbs','WeStand');?></option>
+                    <option <?php if(isset($header_banner_style) and $header_banner_style=="no-header"){echo "selected";}?> value="no-header" ><?php _e('No Subheader','WeStand');?></option>
+                     <option <?php if(isset($header_banner_style) and $header_banner_style=="flex_slider"){echo "selected";}?> value="flex_slider" ><?php _e('Flex Slider','WeStand');?></option>
+                     <option <?php if(isset($header_banner_style) and $header_banner_style=="custom_slider"){echo "selected";}?> value="custom_slider" ><?php _e('Custom Slider','WeStand');?></option>
                 </select>
-                <p>Default header Style settings <a href="<?php echo admin_url();?>/themes.php?page=cs_theme_options#tab-head-scripts-show" target="_blank">Here</a></p>
+                <p><?php _e('Default header Style settings','WeStand');?> <a href="<?php echo admin_url();?>/themes.php?page=cs_theme_options#tab-head-scripts-show" target="_blank"><?php _e('Here','WeStand');?></a></p>
             </li>
         </ul>
         <div id="header_custom_image" style="display:<?php if($header_banner_style=="breadcrumbs")echo 'inline"';else echo 'none';?>"  >
         <ul class="form-elements  noborder">
-            <li class="to-label"><label>Sub-Header Background</label></li>
+            <li class="to-label"><label><?php _e('Sub-Header Background','WeStand');?></label></li>
             <li class="to-field">
                 <input id="header_banner_image" name="header_banner_image" value="<?php echo $header_banner_image?>" type="text" class="small" />
                 <input id="header_banner_image" name="header_banner_image" type="button" class="uploadfile left" value="Browse"/>
-                <p>Default background can be changed by uploading(image size 1600*900)</p>
+                <p><?php _e('Default background can be changed by uploading','WeStand');?>(image size 1600*900)</p>
             </li>
         </ul>
         <ul class="form-elements">
-            <li class="to-label"><label>Page Sub Header Color</label></li>
+            <li class="to-label"><label><?php _e('Page Sub Header Color','WeStand');?></label></li>
             <li class="to-field">
                 <input type="text" name="page_subheader_color"  class="bg_color" value="<?php echo $page_subheader_color ?>" />
             </li>
         </ul>
         <ul class="form-elements  noborder">
-            <li class="to-label"><label>Page Sub Title</label></li>
+            <li class="to-label"><label><?php _e('Page Sub Title','WeStand');?></label></li>
             <li class="to-field">
                 <input type="text" name="page_sub_title" value="<?php echo $page_sub_title ?>" />
             </li>
@@ -3664,30 +3655,30 @@ function subheader_meta_layout($default_theme_options_check = ''){
         </div>
         <div class="slider_options" id="ws_slider_options" style="display:<?php if($header_banner_style=="flex_slider")echo 'inline"';else echo 'none';?>" >
         	<ul class="form-elements noborder">
-                <li class="to-label"><label>Select Slider</label></li>
+                <li class="to-label"><label><?php _e('Select Slider','WeStand');?></label></li>
                 <li class="to-field">
                 <select name="header_banner_flex_slider" class="dropdown">
 					 <?php
                         $query = array( 'posts_per_page' => '-1', 'post_type' => 'cs_slider', 'orderby'=>'ID', 'post_status' => 'publish' );
                         $wp_query = new WP_Query($query);
                         while ($wp_query->have_posts()) : $wp_query->the_post();
-                    ?>
+                  ?>
                         <option <?php if($post->post_name==$header_banner_flex_slider)echo "selected";?> value="<?php echo $post->post_name; ?>"><?php the_title()?></option>
                     <?php
                         endwhile;
                     ?>
                 </select>
-                 <p>You can use already created slider OR create new slider <a href="<?php echo admin_url();?>/post-new.php?post_type=cs_slider" target="_blank">Click Here</a>.</p>
+                 <p><?php _e('You can use already created slider OR create new slider','WeStand');?> <a href="<?php echo admin_url();?>/post-new.php?post_type=cs_slider" target="_blank"><?php _e('Click Here','WeStand');?></a>.</p>
                 </li>
              </ul>
         </div>
         <ul class="form-elements  noborder" id="header_custom_slider" style=" <?php if(isset($header_banner_style) and $header_banner_style <> "custom_slider")echo "display:none"; else "display:inline"; ?>" >
             <li class="to-label">
-                <label>Custom Slider Short Code</label>
+                <label><?php _e('Custom Slider Short Code','WeStand');?></label>
             </li>
             <li class="to-field">
                 <input type="text" name="custom_slider_id" class="txtfield" value="<?php if(isset( $custom_slider_id))echo $custom_slider_id;?>" />
-                <p>Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from <a href="http://codecanyon.net/" target="_blank">Codecanyon</a>. But its optional</p>
+                <p><?php _e('Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from ','WeStand');?><a href="http://codecanyon.net/" target="_blank"><?php _e('Codecanyon','WeStand');?></a>.<?php _e('But its optional','WeStand');?> </p>
             </li>
         </ul>
         
@@ -3723,7 +3714,7 @@ function meta_layout($default_theme_options_check = ''){
 		<div class="clear"></div>
 		<div class="theme-help">
 
-            <h4 style="padding-bottom:0px;">Post/Page Sidebar Settings</h4>
+            <h4 style="padding-bottom:0px;"><?php _e('Post/Page Sidebar Settings','WeStand');?></h4>
 
             <div class="clear"></div>
 
@@ -3732,7 +3723,7 @@ function meta_layout($default_theme_options_check = ''){
 
             <li class="to-label">
 
-                <label>Select Layout</label>
+                <label><?php _e('Select Layout','WeStand');?></label>
 
             </li>
 
@@ -3792,7 +3783,7 @@ function meta_layout($default_theme_options_check = ''){
 
             <li class="to-label">
 
-                <label>Select Left Sidebar</label>
+                <label><?php _e('Select Left Sidebar','WeStand');?></label>
 
             </li>
 
@@ -3821,7 +3812,7 @@ function meta_layout($default_theme_options_check = ''){
                     ?>
 
                 </select>
-				<p> Add New Sidebar. <a href="<?php echo admin_url();?>themes.php?page=cs_theme_options#tab-manage-sidebars-show" target="_blank">Click Here</a></p>
+				<p> <?php _e('Add New Sidebar','WeStand');?> <a href="<?php echo admin_url();?>themes.php?page=cs_theme_options#tab-manage-sidebars-show" target="_blank"><?php _e('Click Here','WeStand');?></a></p>
             </li>
 
         </ul>
@@ -3830,7 +3821,7 @@ function meta_layout($default_theme_options_check = ''){
 
             <li class="to-label">
 
-                <label>Select Right Sidebar</label>
+                <label><?php _e('Select Right Sidebar','WeStand');?></label>
 
             </li>
 
@@ -3857,7 +3848,7 @@ function meta_layout($default_theme_options_check = ''){
                     ?>
 
                 </select>
-				<p> Add New Sidebar. <a href="<?php echo admin_url();?>themes.php?page=cs_theme_options#tab-manage-sidebars-show" target="_blank">Click Here</a></p>
+				<p><?php _e('Add New Sidebar','WeStand');?><a href="<?php echo admin_url();?>themes.php?page=cs_theme_options#tab-manage-sidebars-show" target="_blank"><?php _e('Click Here','WeStand');?></a></p>
                 <input type="hidden" name="cs_orderby[]" value="meta_layout" />
 
             </li>
@@ -4007,15 +3998,15 @@ function show_all_cats($parent, $separator, $selected = "", $taxonomy) {
 function cs_demo_importer(){
 	?>
     <div class="cs-demo-data">
-        <h2>Import Demo Data</h2>
+        <h2><?php _e('Import Demo Data','WeStand');?></h2>
         <div class="inn-text">
-            <p>Importing demo data helps to build site like the demo site by all means. It is the quickest way to setup theme. Following things happen when dummy data is imported;</p>
+            <p><?php _e('Importing demo data helps to build site like the demo site by all means. It is the quickest way to setup theme. Following things happen when dummy data is imported','WeStand');?></p>
             <ul class="import-data">
-                <li>• All wordpress settings will remain same and intact.</li>
-                <li>• Posts, pages and dummy images shown in demo will be imported.</li>
-                <li>• Only dummy images will be imported as all demo images have copy right restriction.</li>
-                <li>• No existing posts, pages, categories, custom post types or any other data will be deleted or modified.</li>
-                <li>• To proceed, please click "Import Demo Data" and wait for a while.</li>
+                <li>•<?php _e('All wordpress settings will remain same and intact','WeStand');?> </li>
+                <li>• <?php _e('Posts, pages and dummy images shown in demo will be imported','WeStand');?></li>
+                <li>•<?php _e('Only dummy images will be imported as all demo images have copy right restriction','WeStand');?> </li>
+                <li>•<?php _e('No existing posts, pages, categories, custom post types or any other data will be deleted or modified','WeStand');?> </li>
+                <li>•<?php _e('To proceed, please click "Import Demo Data" and wait for a while','WeStand');?></li>
             </ul>
         </div>
         <form method="post">
@@ -4048,12 +4039,12 @@ function cs_demo_importer(){
 		}
 		
 		if($cs_demoimport_error){
- 			echo __( 'Error.', 'wordpress-importer' ) . '</p>';
+ 			echo __( 'Error.', 'WeStand' ) . '</p>';
 			die();
 		}else{
  			if(!is_file( get_template_directory() . '/include/importer/demo.xml')){
-				echo '<p><strong>' . __( 'Sorry, there has been an error.', 'wordpress-importer' ) . '</strong><br />';
-				echo __( 'The file does not exist, please try again.', 'wordpress-importer' ) . '</p>';
+				echo '<p><strong>' . __( 'Sorry, there has been an error.', 'WeStand' ) . '</strong><br />';
+				echo __( 'The file does not exist, please try again.', 'WeStand' ) . '</p>';
 			}
 			else{
 				
@@ -4081,10 +4072,6 @@ function cs_demo_importer(){
 				$cs_demo_import->import( get_template_directory() . '/include/importer/demo.xml');
 				
 				// Menu Location
-			
-				
-				
-				
 		  	}
 		}
    }

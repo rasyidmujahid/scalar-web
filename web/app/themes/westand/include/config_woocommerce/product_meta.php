@@ -21,10 +21,10 @@ function cs_meta_woo_prod( $post ) {
         <div class="option-sec row">
             <div class="opt-conts">
             	<ul class="form-elements" style="display:none;">
-                    <li class="to-label"><label>Sub Title</label></li>
+                    <li class="to-label"><label><?php _e('Sub Title','WeStand');?></label></li>
                     <li class="to-field">
                     	<input type="text" name="sub_title" value="<?php echo $sub_title ?>" />
-                        <p>Put the sub title.</p>
+                        <p><?php _e('Put the sub title','WeStand');?></p>
                     </li>
                 </ul>
 			</div>

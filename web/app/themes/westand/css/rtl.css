@@ -1,4 +1,17 @@
 /* CSS Document */
+@media (max-width: 1199px) {
+	#sliderbanner .caption{
+		margin-right:-464px !important;
+		margin-left:0 !important;
+	}
+}
+@media (max-width: 990px) {
+	#sliderbanner .caption{
+		margin-right:0 !important;
+		right: 30px !important;
+		left: auto !important;
+	}
+}
 body{
 	direction: rtl;
 }
@@ -82,6 +95,7 @@ header.cs-heading-title h2,
 	padding: 0;
 	list-style: none;
 }
+.add-calender,
 .panel-heading a.accordion-toggle.collapsed:after,
 .panel-heading a.accordion-toggle:after,
 .sortby,
@@ -100,8 +114,8 @@ header.cs-heading-title h2,
 }
 .detail_inner .text .bottom-event .buy-ticket{ margin: 0 0 0 3px}
 .col-left{ padding: 0 0 0 25px;}
-.right-header,
-.right-header .btn,
+/*.right-header,
+.right-header .btn,*/
 .cs-carousel-control,
 a.btnviewall,
 .cs-blog-panel a.btnshare,
@@ -409,10 +423,10 @@ blockquote:before{
 	right: auto;
 }
 .donar-table ul li .counter{
-	margin: 0px 0px 0px 15px;
+	margin: 0px 0px -9999px 15px;
 }
 .donar-table ul li{
-	padding: 0px 0px 0px 20px;
+	padding: 0px 0px 0px 10px;
 }
 #respond .comment-form p{
 	margin: 0px 20px 20px 0px;
@@ -426,6 +440,17 @@ blockquote:before{
 	direction: ltr;
 	text-align: right;
 }
+.navigation ul > li.sub-icon > a:after{
+	left: 4px !important;
+	right: auto !important;
+}
+nav.navigation ul li{ text-align: right !important; }
+div.pp_default .pp_expand,
+a.pp_previous,
+a.pp_next,
+div.pp_default .pp_close,
+a.pp_arrow_next, a.pp_arrow_previous,
+.pp_nav .pp_pause, .pp_nav .pp_play{ text-align: right !important; }
 @media (max-width: 767px){
 	.logo{
 		float:none !important;

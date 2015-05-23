@@ -8,23 +8,23 @@ $subject = "(" . $bloginfo . ") Contact Form Received";
 $message = '
 	<table width="100%" border="1">
 	  <tr>
-		<td width="100"><strong>Name:</strong></td>
+		<td width="100"><strong>'.__('Name','WeStand').'</strong></td>
 		<td>'.$contact_name.'</td>
 	  </tr>
 	  <tr>
-		<td><strong>Email:</strong></td>
+		<td><strong>'.__('Email','WeStand').'</strong></td>
 		<td>'.$contact_email.'</td>
 	  </tr>
 	  <tr>
-		<td><strong>Subject:</strong></td>
+		<td><strong>'.__('Subject','WeStand').'</strong></td>
 		<td>'.$subject.'</td>
 	  </tr>
 	  <tr>
-		<td><strong>Message:</strong></td>
+		<td><strong>'.__('Message','WeStand').'</strong></td>
 		<td>'.$contact_msg.'</td>
 	  </tr>
 	  <tr>
-		<td><strong>IP Address:</strong></td>
+		<td><strong>'.__('IP Address','WeStand').'</strong></td>
 		<td>'.$_SERVER["REMOTE_ADDR"].'</td>
 	  </tr>
 	</table>

@@ -364,11 +364,16 @@ if($cs_theme_option['trans_switcher'] == "on"){ $cause_status_trans = __('Closed
                     <figure>
                         <img src="<?php echo $image_url;?>" alt="">
                             <figcaption>
+                           
                             	<?php if(isset($cause_status) && $cause_status <> ''){
+										
+									
 											echo '<span class="btn cs-btn-donate cs-bgcolrhvr">'.$cause_status.' </span>';	
 									} else {?>
+                                  
 									<a href="#" class="btn cs-btn-donate cs-bgcolrhvr" data-toggle="modal" data-target="#CausemyModal2<?php echo $post->ID;?>"><?php if($cs_theme_option['trans_switcher'] == "on"){ $trans_featured = _e('Donate Now','WeStand');}else{ echo $cs_theme_option['cause_donate']; }?></a>
-								 <?php }?>
+									
+                                 <?php }?>
                             </figcaption>
                     </figure>
             <?php }?>

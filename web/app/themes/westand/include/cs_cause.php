@@ -104,7 +104,7 @@
 
 			'new_item' => __('New Cause Item','WeStand'),
 
-			'add_new' => __('Add New Cause', 'Add Cause'),
+			'add_new' => __('Add New Cause', 'WeStand'),
 
 			'view_item' => __('View Cause Item','WeStand'),
 
@@ -158,17 +158,17 @@
 
 		  $labels = array(
 
-			'name' => 'Menu Categories',
+			'name' =>__('Menu Categories','WeStand'),
 
-			'search_items' => 'Search Cause Categories',
+			'search_items' =>__('Search Cause Categories','WeStand'),
 
-			'edit_item' => 'Edit Cause Category',
+			'edit_item' =>__('Edit Cause Category','WeStand'),
 
-			'update_item' => 'Update Cause Category',
+			'update_item' =>__('Update Cause Category','WeStand'),
 
-			'add_new_item' => 'Add New Category',
+			'add_new_item' =>__('Add New Category','WeStand'),
 
-			'menu_name' => 'Cause Categories',
+			'menu_name' =>__('Cause Categories','WeStand'),
 
 		  ); 	
 
@@ -198,7 +198,7 @@
 
 		  $labels = array(
 
-			'name' => 'Cause Tags',
+			'name' =>__('Cause Tags','WeStand'),
 
 			'singular_name' => 'cs_menu-tag',
 
@@ -397,12 +397,12 @@
 
                       
 					<div class="opt-head">
-                        <h4>Cause Date, Goal, Email</h4>
+                        <h4><?php _e('Cause Date, Goal, Email','WeStand');?></h4>
                         <div class="clear"></div>
                     </div>
                     <ul class="form-elements noborder">
 
-                            <li class="to-label"><label>Cause End Date</label></li>
+                            <li class="to-label"><label><?php _e('Cause End Date','WeStand');?></label></li>
 
                             <li class="to-field">
 
@@ -414,7 +414,7 @@
 
                       <ul class="form-elements noborder">
 
-                            <li class="to-label"><label>Goal Amount</label></li>
+                            <li class="to-label"><label><?php _e('Goal Amount','WeStand');?></label></li>
 
                             <li class="to-field"><input type="text" name="cause_goal_amount" value="<?php echo htmlspecialchars($cause_goal_amount)?>" /></li>
 
@@ -426,9 +426,9 @@
                         
                         <ul class="form-elements noborder">
 
-                            <li class="to-label"><label>Paypal Email</label></li>
+                            <li class="to-label"><label><?php _e('Paypal Email','WeStand');?></label></li>
 
-                            <li class="to-field"><input type="text" name="cause_paypal_email" value="<?php echo htmlspecialchars($cause_paypal_email)?>" /><p> Please enter your paypal bussiness email for individual Cause. If you dont enter paypal email here. You must enter paypal email at theme options <?php //echo '<a target="_blank" href="' . get_admin_url() . 'themes.php?page=cs_theme_options#tab-paypalapi-key-show">' . __('here', 'WeStand') . '.</a>';?> that will be used for default for all cuases.</p></li>
+                            <li class="to-field"><input type="text" name="cause_paypal_email" value="<?php echo htmlspecialchars($cause_paypal_email)?>" /><p> <?php _e('Please enter your paypal bussiness email for individual Cause. If you dont enter paypal email here. You must enter paypal email at theme options','WeStand');?> <?php //echo '<a target="_blank" href="' . get_admin_url() . 'themes.php?page=cs_theme_options#tab-paypalapi-key-show">' . __('here', 'WeStand') . '.</a>';?> <?php _e('that will be used for default for all cuases','WeStand');?></p></li>
 
                             
 
@@ -436,9 +436,9 @@
                         
                         <ul class="form-elements noborder">
 
-                            <li class="to-label"><label>Raised Amount</label></li>
+                            <li class="to-label"><label><?php _e('Raised Amount','WeStand');?></label></li>
 
-                            <li class="to-field"><input type="text" disabled="disabled" name="cause_raised_amount" value="<?php echo htmlspecialchars($cause_raised_amount)?>" /><p> Auto Calculated Raised Amount From Donations</p></li>
+                            <li class="to-field"><input type="text" disabled="disabled" name="cause_raised_amount" value="<?php echo htmlspecialchars($cause_raised_amount)?>" /><p><?php _e('Auto Calculated Raised Amount From Donations','WeStand');?> </p></li>
 
                             
 
@@ -458,7 +458,7 @@
 
                         <div class="opt-head">
 
-                            <h5>Donor Settings</h5>
+                            <h5><?php _e('Donor Settings','WeStand');?></h5>
 
                             <a href="javascript:closepopedup('add_ingrediant')" class="closeit">&nbsp;</a>
 
@@ -468,13 +468,13 @@
 
                         <ul class="form-elements">
 
-                            <li class="to-label"><label>Name</label></li>
+                            <li class="to-label"><label><?php _e('Name','WeStand');?></label></li>
 
                             <li class="to-field">
 
                             	<input type="text" id="address_name" name="address_name" value="" />
 
-                                <p>Put Name</p>
+                                <p><?php _e('Put Name','WeStand');?></p>
 
                             </li>
 
@@ -482,7 +482,7 @@
 
                         <ul class="form-elements">
 
-                            <li class="to-label"><label>Email</label></li>
+                            <li class="to-label"><label><?php _e('Email','WeStand');?></label></li>
 
                             <li class="to-field">
 
@@ -494,7 +494,7 @@
 
                         <ul class="form-elements">
 
-                            <li class="to-label"><label>Amount</label></li>
+                            <li class="to-label"><label><?php _e('Amount','WeStand');?></label></li>
 
                             <li class="to-field">
 
@@ -506,13 +506,13 @@
 
                         <ul class="form-elements">
 
-                            <li class="to-label"><label>Transaction ID</label></li>
+                            <li class="to-label"><label><?php _e('Transaction ID','WeStand');?></label></li>
 
                             <li class="to-field">
 
                             	<input type="text" id="txn_id" name="txn_id" value="" />
 
-                                <p>Put Transaction ID</p>
+                                <p><?php _e('Put Transaction ID','WeStand');?></p>
 
                             </li>
 
@@ -520,7 +520,7 @@
 
                         <ul class="form-elements">
 
-                            <li class="to-label"><label>Payment Date</label></li>
+                            <li class="to-label"><label><?php _e('Payment Date','WeStand');?></label></li>
 
                             <li class="to-field">
 
@@ -556,9 +556,9 @@
 
                     <div class="opt-head">
 
-                        <h4 style="padding-top:12px;">Cause Donors</h4>
+                        <h4 style="padding-top:12px;"><?php _e('Cause Donors','WeStand');?></h4>
 
-                        <a href="javascript:openpopedup('add_ingrediant')" class="button">Add Donor</a>
+                        <a href="javascript:openpopedup('add_ingrediant')" class="button"><?php _e('Add Donor','WeStand');?></a>
 
                         <div class="clear"></div>
 
@@ -570,17 +570,17 @@
 
                             <tr>
 
-                                <th style="width:20%;">Donor Name</th>
+                                <th style="width:20%;"><?php _e('Donor Name','WeStand');?></th>
 
-                                <th style="width:20%;">Email</th>
+                                <th style="width:20%;"><?php _e('Email','WeStand');?></th>
 
-                                <th style="width:20%;">Amount</th>
+                                <th style="width:20%;"><?php _e('Amount','WeStand');?></th>
 
-                                <th style="width:20%;">Transaction ID</th>
+                                <th style="width:20%;"><?php _e('Transaction ID','WeStand');?></th>
 
-                                <th style="width:20%;">Date</th>
+                                <th style="width:20%;"><?php _e('Date','WeStand');?></th>
 
-                                <th style="width:20%;" class="centr">Actions</th>
+                                <th style="width:20%;" class="centr"><?php _e('Actions','WeStand');?></th>
 
                             </tr>
 
@@ -631,14 +631,14 @@
                 <div class="cause-other-options" id="cause_other_options">
                 <div class="opt-head">
 
-                    <h4>Other Options</h4>
+                    <h4><?php _e('Other Options','WeStand');?></h4>
         
                     <div class="clear"></div>
         
                 </div>
                 <ul class="form-elements noborder">
 
-                    <li class="to-label"><label>Social Sharing</label></li>
+                    <li class="to-label"><label><?php _e('Social Sharing','WeStand');?></label></li>
 
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="cause_social_share" value="on" class="myClass" <?php if($cause_social_share=='on')echo "checked"?> /></div>
@@ -647,21 +647,21 @@
                 </ul>
                 
                 <ul class="form-elements noborder">
-                    <li class="to-label"><label>Post Author</label></li>
+                    <li class="to-label"><label><?php _e('Post Author','WeStand');?></label></li>
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="post_author_info_show" value="on" class="myClass" <?php if($post_author_info_show=='on')echo "checked"?> /></div>
                    
                     </li>
                 </ul>
                 <ul class="form-elements noborder">
-                    <li class="to-label"><label>Tags</label></li>
+                    <li class="to-label"><label><?php _e('Tags','WeStand');?></label></li>
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="post_tags_show" value="on" class="myClass" <?php if($post_tags_show=='on')echo "checked"?> /></div>
                        
                     </li>
                 </ul>
                 <ul class="form-elements noborder">
-                    <li class="to-label"><label>Next Previous Button</label></li>
+                    <li class="to-label"><label><?php _e('Next Previous Button','WeStand');?></label></li>
                     <li class="to-field">
                         <div class="on-off"><input type="checkbox" name="post_pagination_show" value="on" class="myClass" <?php if($post_pagination_show=='on')echo "checked"?> /></div>
                         
@@ -669,7 +669,7 @@
                 </ul>
                 <ul class="form-elements noborder">
 
-                        <li class="to-label"><label>Donors On/Off</label></li>
+                        <li class="to-label"><label><?php _e('Donors On/Off','WeStand');?></label></li>
 
                         <li class="to-field">
 

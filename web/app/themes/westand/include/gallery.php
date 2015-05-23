@@ -1,5 +1,5 @@
 <?php
-	// Gallery start
+		// Gallery start
 		//adding columns start
 		add_filter('manage_cs_gallery_posts_columns', 'gallery_columns_add');
 			function gallery_columns_add($columns) {
@@ -49,8 +49,7 @@
 
 		// adding Gallery meta info start
 			add_action( 'add_meta_boxes', 'cs_meta_gallery_add' );
-			function cs_meta_gallery_add()
-			{  
+			function cs_meta_gallery_add(){  
 				add_meta_box( 'cs_meta_gallery', 'Gallery Options', 'cs_meta_gallery', 'cs_gallery', 'normal', 'high' );  
 			}
 			function cs_meta_gallery( $post ) {
@@ -174,7 +173,6 @@
   $("#edit_" + id) .slideUp(300);
   $(".to-social-list,.gal-active h4.left,#gal-sortable li,#gal-sortable .thumb-secs")  .fadeIn(300);
   };
-
 </script>                    
 										<div id="pagination"><?php media_pagination();?></div>
 	                                    <input type="hidden" name="gallery_meta_form" value="1" />
@@ -191,8 +189,7 @@
 			// saving Gallery meta start
 			if ( isset($_POST['gallery_meta_form']) and $_POST['gallery_meta_form'] == 1 ) {
 				add_action( 'save_post', 'cs_meta_gallery_options' );
-				function cs_meta_gallery_options( $post_id )
-				{
+				function cs_meta_gallery_options( $post_id ){
 					$cs_counter = 0;
 					$sxe = new SimpleXMLElement("<gallery_options></gallery_options>");
 						if ( isset($_POST['path']) ) {

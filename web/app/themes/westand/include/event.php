@@ -194,23 +194,23 @@
             		<div class="option-sec" style="margin-bottom:0;">
                         <div class="opt-conts">
                             <ul class="form-elements noborder">
-                                <li class="to-label"><label>Address</label></li>
+                                <li class="to-label"><label><?php _e('Address','WeStand');?></label></li>
                                 <li class="to-field"><input name="loc_address" id="loc_address" type="text" value="<?php echo htmlspecialchars($loc_address)?>" class="gllpSearchButton" onblur="gll_search_map()" /></li>
                             </ul>
                             <ul class="form-elements noborder">
-                                <li class="to-label"><label>City / Town</label></li>
+                                <li class="to-label"><label><?php _e('City / Town','WeStand');?></label></li>
                                 <li class="to-field"><input name="loc_city" id="loc_city" type="text" value="<?php echo htmlspecialchars($loc_city)?>" class="gllpSearchButton" onblur="gll_search_map()" /></li>
                             </ul>
                             <ul class="form-elements noborder">
-                                <li class="to-label"><label>Post Code</label></li>
+                                <li class="to-label"><label><?php _e('Post Code','WeStand');?></label></li>
                                 <li class="to-field"><input name="loc_postcode" id="loc_postcode" type="text" value="<?php echo htmlspecialchars($loc_postcode)?>" class="gllpSearchButton" onblur="gll_search_map()" /></li>
                             </ul>
                             <ul class="form-elements noborder">
-                                <li class="to-label"><label>Region</label></li>
+                                <li class="to-label"><label><?php _e('Region','WeStand');?></label></li>
                                 <li class="to-field"><input name="loc_region" id="loc_region" type="text" value="<?php echo htmlspecialchars($loc_region)?>" class="gllpSearchButton" onblur="gll_search_map()" /></li>
                             </ul>
                             <ul class="form-elements noborder">
-                                <li class="to-label"><label>Country</label></li>
+                                <li class="to-label"><label><?php _e('Country','WeStand');?></label></li>
                                 <li class="to-field">
                                     <select name="loc_country" id="loc_country" class="gllpSearchButton" onblur="gll_search_map()" >
 										<?php foreach( cs_get_countries() as $key => $val ):?>
@@ -225,7 +225,7 @@
                             </ul>
                             <ul class="form-elements">
                                 <input type="hidden" name="add_new_loc" class="gllpSearchField" style="margin-bottom:10px;" >
-                                <div class="gllpMap">Google Maps</div>
+                                <div class="gllpMap"><?php _e('Google Maps','WeStand');?></div>
                                 <input type="hidden" name="event_loc_lat" value="<?php echo $event_loc_lat?>" class="gllpLatitude" />
                                 <input type="hidden" name="event_loc_long" value="<?php echo $event_loc_long?>" class="gllpLongitude" />
                                 <input type="hidden" name="event_loc_zoom" value="<?php echo $event_loc_zoom?>" class="gllpZoom" />
@@ -339,49 +339,49 @@
                 <div class="opt-conts">
                     <?php subheader_meta_layout();?>
                     <ul class="form-elements">
-                        <li class="to-label"><label>Thumbnail View</label></li>
+                        <li class="to-label"><label><?php _e('Thumbnail View','WeStand');?></label></li>
                         <li class="to-field">
                             <select name="event_thumb_view" class="dropdown" onchange="javascript:new_toggle(this.value)">
-                                <option <?php if($event_thumb_view=="Single Image")echo "selected";?> >Single Image</option>
-                                <option <?php if($event_thumb_view=="Map")echo "selected";?> >Map</option>
+                                <option <?php if($event_thumb_view=="Single Image")echo "selected";?> ><?php _e('Single Image','WeStand');?></option>
+                                <option <?php if($event_thumb_view=="Map")echo "selected";?> ><?php _e('Map','WeStand');?></option>
                             </select>
                            <p id="post_thumb_image" style="display:<?php if($event_thumb_view=="Single Image" or $event_thumb_view == "")echo 'inline"';else echo 'none';?>"></p>
                         </li>
                      </ul>
                     <div class="clear"></div>
                    <div class="opt-head">
-                        <h4>Event Date, Time and Location</h4>
+                        <h4><?php _e('Event Date, Time and Location','WeStand');?></h4>
                         <div class="clear"></div>
                     </div>   
                     
                     <ul class="form-elements noborder">
-                        <li class="to-label"><label>Event Date</label></li>
+                        <li class="to-label"><label><?php _e('Event Date','WeStand');?></label></li>
                         <li class="to-field short-field">
                             <input type="text" id="from_date" name="event_from_date" value="<?php if($cs_event_from_date=='') echo gmdate("Y-m-d"); else echo $cs_event_from_date?>" />
-                            <p>Start date</p>
+                            <p><?php _e('Start date','WeStand');?></p>
                         </li>
-                        <li class="to-label short-label"><label>To</label></li>
+                        <li class="to-label short-label"><label><?php _e('To','WeStand');?></label></li>
                         <li class="to-field short-field">
                             <input type="text" id="to_date" name="event_to_date" value="<?php if($cs_event_to_date=='') echo gmdate("Y-m-d"); else echo $cs_event_to_date?>" />
-                            <p>End date</p>
+                            <p><?php _e('End date','WeStand');?></p>
                         </li>
                     </ul>
 
                     <ul class="form-elements event-day noborder">
-                        <li class="to-label"><label>Start Time</label></li>
+                        <li class="to-label"><label><?php _e('Start Time','WeStand');?></label></li>
                         <li class="to-field">
                             <div id="event_time" <?php if($event_all_day=='on')echo 'style="display:none"'?>>
                                 <div class="cs-left-sec">
                                 <input id="event_start_time" name="event_start_time" value="<?php echo $event_start_time?>" type="text" class="vsmall" />
-                                <label class="first-label">Start time</label></div>
-                                <span class="short">To</span>
+                                <label class="first-label"><?php _e('Start time','WeStand');?></label></div>
+                                <span class="short"><?php _e('To','WeStand');?></span>
                                 <div class="cs-left-sec">
                                 <input id="event_end_time" name="event_end_time" value="<?php echo $event_end_time?>" type="text" class="vsmall"  />
-                                <label class="sec-label">End time</label></div>
+                                <label class="sec-label"><?php _e('End time','WeStand');?></label></div>
                             	<div class="checkbox-list" style="padding-top:15px;">
                                     <div class="checkbox-item">
                                         <input type="checkbox" name="event_all_day" value="on" <?php if($event_all_day=='on')echo "checked"?> onclick="cs_toggle('event_time')" class="styled" />
-                                        <label>All Day</label>
+                                        <label><?php _e('All Day','WeStand');?></label>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +389,7 @@
                     </ul>
                     
                     <ul class="form-elements noborder">
-                        <li class="to-label"><label>Location / Address</label></li>
+                        <li class="to-label"><label><?php _e('Location / Address','WeStand');?></label></li>
                         <li class="to-field">
                         	<?php
                             //echo $event_address."<br />";
@@ -399,7 +399,7 @@
 									endwhile;
 							?>
                         	<select name="event_address" class="dropdown">
-                            	<option value="0">Select Map Location</option>
+                            	<option value="0"><?php _e('Select Map Location','WeStand');?></option>
                                 <?php
 									query_posts( array('posts_per_page' => "-1", 'post_status' => 'publish', 'post_type' => 'event-location') );
 										while ( have_posts()) : the_post();
@@ -412,25 +412,25 @@
                         </li>
                     </ul>
                     <ul class="form-elements noborder" id="event_map">
-                        <li class="to-label"><label>Show Map</label></li>
+                        <li class="to-label"><label><?php _e('Show Map','WeStand');?></label></li>
                         <li class="to-field">
                         	<div class="on-off"><input type="checkbox"  name="event_map" class="myClass" <?php if(empty($event_map) || $event_map == "on"){ echo "checked"; }?> /></div>
                         </li>
                     </ul>
                     <?php if ( empty( $_GET['post']) ) {?>
                         <ul class="form-elements">
-                            <li class="to-label"><label>Repeat</label></li>
+                            <li class="to-label"><label><?php _e('Repeat','WeStand');?></label></li>
                             <li class="to-field">
                                 <select name="repeat" class="dropdown" onchange="toggle_with_value('num_repeat', this.value)">
-									<option value="0">-- Never Repeat --</option>
-									<option value="+1 day">Every Day</option>
-									<option value="+1 week">Every Week</option>
-									<option value="+1 month">Every Month</option>
+									<option value="0"><?php _e('-- Never Repeat --','WeStand');?></option>
+									<option value="+1 day"><?php _e('Every Day','WeStand');?></option>
+									<option value="+1 week"><?php _e('Every Week','WeStand');?></option>
+									<option value="+1 month"><?php _e('Every Month','WeStand');?></option>
                                 </select>
                             </li>
                         </ul>
                         <ul class="form-elements" id="num_repeat" style="display:none">
-                            <li class="to-label"><label>Repeat how many time</label></li>
+                            <li class="to-label"><label><?php _e('Repeat how many time','WeStand');?></label></li>
                             <li class="to-field">
                                 <select name="num_repeat" class="dropdown">
                                     <?php for ( $i = 1; $i <= 25; $i++ ) {?>
@@ -442,57 +442,57 @@
                     <?php }?>
                     <div class="clear"></div>
                     <div class="opt-head">
-                        <h4>Ticket Options</h4>
+                        <h4><?php _e('Ticket Options','WeStand');?></h4>
                         <div class="clear"></div>
                     </div> 
                     <ul class="form-elements noborder">
                         <li class="to-label">
-                            <label>Button Title and Price</label>
+                            <label><?php _e('Button Title and Price','WeStand');?></label>
                         </li>
                         <li class="to-field">
                         	<input type="text" id="event_ticket_options" name="event_ticket_options" value="<?php echo $event_ticket_options;?>" />
                         </li>
                    </ul>
                     <ul class="form-elements noborder">
-                        <li class="to-label"><label>Buy Now URL.</label></li>
+                        <li class="to-label"><label><?php _e('Buy Now URL','WeStand');?></label></li>
                         <li class="to-field">
                             <input type="text" id="event_buy_now" name="event_buy_now" value="<?php echo $event_buy_now;?>" />
                         </li>
                     </ul>
                     <ul class="form-elements">
-                        <li class="to-label"><label>Ticket Button Color</label></li>
+                        <li class="to-label"><label><?php _e('Ticket Button Color','WeStand');?></label></li>
                         <li class="to-field">
                             <input type="text" name="event_ticket_color" value="<?php echo $event_ticket_color;?>" class="bg_color" />
                         </li>
                     </ul>
                     <div class="clear"></div>
                     <div class="opt-head">
-                        <h4>Other Options</h4>
+                        <h4><?php _e('Other Options','WeStand');?></h4>
                         <div class="clear"></div>
                     </div>
                            <ul class="form-elements noborder">
-                            <li class="to-label"><label>Post Author</label></li>
+                            <li class="to-label"><label><?php _e('Post Author','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="post_author_info_show" value="on" class="myClass" <?php if($post_author_info_show=='on')echo "checked"?> /></div>
                      
                             </li>
                         </ul> 
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Social Sharing</label></li>
+                            <li class="to-label"><label><?php _e('Social Sharing','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="event_social_sharing" value="on" class="myClass" <?php if($event_social_sharing=='on')echo "checked"?> /></div>
                             
                             </li>
                         </ul>
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Tags</label></li>
+                            <li class="to-label"><label><?php _e('Tags','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="event_tags" value="on" class="myClass" <?php if($event_tags=='on')echo "checked"?> /></div>
                             
                             </li>
                         </ul>
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Next Previous button</label></li>
+                            <li class="to-label"><label><?php _e('Next Previous button','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="event_pagination" value="on" class="myClass" <?php if($event_pagination=='on')echo "checked"?> /></div>
          
@@ -500,13 +500,13 @@
                         </ul>
                         
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Add to calendar button</label></li>
+                            <li class="to-label"><label><?php _e('Add to calendar button','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="event_calendar" value="on" class="myClass" <?php if($event_calendar=='on')echo "checked"?> /></div>
                             </li>
                         </ul>
                         <ul class="form-elements">
-                            <li class="to-label"><label>Like Button</label></li>
+                            <li class="to-label"><label><?php _e('Like Button','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="event_like" value="on" class="myClass" <?php if($event_like=='on')echo "checked"?> /></div>
                             </li>

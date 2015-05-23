@@ -347,34 +347,34 @@ function cs_event_countdown(year_event,month_event,date_event){
 	 layout: '<strong>{dn}</strong> {dl} <em>:</em> <strong>{hn}</strong> {hl} <em>:</em> <strong>{mn}</strong> {ml} <em>:</em> <strong>{sn}</strong> {sl} '});
 }
 
-
+//menu toggle
 jQuery(document).ready(function($) {
-  MenuToggle();
-  jQuery(window) .resize(function(event) {
-    /* Act on the event */
-    MenuToggle()
-  });
-     jQuery("#menus  li.sub-icon > a") .bind("click",function(){
-      jQuery(this) .next() .slideToggle(200);
-      return false;
-     });
-       jQuery( ".cs-click-menu" ).click(function() {
-        jQuery(this) .next() .slideToggle(200)
-      });
+	MenuToggle();
+	jQuery("#menus  li.sub-icon > a") .click(function(){
+		jQuery(this).next().toggle(200);
+		return false;
+	});
+	jQuery('.cs-click-menu').live('click', function(event) {        
+		jQuery(this).next().toggle('show');
+		jQuery("#menus ul") .hide();
+	});
+});
+function MenuToggle() {
+		jQuery("#menus ul") .parent('li') .addClass('sub-icon');
+}
+jQuery(window).resize(function($) {
+  		var a = jQuery(window).width();
+		var b = 1000
+		if (a >= b) {
+			jQuery("#menus ul,#menus") .show();
+		}else{
+			jQuery("#menus ul,#menus") .hide();
+		}
+		
 });
 
 
-function MenuToggle() {
-   var a = jQuery(window).width();
- var b = 1000
- if (a <= b) {
- jQuery("#menus ul") .parent('li') .addClass('sub-icon');
-  jQuery("#menus ul") .hide();
-    } else {
-        jQuery("#menus ul,#menus") .show();
-    }
-}
-
+//menu toggle
 function cs_skills_shortcode_script() {
   jQuery("[data-loadbar]").each(function(index) {
     var d = jQuery(this).attr('data-loadbar');

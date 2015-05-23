@@ -15,58 +15,58 @@ function theme_option() {
         <div class="col1">
           <div class="logo"><a href="#"><img src="<?php echo get_template_directory_uri()?>/images/admin/logo.png" /></a></div>
           <div class="arrowlistmenu" id="paginate-slider2">
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon g-setting">&nbsp;</span>General Settings</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon g-setting">&nbsp;</span><?php _e('General Settings','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-color active"><a href="#tab-color" onClick="toggleDiv(this.hash);return false;">Color and Style</a></li>
-              <li class="tab-logo"><a href="#tab-logo" onClick="toggleDiv(this.hash);return false;">Logo / Fav Icon</a></li>
-              <li class="tab-head-scripts"><a href="#tab-head-scripts" onClick="toggleDiv(this.hash);return false;">Header Settings</a></li>
-              <li class="tab-foot-setting"><a href="#tab-foot-setting" onClick="toggleDiv(this.hash);return false;">Footer Settings</a></li>
-              <li class="tab-under-consturction"><a href="#tab-under-consturction" onClick="toggleDiv(this.hash);return false;">Under Constrution</a></li>
-              <li class="tab-other"><a href="#tab-other" onClick="toggleDiv(this.hash);return false;">Other Settings</a></li>
+              <li class="tab-color active"><a href="#tab-color" onClick="toggleDiv(this.hash);return false;"><?php _e('Color and Style','WeStand');?></a></li>
+              <li class="tab-logo"><a href="#tab-logo" onClick="toggleDiv(this.hash);return false;"><?php _e('Logo / Fav Icon','WeStand');?></a></li>
+              <li class="tab-head-scripts"><a href="#tab-head-scripts" onClick="toggleDiv(this.hash);return false;"><?php _e('Header Settings','WeStand');?></a></li>
+              <li class="tab-foot-setting"><a href="#tab-foot-setting" onClick="toggleDiv(this.hash);return false;"><?php _e('Footer Settings','WeStand');?></a></li>
+              <li class="tab-under-consturction"><a href="#tab-under-consturction" onClick="toggleDiv(this.hash);return false;"><?php _e('Under Constrution','WeStand');?></a></li>
+              <li class="tab-other"><a href="#tab-other" onClick="toggleDiv(this.hash);return false;"><?php _e('Other Settings','WeStand');?></a></li>
              
-              <li class="tab-api-key"><a href="#tab-api-key" onClick="toggleDiv(this.hash);return false;">API Settings</a></li>
+              <li class="tab-api-key"><a href="#tab-api-key" onClick="toggleDiv(this.hash);return false;"><?php _e('API Settings','WeStand');?></a></li>
               
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon h-setting">&nbsp;</span>Home Page Settings</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon h-setting">&nbsp;</span><?php _e('Home Page Settings','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-slider"><a href="#tab-slider" onClick="toggleDiv(this.hash);return false;">Slider</a></li>
+              <li class="tab-slider"><a href="#tab-slider" onClick="toggleDiv(this.hash);return false;"><?php _e('Slider','WeStand');?></a></li>
               
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon h-setting">&nbsp;</span>Donations</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon h-setting">&nbsp;</span><?php _e('Donations','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-paypalapi"><a href="#tab-paypalapi" onClick="toggleDiv(this.hash);return false;">Paypal and Payment settings</a></li>
-              <li class="tab-donationsbtns"><a href="#tab-donationsbtns" onClick="toggleDiv(this.hash);return false;">Model Window Buttons</a></li>
+              <li class="tab-paypalapi"><a href="#tab-paypalapi" onClick="toggleDiv(this.hash);return false;"><?php _e('Paypal and Payment settings','WeStand');?></a></li>
+              <li class="tab-donationsbtns"><a href="#tab-donationsbtns" onClick="toggleDiv(this.hash);return false;"><?php _e('Model Window Buttons','WeStand');?></a></li>
             </ul>
-           <h3 class="menuheader expandable"><a href="#"><span class="nav-icon side-bar">&nbsp;</span>Side Bars</a></h3>
+           <h3 class="menuheader expandable"><a href="#"><span class="nav-icon side-bar">&nbsp;</span><?php _e('Side Bars','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-manage-sidebars"><a href="#tab-manage-sidebars" onClick="toggleDiv(this.hash);return false;">Manage Sidebars</a></li>
+              <li class="tab-manage-sidebars"><a href="#tab-manage-sidebars" onClick="toggleDiv(this.hash);return false;"><?php _e('Manage Sidebars','WeStand');?></a></li>
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon slider-setting">&nbsp;</span>Slider Setting</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon slider-setting">&nbsp;</span><?php _e('Slider Setting','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-flex-slider"><a href="#tab-flex-slider" onClick="toggleDiv(this.hash);return false;">Flex Slider</a></li>
+              <li class="tab-flex-slider"><a href="#tab-flex-slider" onClick="toggleDiv(this.hash);return false;"><?php _e('Flex Slider','WeStand');?></a></li>
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon s-network">&nbsp;</span>Social Settings</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon s-network">&nbsp;</span><?php _e('Sahre','WeStand');?><?php _e('Social Settings','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-social-network"><a href="#tab-social-network" onClick="toggleDiv(this.hash);return false;">Social Network</a></li>
+              <li class="tab-social-network"><a href="#tab-social-network" onClick="toggleDiv(this.hash);return false;"><?php _e('Social Network','WeStand');?></a></li>
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon languages">&nbsp;</span>Language</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon languages">&nbsp;</span><?php _e('Language','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-upload-languages"><a href="#tab-upload-languages" onClick="toggleDiv(this.hash);return false;">Upload New Languages</a></li>
+              <li class="tab-upload-languages"><a href="#tab-upload-languages" onClick="toggleDiv(this.hash);return false;"><?php _e('Upload New Languages','WeStand');?></a></li>
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon translation">&nbsp;</span>Translation</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon translation">&nbsp;</span><?php _e('Translation','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-cause-translation"><a href="#tab-cause-translation" onClick="toggleDiv(this.hash);return false;">Cause</a></li>
-              <li class="tab-contact-translation"><a href="#tab-contact-translation" onClick="toggleDiv(this.hash);return false;">Contact</a></li>
-              <li class="tab-other-translation"><a href="#tab-other-translation" onClick="toggleDiv(this.hash);return false;">Others</a></li>
+              <li class="tab-cause-translation"><a href="#tab-cause-translation" onClick="toggleDiv(this.hash);return false;"><?php _e('Cause','WeStand');?></a></li>
+              <li class="tab-contact-translation"><a href="#tab-contact-translation" onClick="toggleDiv(this.hash);return false;"><?php _e('Contact','WeStand');?></a></li>
+              <li class="tab-other-translation"><a href="#tab-other-translation" onClick="toggleDiv(this.hash);return false;"><?php _e('Others','WeStand');?></a></li>
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon default-pages">&nbsp;</span>Default Pages</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon default-pages">&nbsp;</span><?php _e('Default Pages','WeStand');?></a></h3>
             <ul class="categoryitems">
-              <li class="tab-default-pages"><a href="#tab-default-pages" onClick="toggleDiv(this.hash);return false;">Default Pages</a></li>
+              <li class="tab-default-pages"><a href="#tab-default-pages" onClick="toggleDiv(this.hash);return false;"><?php _e('Default Pages','WeStand');?></a></li>
             </ul>
-            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon default-pages">&nbsp;</span>Backup Options</a></h3>
+            <h3 class="menuheader expandable"><a href="#"><span class="nav-icon default-pages">&nbsp;</span><?php _e('Backup Options','WeStand');?></a></h3>
             <ul class="categoryitems">
-            <li><a href="#tab-import-export-backup" onClick="toggleDiv(this.hash);return false;">Theme Options Backup</a></li> 
-             <li class="tab-import-export"><a onclick="cs_to_restore_default_option('<?php echo admin_url()?>', '<?php echo get_template_directory_uri()?>')">Restore Default</a></li>
+            <li><a href="#tab-import-export-backup" onClick="toggleDiv(this.hash);return false;"><?php _e('Theme Options Backup','WeStand');?></a></li> 
+             <li class="tab-import-export"><a onclick="cs_to_restore_default_option('<?php echo admin_url()?>', '<?php echo get_template_directory_uri()?>')"><?php _e('Restore Default','WeStand');?></a></li>
            
             </ul>
              
@@ -80,16 +80,16 @@ function theme_option() {
           <!-- Color And Style Start -->
           <div id="tab-color">
             <div class="theme-header">
-              <h1>General Settings</h1>
+              <h1><?php _e('General Settings','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Color And Styles</h4>
-              <p>Theme color scheme and styling setting.</p>
+              <h4><?php _e('Color And Styles','WeStand');?></h4>
+              <p><?php _e('Theme color scheme and styling setting','WeStand');?></p>
             </div>
            
             <ul class="form-elements">
               <li class="to-label">
-                <label>Select Color Scheme</label>
+                <label><?php _e('Select Color Scheme','WeStand');?></label>
               </li>
               <li class="to-field">
                     <div id="colorpickerwrapp">
@@ -109,38 +109,38 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Custom Color Scheme</label>
+                <label><?php _e('Custom Color Scheme','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="cs_custom_color_style" name="custom_color_scheme" value="<?php if(isset($cs_theme_option['custom_color_scheme'])){ echo $cs_theme_option['custom_color_scheme']; }?>" class="bg_color"  />
-                <p>Pick a custom color for Scheme of the theme e.g. #697e09</p>
+                <p><?php _e('Pick a custom color for Scheme of the theme','WeStand');?> e.g. #697e09</p>
               </li>
             </ul>
             <div class="clear"></div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Layout Options</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Layout Options','WeStand');?></h4>
               <div class="clear"></div>
             </div>
              <ul class="form-elements">
               <li class="to-label">
-                <label>Layout Option</label>
+                <label><?php _e('Layout Option','WeStand');?></label>
               </li>
               <li class="to-field">
                <span id="wrapper_boxed_layoutoptions1"> <input type="radio" name="layout_option"  value="wrapper_boxed" <?php if($cs_theme_option['layout_option']=="wrapper_boxed")echo "checked"?> class="styled" /></span>
-                <label>Boxed</label>
+                <label><?php _e('Boxed','WeStand');?></label>
                 <span id="wrapper_boxed_layoutoptions2"><input type="radio" name="layout_option"  value="wrapper" <?php if($cs_theme_option['layout_option']=="wrapper")echo "checked"?> class="styled" /></span>
-                <label>Wide</label>
+                <label><?php _e('Wide','WeStand');?></label>
               </li>
             </ul>
             <div id="layout-background-theme-options" <?php if($cs_theme_option['layout_option']=="wrapper"){echo 'style="display: none;"';}?>	>
             <div class="clear"></div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Background Options</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Background Options','WeStand');?></h4>
               <div class="clear"></div>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Background Image</label>
+                <label><?php _e('Background Image','WeStand');?></label>
               </li>
               <li class="to-field">
                 <div class="meta-input pattern">
@@ -156,7 +156,7 @@ function theme_option() {
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Background Image</label>
+                <label><?php _e('Background Image','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input id="bg_img_custom" name="bg_img_custom" value="<?php echo $cs_theme_option['bg_img_custom'] ?>" type="text" class="small" />
@@ -167,44 +167,44 @@ function theme_option() {
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Position</label>
+                <label><?php _e('Position','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="radio" name="bg_position" value="left" <?php if($cs_theme_option['bg_position']=="left")echo "checked"?> class="styled" />
-                <label>Left</label>
+                <label><?php _e('Left','WeStand');?></label>
                 <input type="radio" name="bg_position" value="center" <?php if($cs_theme_option['bg_position']=="center")echo "checked"?> class="styled" />
-                <label>Center</label>
+                <label><?php _e('Center','WeStand');?></label>
                 <input type="radio" name="bg_position" value="right" <?php if($cs_theme_option['bg_position']=="right")echo "checked"?> class="styled" />
-                <label>Right</label>
+                <label><?php _e('Right','WeStand');?></label>
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Repeat</label>
+                <label><?php _e('Repeat','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="radio" name="bg_repeat" value="no-repeat" <?php if($cs_theme_option['bg_repeat']=="no-repeat")echo "checked"?> class="styled" />
-                <label>No Repeat</label>
+                <label><?php _e('No Repeat','WeStand');?></label>
                 <input type="radio" name="bg_repeat" value="repeat" <?php if($cs_theme_option['bg_repeat']=="repeat")echo "checked"?> class="styled" />
-                <label>Tile</label>
+                <label><?php _e('Tile','WeStand');?></label>
                 <input type="radio" name="bg_repeat" value="repeat-x" <?php if($cs_theme_option['bg_repeat']=="repeat-x")echo "checked"?> class="styled" />
-                <label>Tile Horizontally</label>
+                <label><?php _e('Tile Horizontally','WeStand');?></label>
                 <input type="radio" name="bg_repeat" value="repeat-y" <?php if($cs_theme_option['bg_repeat']=="repeat-y")echo "checked"?> class="styled" />
-                <label>Tile Vertically</label>
+                <label><?php _e('Tile Vertically','WeStand');?></label>
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Attachment</label>
+                <label><?php _e('Attachment','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="radio" name="bg_attach" value="scroll" <?php if($cs_theme_option['bg_attach']=="scroll")echo "checked"?> class="styled" />
                 <label>Scroll</label>
                 <input type="radio" name="bg_attach" value="fixed" <?php if($cs_theme_option['bg_attach']=="fixed")echo "checked"?> class="styled" />
-                <label>Fixed</label>
+                <label><?php _e('Fixed','WeStand');?></label>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Background Pattern</label>
+                <label><?php _e('Background Pattern','WeStand');?></label>
               </li>
               <li class="to-field">
                 <div class="meta-input pattern">
@@ -220,7 +220,7 @@ function theme_option() {
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Background Pattern</label>
+                <label><?php _e('Background Pattern','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input id="custome_pattern" name="custome_pattern" value="<?php echo $cs_theme_option['custome_pattern']; ?>" type="text" class="small" />
@@ -231,7 +231,7 @@ function theme_option() {
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Background Color</label>
+                <label><?php _e('Background Color','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="bg_color" value="<?php echo $cs_theme_option['bg_color']?>" class="bg_color" data-default-color="" />
@@ -243,53 +243,53 @@ function theme_option() {
           <!-- Logo Tabs -->
           <div id="tab-logo" style="display:none;">
             <div class="theme-header">
-              <h1>Logo / Fav Icon Settings</h1>
+              <h1><?php _e('Logo / Fav Icon Settings','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Logo / Fav Icon Settings</h4>
-              <p>Add your logo and fav icon.</p>
+              <h4><?php _e('Logo / Fav Icon Settings','WeStand');?></h4>
+              <p><?php _e('Add your logo and fav icon','WeStand');?></p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Upload Logo</label>
+                <label><?php _e('Upload Logo','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input id="logo" name="logo" value="<?php echo $cs_theme_option['logo']?>" type="text" class="small {validate:{accept:'jpg|jpeg|gif|png|bmp'}}" />
                 <input id="log" name="logo" type="button" class="uploadfile left" value="Browse"/>
                 <?php if ( $cs_theme_option['logo'] <> "" ) { ?>
-                <div class="thumb-preview" id="logo_img_div"> <img width="<?php echo $cs_theme_option['logo_width']?>" height="<?php echo $cs_theme_option['logo_height']?>" src="<?php echo $cs_theme_option['logo']?>" /> <a href="javascript:remove_image('logo')" class="del">&nbsp;</a> </div>
+                <div class="thumb-preview" id="logo_img_div"><img width="<?php echo $cs_theme_option['logo_width']?>" height="<?php echo $cs_theme_option['logo_height']?>" src="<?php echo $cs_theme_option['logo']?>" /> <a href="javascript:remove_image('logo')" class="del">&nbsp;</a> </div>
                 <?php } ?>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Width</label>
+                <label><?php _e('Width','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="logo_width" id="width-value" value="<?php echo $cs_theme_option['logo_width']?>" class="vsmall" />
                 <span class="short">px</span>
-                <p>Please enter the required size.</p>
+                <p><?php _e('Please enter the required size','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Height</label>
+                <label><?php _e('Height','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="logo_height" id="height-value" value="<?php echo $cs_theme_option['logo_height']?>" class="vsmall" />
                 <span class="short">px</span>
-                <p>Please enter the required size.</p>
+                <p><?php _e('Please enter the required size','WeStand');?></p>
               </li>
             </ul>
             
             <ul class="form-elements">
               <li class="to-label">
-                <label>FAV Icon</label>
+                <label><?php _e('FAV Icon','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input id="fav_icon" name="fav_icon" value="<?php echo $cs_theme_option['fav_icon']?>" type="text" class="small {validate:{accept:'ico|png'}}" />
                 <input id="fav_icon" name="fav_icon" type="button" class="uploadfile left" value="Browse" />
-                <p>Browse a small fav icon, only .ICO or .PNG format allowed.</p>
+                <p><?php _e('Browse a small fav icon, only .ICO or .PNG format allowed','WeStand');?></p>
               </li>
             </ul>
           </div>
@@ -301,15 +301,15 @@ function theme_option() {
           <!-- Header Script -->
           <div id="tab-head-scripts" style="display:none;">
             <div class="theme-header">
-              <h1>Header Settings</h1>
+              <h1><?php _e('Header Settings','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Header Settings</h4>
-              <p>Modify your header settings</p>
+              <h4><?php _e('Header Settings','WeStand');?></h4>
+              <p><?php _e('Modify your header settings','WeStand');?></p>
             </div>
          	<ul class="form-elements noborder header-bg">
                 <li class="to-label">
-                    <label>Menu Background Color</label>
+                    <label><?php _e('Menu Background Color','WeStand');?></label>
                   </li>
                   <li class="to-field">
                     <input type="text" name="menu_bg_color" value="<?php if(isset($cs_theme_option['menu_bg_color'])){echo $cs_theme_option['menu_bg_color'];}?>" class="bg_color" />
@@ -317,7 +317,7 @@ function theme_option() {
               </ul>
               <ul class="form-elements">
                     <li class="to-label">
-                    <label>Menu Font Color</label>
+                    <label><?php _e('Menu Font Color','WeStand');?></label>
                   </li>
                   <li class="to-field">
                     <input type="text" name="menu_font_color" value="<?php if(isset($cs_theme_option['menu_font_color'])){echo $cs_theme_option['menu_font_color'];}?>" class="bg_color" />
@@ -334,7 +334,7 @@ function theme_option() {
               <ul class="form-elements">
                 <li class="full">&nbsp;</li>
                 <li class="to-label">
-                  <label>Header Languages</label>
+                  <label><?php _e('Header Languages','WeStand');?></label>
                 </li>
                 <li class="to-field">
                   <input type="hidden" name="header_languages" value="" />
@@ -349,7 +349,7 @@ function theme_option() {
 				 ?> 
                 <ul class="form-elements">
                     <li class="to-label">
-                       <label>Cart Count</label>
+                       <label><?php _e('Cart Count','WeStand');?></label>
                     </li>
                     <li class="to-field">
                       <input type="hidden" name="header_cart" value=""/>
@@ -364,7 +364,7 @@ function theme_option() {
             
               <ul class="form-elements donation-button-theme-options noborder">
                <li class="to-label">
-                <label>Donation</label>
+                <label><?php _e('Donation','WeStand');?></label>
                </li>
                <li class="to-field">
                 <input type="hidden" name="header_donation_button" value="" />
@@ -373,7 +373,7 @@ function theme_option() {
               </ul>
               <ul class="form-elements donation-button-theme-options">
               	<li class="to-label">
-                    <label>Donation Title</label>
+                    <label><?php _e('Donation Title','WeStand');?></label>
                   </li>
                   <li class="to-field">
                     <input type="text" name="donation_btn_title" value="<?php if(isset($cs_theme_option['donation_btn_title']) && $cs_theme_option['donation_btn_title'] <> '')echo $cs_theme_option['donation_btn_title']?>" class="vsmall" />
@@ -398,35 +398,35 @@ function theme_option() {
               
         ?>
         <ul class="form-elements noborder">
-            <li class="to-label"><label>Sub Header Style</label></li>
+            <li class="to-label"><label><?php _e('Sub Header Style','WeStand');?></label></li>
             <li class="to-field">
                 <select name="header_banner_style_default" class="dropdown" onchange="javascript:home_slider_header_toggle(this.value)">
                 	
-                	<option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="breadcrumbs"){echo "selected";}?> value="breadcrumbs" >Breadcrumbs</option>
-                    <option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="no-header"){echo "selected";}?> value="no-header" >No Subheader</option>
-                     <option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="flex_slider"){echo "selected";}?> value="flex_slider" >Flex Slider</option>
-                     <option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="custom_slider"){echo "selected";}?> value="custom_slider" >Custom Slider</option>
+                	<option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="breadcrumbs"){echo "selected";}?> value="breadcrumbs" ><?php _e('Breadcrumbs','WeStand');?></option>
+                    <option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="no-header"){echo "selected";}?> value="no-header" ><?php _e('No Subheader','WeStand');?></option>
+                     <option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="flex_slider"){echo "selected";}?> value="flex_slider" ><?php _e('Flex Slider','WeStand');?></option>
+                     <option <?php if(isset($header_banner_style_default) and $header_banner_style_default=="custom_slider"){echo "selected";}?> value="custom_slider" ><?php _e('Custom Slider','WeStand');?></option>
                 </select>
-                <p>These settings will apply to all those pages or post where you select the Default Header Style.</p>
+                <p><?php _e('These settings will apply to all those pages or post where you select the Default Header Style','WeStand');?></p>
             </li>
         </ul>
         <div id="header_custom_image" style="display:<?php if($header_banner_style_default=="breadcrumbs" || $header_banner_style_default=="")echo 'inline"';else echo 'none';?>"  >
         <ul class="form-elements  noborder">
-            <li class="to-label"><label>Sub-Header Background</label></li>
+            <li class="to-label"><label><?php _e('Sub-Header Background','WeStand');?></label></li>
             <li class="to-field">
                 <input id="header_banner_image_default" name="header_banner_image_default" value="<?php echo $header_banner_image_default?>" type="text" class="small" />
                 <input id="header_banner_image_default" name="header_banner_image_default" type="button" class="uploadfile left" value="Browse"/>
-                <p>Default background can be changed by uploading(image size 1600*900)</p>
+                <p><?php _e('Default background can be changed by uploading','WeStand');?>(image size 1600*900)</p>
             </li>
         </ul>
         <ul class="form-elements">
-            <li class="to-label"><label>Page Sub Header Color</label></li>
+            <li class="to-label"><label><?php _e('Page Sub Header Color','WeStand');?></label></li>
             <li class="to-field">
                 <input type="text" name="page_subheader_color_default" class="bg_color" value="<?php echo $page_subheader_color_default ?>" />
             </li>
         </ul>
         <ul class="form-elements">
-            <li class="to-label"><label>Page Sub Title</label></li>
+            <li class="to-label"><label><?php _e('Page Sub Title','WeStand');?></label></li>
             <li class="to-field">
                 <input type="text" name="page_sub_title_default" value="<?php echo $page_sub_title_default ?>" />
             </li>
@@ -434,7 +434,7 @@ function theme_option() {
         </div>
         <div class="slider_options" id="ws_slider_options" style="display:<?php if($header_banner_style_default=="flex_slider")echo 'inline"';else echo 'none';?>" >
         	<ul class="form-elements">
-                <li class="to-label"><label>Select Slider</label></li>
+                <li class="to-label"><label><?php _e('Select Slider','WeStand');?></label></li>
                 <li class="to-field">
                 <select name="header_banner_flex_slider_default" class="dropdown">
 					 <?php
@@ -447,27 +447,27 @@ function theme_option() {
                         endwhile;
                     ?>
                 </select>
-                 <p>You can use already created slider OR create new slider <a href="<?php echo admin_url();?>/post-new.php?post_type=cs_slider" target="_blank">Click Here</a>.</p>
+                 <p><?php _e('You can use already created slider OR create new slider','WeStand');?> <a href="<?php echo admin_url();?>/post-new.php?post_type=cs_slider" target="_blank"><?php _e('Click Here','WeStand');?></a>.</p>
                 </li>
              </ul>
         </div>
         <ul class="form-elements" id="header_custom_slider" style=" <?php if(isset($header_banner_style_default) and $header_banner_style_default <> "custom_slider")echo "display:none"; else "display:inline"; ?>" >
             <li class="to-label">
-                <label>Custom Slider Short Code</label>
+                <label><?php _e('Custom Slider Short Code','WeStand');?></label>
             </li>
             <li class="to-field">
                 <input type="text" name="custom_slider_id_default" class="txtfield" value="<?php if(isset( $custom_slider_id_default))echo $custom_slider_id_default;?>" />
-                <p>Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from <a href="http://codecanyon.net/" target="_blank">Codecanyon</a>. But its optional</p>
+                <p><?php _e('Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from','WeStand');?> <a href="http://codecanyon.net/" target="_blank"><?php _e('Codecanyon','WeStand');?></a>.<?php _e('But its optional','WeStand');?> </p>
             </li>
         </ul> 
              
              <ul class="form-elements">
               <li class="to-label">
-                <label>Header Code</label>
+                <label><?php _e('Header Code','WeStand');?></label>
               </li>
               <li class="to-field">
                 <textarea rows="" cols="" class="header_code_indent" name="header_code"><?php echo $cs_theme_option['header_code']?></textarea>
-                <p>Paste your Html or Css Code here.</p>
+                <p><?php _e('Paste your Html or Css Code here','WeStand');?></p>
               </li>
             </ul>
             
@@ -476,15 +476,15 @@ function theme_option() {
           <!-- Footer Settings -->
           <div id="tab-foot-setting" style="display:none;">
             <div class="theme-header">
-              <h1>Footer Settings</h1>
+              <h1><?php _e('Footer Settings','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Footer Settings</h4>
-              <p>Add footer setting detail.</p>
+              <h4><?php _e('Footer Settings','WeStand');?></h4>
+              <p><?php _e('Add footer setting detail','WeStand');?></p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Footer Widget Background Color</label>
+                <label><?php _e('Footer Widget Background Color','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="footer_widgetarea_bg_color" name="footer_widgetarea_bg_color" value="<?php if(isset($cs_theme_option['footer_widgetarea_bg_color'])){ echo $cs_theme_option['footer_widgetarea_bg_color']; }?>" class="bg_color"  />
@@ -492,7 +492,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Footer Background Color</label>
+                <label><?php _e('Footer Background Color','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="footer_bg_color" name="footer_bg_color" value="<?php if(isset($cs_theme_option['footer_bg_color'])){ echo $cs_theme_option['footer_bg_color']; }?>" class="bg_color"  />
@@ -500,7 +500,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Custom Copyright</label>
+                <label><?php _e('Custom Copyright','WeStand');?></label>
               </li>
               <li class="to-field">
                 <textarea rows="2" cols="4" name="copyright"><?php echo $cs_theme_option['copyright']?></textarea>
@@ -508,7 +508,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Powered By Text</label>
+                <label><?php _e('Powered By Text','WeStand');?></label>
               </li>
               <li class="to-field">
                 <textarea rows="2" cols="4" name="powered_by"><?php echo $cs_theme_option['powered_by']?></textarea>
@@ -516,12 +516,12 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Analytics Code</label>
+                <label><?php _e('Analytics Code','WeStand');?></label>
               </li>
               <li class="to-field">
                 <textarea rows="" cols="" class="analytics_indent" name="analytics"><?php echo $cs_theme_option['analytics']?></textarea>
-                <p>Paste your Google Analytics (or other) tracking code here.<br />
-                  This will be added into the footer template of your theme.</p>
+                <p><?php _e('Paste your Google Analytics (or other) tracking code here','WeStand');?>.<br />
+                  <?php _e('This will be added into the footer template of your theme','WeStand');?>.</p>
               </li>
             </ul>
           </div>
@@ -529,35 +529,35 @@ function theme_option() {
           <!-- Maintenance Page Settings start -->
           <div id="tab-under-consturction" style="display:none;">
             <div class="theme-header">
-              <h1>Maintenance Page Settings</h1>
+              <h1><?php _e('Maintenance Page Settings','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Maintenance Page Settings</h4>
-              <p>Add maintenance page setting detail.</p>
+              <h4><?php _e('Maintenance Page Settings','WeStand');?></h4>
+              <p><?php _e('Add maintenance page setting detail','WeStand');?>.</p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Maintenance Page</label>
+                <label><?php _e('Maintenance Page','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="under-construction" value="" />
                 <input type="checkbox" class="myClass" name="under-construction" <?php if($cs_theme_option['under-construction']=="on") echo "checked" ?> />
-                <p>Set the maintenance page On/Off</p>
+                <p><?php _e('Set the maintenance page On/Off','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Show Logo</label>
+                <label><?php _e('Show Logo','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="showlogo" value="" />
                 <input type="checkbox" class="myClass" name="showlogo" <?php if($cs_theme_option['showlogo']=="on") echo "checked" ?> />
-                <p>Set show logo On/Off</p>
+                <p><?php _e('Set show logo On/Off','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Maintenance Text</label>
+                <label><?php _e('Maintenance Text','WeStand');?></label>
               </li>
               <li class="to-field">
                 <textarea rows="2" cols="4" name="under_construction_text"><?php echo $cs_theme_option['under_construction_text']?></textarea>
@@ -566,7 +566,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Launch Date</label>
+                <label><?php _e('Launch Date','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="launch_date" name="launch_date" value="<?php if($cs_theme_option['launch_date'] == ''){ echo gmdate("Y-m-d"); }else{ echo $cs_theme_option['launch_date']; } ?>" />
@@ -575,12 +575,12 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Social Network</label>
+                <label><?php _e('Social Network','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="socialnetwork" value="" />
                 <input type="checkbox" class="myClass" name="socialnetwork" <?php if($cs_theme_option['socialnetwork']=="on") echo "checked" ?> />
-                <p>Set social network On/Off</p>
+                <p><?php _e('Set social network On/Off','WeStand');?></p>
               </li>
             </ul>
           </div>
@@ -588,73 +588,74 @@ function theme_option() {
           <!-- Other Settings Start -->
           <div id="tab-other" style="display:none;">
             <div class="theme-header">
-              <h1>Other Setting</h1>
+              <h1><?php _e('Other Setting','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Other Setting</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Other Setting','WeStand');?></h4>
             </div>
             <ul class="form-elements">
                <li class="to-label">
-                <label>Sticky Menu</label>
+                <label><?php _e('Sticky Menu','WeStand');?></label>
                </li>
                <li class="to-field">
                 <input type="hidden" name="header_sticky_menu" value="" />
                 <input type="checkbox" class="myClass" name="header_sticky_menu" <?php if ($cs_theme_option['header_sticky_menu'] == "on") echo "checked" ?> />
-                <p>Set the Main Navigation Sticky On/Off</p>
+                <p><?php _e('Set the Main Navigation Sticky On/Off','WeStand');?></p>
                </li>
               </ul>
               
             <ul class="form-elements">
               <li class="to-label">
-                <label>Responsive</label>
+                <label><?php _e('Responsive','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="responsive" value="" />
                 <input type="checkbox" class="myClass" name="responsive" <?php if($cs_theme_option['responsive']=="on") echo "checked" ?> />
-                <p>Set the responsive On/Off</p>
+                <p><?php _e('Set the responsive On/Off','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Right to Left (RTL)</label>
+                <label><?php _e('Right to Left(RTL)','WeStand');?> </label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="style_rtl" value="" />
                 <input type="checkbox" class="myClass" name="style_rtl" <?php if($cs_theme_option['style_rtl']=="on") echo "checked" ?> />
-                <p>Set the theme style "Right to Left (RTL)" </p>
+                <p><?php _e('Set the theme styl"Right to Left (RTL)"','WeStand');?> </p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Color Switcher</label>
+                <label><?php _e('Color Switcher','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="color_switcher" value="" />
                 <input type="checkbox" class="myClass" name="color_switcher" <?php if($cs_theme_option['color_switcher']=="on") echo "checked" ?> />
-                <p>Set the color switcher for user demo</p>
+                <p><?php _e('Set the color switcher for user demo','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Translation Switcher</label>
+                <label><?php _e('Translation Switcher','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="trans_switcher" value="" />
                 <input type="checkbox" class="myClass" name="trans_switcher" <?php if($cs_theme_option['trans_switcher']=="on") echo "checked" ?> />
-                <p>Set the translation switcher for user demo</p>
+                <p><?php _e('Set the translation switcher for user demo','WeStand');?></p>
               </li>
             </ul>
           </div>
+		  
            <div id="tab-paypalapi" style="display:none;">
            		<div class="theme-header">
-              <h1>Paypal & Payments</h1>
+              <h1><?php _e('Paypal & Payments','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Paypal & Payments Setting</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Paypal & Payments Setting','WeStand');?></h4>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Paypal Email</label>
+                <label><?php _e('Paypal Email','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="paypal_email" name="paypal_email" value="<?php  echo $cs_theme_option['paypal_email'];  ?>" />
@@ -662,7 +663,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Paypal Ipn URL</label>
+                <label><?php _e('Paypal Ipn URL','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="paypal_ipn_url" name="paypal_ipn_url" value="<?php  echo $cs_theme_option['paypal_ipn_url'];  ?>"/>
@@ -670,7 +671,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Currency</label>
+                <label><?php _e('Currency','WeStand');?></label>
               </li>
               <li class="to-field">
              <?php $currency_array = array('U.S. Dollar'=>'USD','Australian Dollar'=>'AUD','Brazilian Real'=>'BRL','Canadian Dollar'=>'CAD','Czech Koruna'=>'CZK','Danish Krone'=>'DKK','Euro'=>'EUR','Hong Kong Dollar'=>'HKD','Hungarian Forint'=>'HUF','Israeli New Sheqel'=>'ILS','Japanese Yen'=>'JPY','Malaysian Ringgit'=>'MYR','Mexican Peso'=>'MXN','Norwegian Krone'=>'NOK','New Zealand Dollar'=>'NZD','Philippine Peso'=>'PHP','Polish Zloty'=>'PLN','Pound Sterling'=>'GBP','Singapore Dollar'=>'SGD','Swedish Krona'=>'SEK','Swiss Franc'=>'CHF','Taiwan New Dollar'=>'TWD','Thai Baht'=>'THB','Turkish Lira'=>'TRY');?>
@@ -683,25 +684,25 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Currency Sign</label>
+                <label><?php _e('Currency Sign','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="paypal_currency_sign" name="paypal_currency_sign" value="<?php if($cs_theme_option['paypal_currency_sign']==''){echo '$';} else { echo $cs_theme_option['paypal_currency_sign'];} ?>"/>
-                <p>Use Currency Sign eg: &pound;,&yen;</p>
+                <p><?php _e('Use Currency Sign','WeStand');?> eg: &pound;,&yen;</p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Paypal Payments</label>
+                <label><?php _e('Paypal Payments','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="paypal_payments" name="paypal_payments" value="<?php if(isset($cs_theme_option['paypal_payments']) && $cs_theme_option['paypal_payments']==''){echo '';} else { echo $cs_theme_option['paypal_payments'];} ?>"/>
-                <p>Please enter payments by comma seperated.</p>
+                <p><?php _e('Please enter payments by comma seperated','WeStand');?>.</p>
               </li>
             </ul>
             <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Model Window Heading</label>
+                        <label><?php _e('Model Window Heading','WeStand');?></label>
                     </li>
                     <li class="to-field">
                     	<textarea name="header_support_button_text_heading3" cols="20" rows="8"><?php if(isset( $cs_theme_option['header_support_button_text_heading3'])){echo $cs_theme_option['header_support_button_text_heading3'];}?></textarea>
@@ -709,17 +710,18 @@ function theme_option() {
                     </li>
                 </ul>
            </div>
+		   
          <div id="tab-donationsbtns" style="display:none;">
          	<div class="theme-header">
-              <h1>Support Buttons</h1>
+              <h1><?php _e('Support Buttons','WeStand');?></h1>
             </div>
             <div class="clear"></div>
             <div class="theme-help">
-                <h4 style="padding-bottom:0px;">Tab 1</h4>
+                <h4 style="padding-bottom:0px;"><?php _e('Tab 1','WeStand');?></h4>
             </div>
             <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Donation Title</label>
+                        <label><?php _e('Donation Title','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_title3" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_title3']))echo $cs_theme_option['header_support_button_title3'];?>" />
@@ -727,17 +729,17 @@ function theme_option() {
                 </ul>
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Fontawsome Icon</label>
+                        <label><?php _e('Fontawsome Icon','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_icon3" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_icon3']))echo $cs_theme_option['header_support_button_icon3'];?>" />
-                        <p>Put Fontawsome icon url. You can get fontawsome icons from <a href='http://fortawesome.github.io/Font-Awesome/icons/'>here</a></p>
+                        <p><?php _e('Put Fontawsome icon url. You can get fontawsome icons from','WeStand');?> <a href='http://fortawesome.github.io/Font-Awesome/icons/'><?php _e('here','WeStand');?></a></p>
                     </li>
                 </ul>
                 
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Button Text</label>
+                        <label><?php _e('Button Text','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_text3" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_text3']))echo $cs_theme_option['header_support_button_text3'];?>" />
@@ -746,7 +748,7 @@ function theme_option() {
                 
                 <ul class="form-elements">
                   <li class="to-label">
-                        <label>Cause</label>
+                        <label><?php _e('Cause','WeStand');?></label>
                     </li>
                     <li class="to-field">
                     	 <select name="header_support_button_url3" class="dropdown">
@@ -776,11 +778,11 @@ function theme_option() {
                 </ul>
                 <div class="clear"></div>
             <div class="theme-help">
-                <h4 style="padding-bottom:0px;">Tab 2</h4>
+                <h4 style="padding-bottom:0px;"><?php _e('Tab 2','WeStand');?></h4>
             </div>
             <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Join Our Movement Title</label>
+                        <label><?php _e('Join Our Movement Title','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_title1" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_title1']))echo $cs_theme_option['header_support_button_title1'];?>" />
@@ -788,16 +790,16 @@ function theme_option() {
                 </ul>
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Fontawsome Icon</label>
+                        <label><?php _e('Fontawsome Icon','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_icon1" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_icon1']))echo $cs_theme_option['header_support_button_icon1'];?>" />
-                        <p>Put Fontawsome icon url. You can get fontawsome icons from <a href='http://fortawesome.github.io/Font-Awesome/icons/'>here</a></p>
+                        <p><?php _e('Put Fontawsome icon url. You can get fontawsome icons from','WeStand');?> <a href='http://fortawesome.github.io/Font-Awesome/icons/'><?php _e('here','WeStand');?></a></p>
                     </li>
                 </ul>
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Button Text</label>
+                        <label><?php _e('Button Text','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_text1" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_text1']))echo $cs_theme_option['header_support_button_text1'];?>" />
@@ -805,7 +807,7 @@ function theme_option() {
                 </ul>
                 <ul class="form-elements">
                   <li class="to-label">
-                        <label>URL</label>
+                        <label><?php _e('URL','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_url1" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_url1']))echo $cs_theme_option['header_support_button_url1'];?>" />
@@ -813,11 +815,11 @@ function theme_option() {
                 </ul>
                 <div class="clear"></div>
                 <div class="theme-help">
-                    <h4 style="padding-bottom:0px;">Tab 3</h4>
+                    <h4 style="padding-bottom:0px;"><?php _e('Tab 3','WeStand');?></h4>
                 </div>
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Become Volunteer Title</label>
+                        <label><?php _e('Become Volunteer Title','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_title2" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_title2']))echo $cs_theme_option['header_support_button_title2'];?>" />
@@ -825,16 +827,16 @@ function theme_option() {
                 </ul>
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Fontawsome Icon</label>
+                        <label><?php _e('Fontawsome Icon','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_icon2" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_icon2']))echo $cs_theme_option['header_support_button_icon2'];?>" />
-                        <p>Put Fontawsome icon url. You can get fontawsome icons from <a href='http://fortawesome.github.io/Font-Awesome/icons/'>here</a></p>
+                        <p><?php _e('Put Fontawsome icon url. You can get fontawsome icons from ','WeStand');?><a href='http://fortawesome.github.io/Font-Awesome/icons/'><?php _e('here','WeStand');?></a></p>
                     </li>
                 </ul>
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Button Text</label>
+                        <label><?php _e('Button Text','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_text2" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_text2']))echo $cs_theme_option['header_support_button_text2'];?>" />
@@ -842,7 +844,7 @@ function theme_option() {
                 </ul>
                 <ul class="form-elements noborder">
                   <li class="to-label">
-                        <label>Button URL</label>
+                        <label><?php _e('Button URL','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="header_support_button_url2" class="txtfield" value="<?php if(isset( $cs_theme_option['header_support_button_url2']))echo $cs_theme_option['header_support_button_url2'];?>" />
@@ -854,28 +856,28 @@ function theme_option() {
           <!-- API Settings Start -->
           <div id="tab-api-key" style="display:none;">
           <div class="theme-header">
-            <h1>API Setting</h1>
+            <h1><?php _e('API Setting','WeStand');?></h1>
           </div>
           <div class="theme-help">
-            <h4 style="padding-bottom:0px;">API Setting</h4>
+            <h4 style="padding-bottom:0px;"><?php _e('API Setting','WeStand');?></h4>
           </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>MailChimp Key</label>
+                <label><?php _e('MailChimp Key','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" id="mailchimp_key" name="mailchimp_key" value="<?php if(isset($cs_theme_option['mailchimp_key'])){ echo $cs_theme_option['mailchimp_key'];}else{ $cs_theme_option['mailchimp_key'] = '';}   ?>" />
-                <p><?php echo __('Enter a valid MailChimp API key here to get started. Once you\'ve done that, you can use the MailChimp Widget from the Widgets menu. You will need to have at least MailChimp list set up before the using the widget.', 'mailchimp-widget'). __(' You can get your mailchimp activation key', 'WeStand') . ' <u><a href="' . get_admin_url() . 'https://login.mailchimp.com/">' . __('here', 'WeStand') . '</a></u>' ?> 				
+                <p><?php echo __('Enter a valid MailChimp API key here to get started. Once you\'ve done that, you can use the MailChimp Widget from the Widgets menu. You will need to have at least MailChimp list set up before the using the widget.', 'WeStand'). __(' You can get your mailchimp activation key', 'WeStand') . ' <u><a href="' . get_admin_url() . 'https://login.mailchimp.com/">' . __('here', 'WeStand') . '</a></u>' ?> 				
 			</p>
               </li>
             </ul>
           <div class="clear"></div>
           <div class="theme-help">
-            <h4 style="padding-bottom:0px;">Twitter API Setting</h4>
+            <h4 style="padding-bottom:0px;"><?php _e('Twitter API Setting','WeStand');?></h4>
           </div>
            <ul class="form-elements">
             <li class="to-label">
-              <label>Consumer Key</label>
+              <label><?php _e('Consumer Key','WeStand');?></label>
             </li>
             <li class="to-field">
               <input type="hidden" name="consumer_key" value="" />
@@ -884,7 +886,7 @@ function theme_option() {
           </ul>
           <ul class="form-elements">
             <li class="to-label">
-              <label>Consumer Secret</label>
+              <label><?php _e('Consumer Secret','WeStand');?></label>
             </li>
             <li class="to-field">
               <input type="hidden" name="consumer_secret" value="" />
@@ -893,7 +895,7 @@ function theme_option() {
           </ul>
           <ul class="form-elements">
             <li class="to-label">
-              <label>Access Token</label>
+              <label><?php _e('Access Token','WeStand');?></label>
             </li>
             <li class="to-field">
               <input type="hidden" name="access_token" value="" />
@@ -902,7 +904,7 @@ function theme_option() {
           </ul>
           <ul class="form-elements">
             <li class="to-label">
-              <label>Access Token Secret</label>
+              <label><?php _e('Access Token Secret','WeStand');?></label>
             </li>
             <li class="to-field">
               <input type="hidden" name="access_token_secret" value="" />
@@ -915,28 +917,28 @@ function theme_option() {
           <!-- API Settings end -->
           <div id="tab-slider" style="display:none;">
             <div class="theme-header">
-              <h1>Home Page Slider</h1>
+              <h1><?php _e('Home Page Slider','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Home Page Slider</h4>
-              <p>Edit home page slider settings</p>
+              <h4><?php _e('Home Page Slider','WeStand');?></h4>
+              <p><?php _e('Edit home page slider settings','WeStand');?></p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Show Slider</label>
+                <label><?php _e('Show Slider','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="show_slider" value="" />
                 <input type="checkbox" class="myClass" name="show_slider" <?php if(isset($cs_theme_option['show_slider']) and $cs_theme_option['show_slider']=="on") echo "checked" ?> />
-                <p>Switch it on if you want to show slider at home page. If you switch it off it will not show slider at home page</p>
+                <p><?php _e('Switch it on if you want to show slider at home page. If you switch it off it will not show slider at home page','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
-                <li class="to-label"><label>Choose SliderType</label></li>
+                <li class="to-label"><label><?php _e('Choose SliderType','WeStand');?></label></li>
                 <li class="to-field">
                     <select name="slider_type" class="dropdown" onchange="javascript:home_slider_toggle(this.value)">
-                         <option <?php if(isset($cs_theme_option['slider_type']) and $cs_theme_option['slider_type']=="post_slider"){echo "selected";}?> value="post_slider" >Post Slider</option>
-                         <option <?php if(isset($cs_theme_option['slider_type']) and $cs_theme_option['slider_type']=="custom"){echo "selected";}?> value="custom" >Custom Slider</option>
+                         <option <?php if(isset($cs_theme_option['slider_type']) and $cs_theme_option['slider_type']=="post_slider"){echo "selected";}?> value="post_slider" ><?php _e('Post Slider','WeStand');?></option>
+                         <option <?php if(isset($cs_theme_option['slider_type']) and $cs_theme_option['slider_type']=="custom"){echo "selected";}?> value="custom" ><?php _e('Custom Slider','WeStand');?></option>
                     </select>
                 </li>
             </ul>
@@ -945,12 +947,12 @@ function theme_option() {
             <div class="form-elements" id="post_sliders"  style=" <?php if($cs_theme_option['slider_type'] <> "post_slider")echo "display:none"; else "display:inline"; ?>">
             <ul class="form-elements">
                   <li class="to-label">
-                    <label>Select Post Category For posts</label>
+                    <label><?php _e('Select Post Category For posts','WeStand');?></label>
                   </li>
                   <li class="to-field">
                     <select name="cs_slider_blog_cat" class="dropdown">
         
-                            <option value="0">-- Select Category --</option>
+                            <option value="0"><?php _e('-- Select Category --','WeStand');?></option>
         
                             <?php show_all_cats('', '', $cs_theme_option['cs_slider_blog_cat'], "category");?>
         
@@ -960,7 +962,7 @@ function theme_option() {
                </ul>
                <ul class="form-elements">
                   <li class="to-label">
-                        <label>No of Posts</label>
+                        <label><?php _e('No of Posts','WeStand');?></label>
                     </li>
                     <li class="to-field">
                         <input type="text" name="slider_no_posts" class="txtfield" value="<?php if(isset( $cs_theme_option['slider_no_posts']))echo $cs_theme_option['slider_no_posts'];?>" />
@@ -968,12 +970,12 @@ function theme_option() {
                 </ul>
                 <ul class="form-elements">
               <li class="to-label">
-                <label>Show Slider Pagination</label>
+                <label><?php _e('Show Slider Pagination','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="show_slider_pagination" value="" />
                 <input type="checkbox" class="myClass" name="show_slider_pagination" <?php if(isset($cs_theme_option['show_slider_pagination']) and $cs_theme_option['show_slider_pagination']=="on") echo "checked" ?> />
-                <p>Switch it on if you want to show slider pagination at home page. If you switch it off it will not show slider at home page</p>
+                <p><?php _e('Switch it on if you want to show slider pagination at home page. If you switch it off it will not show slider at home page','WeStand');?></p>
               </li>
             </ul>
             </div>
@@ -981,11 +983,11 @@ function theme_option() {
             
             <ul class="form-elements" id="custom_slider" style=" <?php if(isset($cs_theme_option['slider_type']) and $cs_theme_option['slider_type'] <> "custom")echo "display:none"; else "display:inline"; ?>" >
                 <li class="to-label">
-                    <label>Custom Slider Short Code</label>
+                    <label><?php _e('Custom Slider Short Code','WeStand');?></label>
                 </li>
                 <li class="to-field">
                     <input type="text" name="slider_id" class="txtfield" value="<?php if(isset( $cs_theme_option['slider_id']))echo $cs_theme_option['slider_id'];?>" />
-                    <p><p>Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from <a href="http://codecanyon.net/" target="_blank">Codecanyon</a>. But its optional</p></p>
+                    <p>><?php _e('Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from','WeStand');?> <a href="http://codecanyon.net/" target="_blank"><?php _e('Codecanyon','WeStand');?></a>.<?php _e('But its optional','WeStand');?> </p>
                 </li>
             </ul>
             
@@ -994,32 +996,32 @@ function theme_option() {
           
           <div id="tab-manage-sidebars" style="display:none;">
             <div class="theme-header">
-              <h1>Manage Sidebars</h1>
+              <h1><?php _e('Manage Sidebars','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Manage Sidebars</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Manage Sidebars','WeStand');?></h4>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Sidebar Name</label>
+                <label><?php _e('Sidebar Name','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input class="small" type="text" name="sidebar_input" id="sidebar_input" style="width:420px;" />
                 <input type="button" value="Add Sidebar" onclick="javascript:add_sidebar()" />
-                <p>Please enter the desired title of sidebar.</p>
+                <p><?php _e('Please enter the desired title of sidebar','WeStand');?></p>
               </li>
             </ul>
             <div class="clear"></div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Already Added Sidebars</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Already Added Sidebars','WeStand');?></h4>
               <div class="clear"></div>
             </div>
             <div class="boxes">
               <table class="to-table" border="0" cellspacing="0">
                 <thead>
                   <tr>
-                    <th>Sider Bar Name</th>
-                    <th class="centr">Actions</th>
+                    <th><?php _e('Sider Bar Name','WeStand');?></th>
+                    <th class="centr"><?php _e('Actions','WeStand');?></th>
                   </tr>
                 </thead>
                 <tbody id="sidebar_area">
@@ -1039,66 +1041,67 @@ function theme_option() {
               </table>
             </div>
           </div>
+		  
           <div id="tab-flex-slider" style="display:none;">
             <div class="theme-header">
-              <h1>Flex Slider</h1>
+              <h1><?php _e('Flex Slider','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Flex Slider Options</h4>
-              <p>Configure Flex Slider setting</p>
+              <h4><?php _e('Flex Slider Options','WeStand');?></h4>
+              <p><?php _e('Configure Flex Slider setting','WeStand');?></p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Effects</label>
+                <label><?php _e('Effects','WeStand');?></label>
               </li>
               <li class="to-field">
                 <select class="dropdown" name="flex_effect">
-                  <option <?php if(isset($cs_theme_option['flex_effect']) and $cs_theme_option['flex_effect']=="fade"){echo "selected";}?> value="fade" >Fade</option>
-                  <option <?php if(isset($cs_theme_option['flex_effect']) and $cs_theme_option['flex_effect']=="slide"){echo "selected";}?> value="slide" >Slide</option>
+                  <option <?php if(isset($cs_theme_option['flex_effect']) and $cs_theme_option['flex_effect']=="fade"){echo "selected";}?> value="fade" ><?php _e('Fade','WeStand');?></option>
+                  <option <?php if(isset($cs_theme_option['flex_effect']) and $cs_theme_option['flex_effect']=="slide"){echo "selected";}?> value="slide" ><?php _e('Slide','WeStand');?></option>
                 </select>
-                <p>Please select Effect for flex Slider.</p>
+                <p><?php _e('Please select Effect for flex Slider','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Auto Play</label>
+                <label><?php _e('Auto Play','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="hidden" name="flex_auto_play" value="" />
                 <input type="checkbox" name="flex_auto_play" <?php if (isset($cs_theme_option['flex_auto_play']) and $cs_theme_option['flex_auto_play'] == "on" ){ echo "checked";}?> class="myClass" />
-                <p>If true, the slideshow will start running on page load</p>
+                <p><?php _e('If true, the slideshow will start running on page load','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Animation Speed</label>
+                <label><?php _e('Animation Speed','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="flex_animation_speed" size="5" class="{validate:{required:true}} bar" value="<?php if (isset($cs_theme_option['flex_animation_speed'])) echo $cs_theme_option['flex_animation_speed']?>" />
-                <p>How long the slideshow transition takes (in milliseconds)</p>
+                <p><?php _e('How long the slideshow transition takes (in milliseconds)','WeStand');?></p>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Pause Time</label>
+                <label><?php _e('Pause Time','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="flex_pause_time" size="5" class="{validate:{required:true}} bar" value="<?php if (isset($cs_theme_option['flex_pause_time'])) echo $cs_theme_option['flex_pause_time']?>" />
-                <p>Resume slideshow after user interaction (in milliseconds)</p>
+                <p><?php _e('Resume slideshow after user interaction (in milliseconds)','WeStand');?></p>
               </li>
             </ul>
           </div>
           <div id="tab-social-network" style="display:none;">
             <div class="theme-header">
-              <h1>Social Settings</h1>
+              <h1><?php _e('Social Settings','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Social Network</h4>
-              <p>Edit Social Network</p>
+              <h4><?php _e('Social Network','WeStand');?></h4>
+              <p><?php _e('Edit Social Network','WeStand');?></p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Section Title</label>
+                <label><?php _e('Section Title','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="social_net_title" value="<?php if (isset($cs_theme_option['social_net_title'])) echo $cs_theme_option['social_net_title']?>" />
@@ -1106,7 +1109,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Icon Path</label>
+                <label><?php _e('Icon Path','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input id="social_net_icon_path_input" type="text" class="small" onblur="javascript:update_image('social_net_icon_path_input_img_div')" />
@@ -1114,28 +1117,28 @@ function theme_option() {
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Awesome Font</label>
+                <label><?php _e('Awesome Font','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input class="small" type="text" id="social_net_awesome_input" style="width:420px;" />
-                <p>Put Awesome Font Code like "icon-facebook".</p>
+                <p><?php _e('Put Awesome Font Code like "icon-facebook".','WeStand');?></p>
               </li>
               
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>URL</label>
+                <label><?php _e('URL','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input class="small" type="text" id="social_net_url_input" style="width:420px;" />
-                <p>Please enter full URL.</p>
+                <p><?php _e('Please enter full URL','WeStand');?></p>
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Title</label>
+                <label><?php _e('Title','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input class="small" type="text" id="social_net_tooltip_input" style="width:420px;" />
-                <p>Please enter text for icon tooltip.</p>
+                <p><?php _e('Please enter text for icon tooltip','WeStand');?></p>
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label"></li>
@@ -1145,16 +1148,16 @@ function theme_option() {
             </ul>
             <div class="clear"></div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Already Added Social Icons</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Already Added Social Icons','WeStand');?></h4>
               <div class="clear"></div>
             </div>
             <div class="boxes">
               <table class="to-table" border="0" cellspacing="0">
                 <thead>
                   <tr>
-                    <th>Icon Path</th>
-                    <th>URL</th>
-                    <th class="centr">Actions</th>
+                    <th><?php _e('Icon Path','WeStand');?></th>
+                    <th><?php _e('URL','WeStand');?></th>
+                    <th class="centr"><?php _e('Actions','WeStand');?></th>
                   </tr>
                 </thead>
                 <tbody id="social_network_area">
@@ -1186,7 +1189,7 @@ function theme_option() {
                   <tr id="<?php echo $cs_counter_social_network;?>" style="display:none">
                     <td colspan="3"><ul class="form-elements">
                         <li class="to-label">
-                          <label>Icon Path</label>
+                          <label><?php _e('Icon Path','WeStand');?></label>
                         </li>
                         <li class="to-field">
                           <input id="social_net_icon_path<?php echo $cs_counter_social_network?>" name="social_net_icon_path[]" value="<?php echo $cs_theme_option['social_net_icon_path'][$i]?>" type="text" class="small" />
@@ -1194,19 +1197,19 @@ function theme_option() {
                         <li><a onclick="cs_toggle('<?php echo $cs_counter_social_network?>')"><img src="<?php echo get_template_directory_uri()?>/images/admin/close-red.png" /></a></li>
                         <li class="full">&nbsp;</li>
                         <li class="to-label">
-                          <label>Awesome Font</label>
+                          <label><?php _e('Awesome Font','WeStand');?></label>
                         </li>
                         <li class="to-field">
                           <input class="small" type="text" id="social_net_awesome" name="social_net_awesome[]" value="<?php echo $cs_theme_option['social_net_awesome'][$i]?>" style="width:420px;" />
-                          <p>Put Awesome Font Code like "icon-flag".</p>
+                          <p><?php _e('Put Awesome Font Code like "icon-flag".','WeStand');?></p>
                         </li>
                         <li class="full">&nbsp;</li>
                         <li class="to-label">
-                          <label>URL</label>
+                          <label><?php _e('URL','WeStand');?></label>
                         </li>
                         <li class="to-field">
                           <input class="small" type="text" id="social_net_url" name="social_net_url[]" value="<?php echo $val?>" style="width:420px;" />
-                          <p>Please enter full URL.</p>
+                          <p><?php _e('Please enter full URL','WeStand');?></p>
                         </li>
                         <li class="full">&nbsp;</li>
                         <li class="to-label">
@@ -1214,7 +1217,7 @@ function theme_option() {
                         </li>
                         <li class="to-field">
                           <input class="small" type="text" id="social_net_tooltip" name="social_net_tooltip[]" value="<?php echo $cs_theme_option['social_net_tooltip'][$i]?>" style="width:420px;" />
-                          <p>Please enter text for icon tooltip.</p>
+                          <p><?php _e('Please enter text for icon tooltip','WeStand');?></p>
                         </li>
                       </ul></td>
                   </tr>
@@ -1227,28 +1230,29 @@ function theme_option() {
               </table>
             </div>
           </div>
+		  
           <div id="tab-default-pages" style="display:none;">
             <div class="theme-header">
-              <h1>Default Pages</h1>
+              <h1><?php _e('Default Pages','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Default Pages Settings</h4>
-              <p>Manage Default Pages (Archive, Search, Categories, Tags and Author Pages)</p>
+              <h4><?php _e('Default Pages Settings','WeStand');?></h4>
+              <p><?php _e('Manage Default Pages (Archive, Search, Categories, Tags and Author Pages)','WeStand');?></p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Pagination</label>
+                <label><?php _e('Pagination','WeStand');?></label>
               </li>
               <li class="to-field">
                 <select name="pagination" class="dropdown" onchange="cs_toggle('record_per_page')">
-                  <option <?php if(isset($cs_theme_option['pagination']) and $cs_theme_option['pagination']=="Show Pagination")echo "selected";?> >Show Pagination</option>
-                  <option <?php if(isset($cs_theme_option['pagination']) and $cs_theme_option['pagination']=="Single Page")echo "selected";?> >Single Page</option>
+                  <option <?php if(isset($cs_theme_option['pagination']) and $cs_theme_option['pagination']=="Show Pagination")echo "selected";?> ><?php _e('Show Pagination','WeStand');?></option>
+                  <option <?php if(isset($cs_theme_option['pagination']) and $cs_theme_option['pagination']=="Single Page")echo "selected";?> ><?php _e('Single Page','WeStand');?></option>
                 </select>
               </li>
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Exerpt Length</label>
+                <label><?php _e('Exerpt Length','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="default_excerpt_length" value="<?php if(isset($cs_theme_option['default_excerpt_length'])) echo $cs_theme_option['default_excerpt_length']?>" />
@@ -1289,29 +1293,30 @@ function theme_option() {
 				  meta_layout('default');
 		  ?>
           </div>
+		  
           <div id="tab-upload-languages" style="display:none;">
             <div class="theme-header">
-              <h1>Upload New Language</h1>
+              <h1><?php _e('Upload New Language','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Upload New Language</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Upload New Language','WeStand');?></h4>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Upload Language (MO File)</label>
+                <label><?php _e('Upload Language (MO File)','WeStand');?></label>
               </li>
               <li class="to-field">
                 <div class="fileinputs">
                   <input type="file" class="file" size="78" name="mofile" id="mofile" />
                   <div class="fakefile">
                     <input type="text" />
-                    <button>Browse</button>
+                    <button><?php _e('Browse','WeStand');?></button>
                   </div>
                 </div>
-                <p>Please upload new language file (MO format only). It will be uploaded in your theme's languages folder. </p>
-                <p>Download MO files from <a target="_blank" href="http://translate.wordpress.org/projects/wp/">http://translate.wordpress.org/projects/wp/</a> </p>
+                <p><?php _e('Please upload new language file (MO format only). It will be uploaded in your themes languages folder.','WeStand');?> </p>
+                <p><?php _e('Download MO files from','WeStand');?> <a target="_blank" href="http://translate.wordpress.org/projects/wp/">http://translate.wordpress.org/projects/wp/</a> </p>
                 <p>
-                  <button type="button" id="upload_btn">Upload Files!</button>
+                  <button type="button" id="upload_btn"><?php _e('Upload Files!','WeStand');?></button>
                 </p>
               </li>
             </ul>
@@ -1319,7 +1324,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Already Uploaded Languages</label>
+                <label><?php _e('Already Uploaded Languages','WeStand');?></label>
               </li>
               <li class="to-field"> <strong>
                 <?php
@@ -1331,55 +1336,64 @@ function theme_option() {
 					}
 				?>
                 </strong>
-                <p>Please copy the language name, open config.php file, find WPLANG constant and set its value by replacing the language name. </p>
+				</li>
+                <p><?php _e('Please copy the language name, open config.php file, find WPLANG constant and set its value by replacing the language name.','WeStand');?> </p>
              	
-               <p><strong>Language Translations</strong><br/> All of our Themes are able to be translated into any language. The process of translating the theme is a user responsibility. The following instructions are given as guidance.</p>
+               <p><strong><?php _e('Language Translations','WeStand');?></strong><br/><?php _e('All of our Themes are able to be translated into any language. The process of translating the theme is a user responsibility. The following instructions are given as guidance.','WeStand');?> </p>
                <ul class="lnag-listing">
-               <li>
-                1. Open wp-config.php and replace this: define ('WPLANG', ''); with this (subsitute the language string (bg_BG) with your own!): define ('WPLANG', 'bg_BG');
+              	
+				<li>
+                <?php _e('1. Open wp-config.php and replace this: define','WeStand');?>('WPLANG', '');<?php _e('with this (subsitute the language string (bg_BG) with your own!): define','WeStand');?>('WPLANG', 'bg_BG');
+                </li>
+				
+				
+				
+                <li>
+               <?php _e('2. Download and install POEDIT','WeStand');?> 
                 </li>
                 <li>
-                2. Download and install POEDIT
+               <?php _e('3. Connect to your site -> open your theme/languages directory','WeStand');?> 
                 </li>
                 <li>
-                3. Connect to your site -> open your theme/languages directory
+               <?php _e('4. Download the default.po file and open it with POEDIT.','WeStand');?> 
                 </li>
                 <li>
-                4. Download the default.po file and open it with POEDIT.
+               <?php _e('5. Translate file and save it as bg_BG (the file name must match with the string you inserted into wp-config.php)','WeStand');?> 
                 </li>
                 <li>
-                5. Translate file and save it as bg_BG (the file name must match with the string you inserted into wp-config.php)
+               <?php _e('6. Two files will be generated after save. bg_BG.po and bg_BG.mo','WeStand');?> 
                 </li>
                 <li>
-                6. Two files will be generated after save. bg_BG.po and bg_BG.mo
-                </li>
-                <li>
-                7. Upload the .mo and .po files into wp-content/themes/your-theme/languages folder
+              <?php _e(' 7. Upload the .mo and .po files into wp-content/themes/your-theme/languages folder','WeStand');?> 
                 </li>
                	
                 
               </li>
             </ul>
+			</ul>
+			</ul>
           </div>
+		  
           <div id="tab-upload-languages" style="display:none;">
             <div class="theme-header">
-              <h1>Manage Languages</h1>
+              <h1><?php _e('Manage Languages','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4>Upload Languages</h4>
-              <p>Upload new language.</p>
+              <h4><?php _e('Upload Languages','WeStand');?></h4>
+              <p><?php _e('Upload new language','WeStand');?></p>
             </div>
           </div>
+		  
           <div id="tab-cause-translation" style="display:none;">
             <div class="theme-header">
-              <h1>Cause Translation</h1>
+              <h1><?php _e('Cause Translation','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Cause Translation</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Cause Translation','WeStand');?></h4>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Raised</label>
+                <label><?php _e('Raised','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="cause_raised" value="<?php echo $cs_theme_option['cause_raised']?>" />
@@ -1387,7 +1401,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>End Date</label>
+                <label><?php _e('End Date','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="cause_end_date" value="<?php echo $cs_theme_option['cause_end_date']?>" />
@@ -1395,7 +1409,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Goal</label>
+                <label><?php _e('Goal','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="cause_goal" value="<?php echo $cs_theme_option['cause_goal']?>" />
@@ -1403,7 +1417,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Close</label>
+                <label><?php _e('Close','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="cause_status" value="<?php echo $cs_theme_option['cause_status']?>" />
@@ -1411,7 +1425,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Donors</label>
+                <label><?php _e('Donors','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="cause_donors" value="<?php echo $cs_theme_option['cause_donors']?>" />
@@ -1419,7 +1433,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Donation</label>
+                <label><?php _e('Donation','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="cause_donation" value="<?php echo $cs_theme_option['cause_donation']?>" />
@@ -1427,7 +1441,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Donate Now</label>
+                <label><?php _e('Donate Now','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="cause_donate" value="<?php echo $cs_theme_option['cause_donate']?>" />
@@ -1439,14 +1453,14 @@ function theme_option() {
           
           <div id="tab-contact-translation" style="display:none;">
             <div class="theme-header">
-              <h1>Contact Translation</h1>
+              <h1><?php _e('Contact Translation','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Contact Translation</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Contact Translation','WeStand');?></h4>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>First Name</label>
+                <label><?php _e('First Name','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="res_first_name" value="<?php if(isset($cs_theme_option['res_first_name'])) echo $cs_theme_option['res_first_name']?>" />
@@ -1454,7 +1468,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Last Name</label>
+                <label><?php _e('Last Name','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="res_last_name" value="<?php if(isset($cs_theme_option['res_last_name'])) echo $cs_theme_option['res_last_name']?>" />
@@ -1462,7 +1476,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Subject</label>
+                <label><?php _e('Subject','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_subject" value="<?php if(isset($cs_theme_option['trans_subject'])) echo $cs_theme_option['trans_subject']?>" />
@@ -1470,7 +1484,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Message</label>
+                <label><?php _e('Message','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_message" value="<?php if(isset($cs_theme_option['trans_message'])) echo $cs_theme_option['trans_message']?>" />
@@ -1479,14 +1493,14 @@ function theme_option() {
           </div>
           <div id="tab-other-translation" style="display:none;">
             <div class="theme-header">
-              <h1>Other Translation</h1>
+              <h1><?php _e('Other Translation','WeStand');?></h1>
             </div>
             <div class="theme-help">
-              <h4 style="padding-bottom:0px;">Other Translation</h4>
+              <h4 style="padding-bottom:0px;"><?php _e('Other Translation','WeStand');?></h4>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>404 Content</label>
+                <label><?php _e('404 Content','WeStand');?></label>
               </li>
               <li class="to-field">
                 <textarea name="trans_content_404"><?php if(isset($cs_theme_option['trans_content_404'])) echo $cs_theme_option['trans_content_404']?></textarea>
@@ -1494,7 +1508,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Share Now</label>
+                <label><?php _e('Share Now','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_share_this_post" value="<?php if(isset($cs_theme_option['trans_share_this_post'])) echo $cs_theme_option['trans_share_this_post']?>" />
@@ -1502,7 +1516,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Current Page</label>
+                <label><?php _e('Current Page','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_current" value="<?php if(isset($cs_theme_option['trans_current'])) echo $cs_theme_option['trans_current']?>" />
@@ -1510,7 +1524,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Likes</label>
+                <label><?php _e('Likes','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_likes" value="<?php if(isset($cs_theme_option['trans_likes'])) echo $cs_theme_option['trans_likes']?>" />
@@ -1519,7 +1533,7 @@ function theme_option() {
             
             <ul class="form-elements">
               <li class="to-label">
-                <label>Sort By</label>
+                <label><?php _e('Sort By','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_sortby" value="<?php if(isset($cs_theme_option['trans_sortby'])) echo $cs_theme_option['trans_sortby']?>" />
@@ -1527,7 +1541,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Featured</label>
+                <label><?php _e('Featured','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_featured" value="<?php if(isset($cs_theme_option['trans_featured'])) echo $cs_theme_option['trans_featured']?>" />
@@ -1535,7 +1549,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Read More</label>
+                <label><?php _e('Read More','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_read_more" value="<?php if(isset($cs_theme_option['trans_read_more'])) echo $cs_theme_option['trans_read_more']?>" />
@@ -1543,7 +1557,7 @@ function theme_option() {
             </ul>
             <ul class="form-elements">
               <li class="to-label">
-                <label>View All</label>
+                <label><?php _e('View All','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="text" name="trans_view_all" value="<?php if(isset($cs_theme_option['trans_view_all'])) echo $cs_theme_option['trans_view_all']?>" />
@@ -1554,15 +1568,15 @@ function theme_option() {
           <!-- import export Start -->
           <div id="tab-import-export-backup" style="display:none;">
             <div class="theme-header">
-              <h1>Backup Options</h1>
+              <h1><?php _e('Backup Options','WeStand');?></h1>
             </div>
            <div class="theme-help">
-              <h4>Backup Options</h4>
-              <p>Theme Options Backup and restore settings</p>
+              <h4><?php _e('Backup Options','WeStand');?></h4>
+              <p><?php _e('Theme Options Backup and restore settings','WeStand');?></p>
             </div>
             <ul class="form-elements">
               <li class="to-label">
-                <label>Last Backup Taken on</label>
+                <label><?php _e('Last Backup Taken on','WeStand');?></label>
               </li>
               <li class="to-field"> <strong><span id="last_backup_taken">
                 <?php 
@@ -1574,37 +1588,37 @@ function theme_option() {
                 </span></strong> </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Take Backup</label>
+                <label><?php _e('Take Backup','WeStand');?></label>
               </li>
               <li class="to-field">
                 <input type="button" value="Take Backup" onclick="cs_to_backup('<?php echo admin_url()?>', '<?php echo get_template_directory_uri()?>')" />
-                <p>Take the Backup of your current theme options, it will replace the old backup if you have already taken.</p>
+                <p><?php _e('Take the Backup of your current theme options, it will replace the old backup if you have already taken','WeStand');?></p>
               </li>
               <li class="full">&nbsp;</li>
               <li class="to-label">
-                <label>Restore Backup</label>
+                <label><?php _e('Restore Backup','WeStand');?></label>
               </li>
               <li class="to-field">
-                <input type="button" value="Restore Backup" onclick="cs_to_backup_restore('<?php echo admin_url()?>', '<?php echo get_template_directory_uri()?>')" />
-                <p>Restore your last backup taken (It will be replaced on your curernt theme options).</p>
+                <input type="button" value="Restore Backup" onclick="cs_to_backup_restore('<?php echo admin_url()?>','<?php echo get_template_directory_uri()?>')" />
+                <p><?php _e('Restore your last backup taken (It will be replaced on your curernt theme options)','WeStand');?>.</p>
               </li>
             </ul>
             <ul class="form-elements">
             <li class="to-label">
-              <label>Current Theme Option Data</label>
+              <label><?php _e('Current Theme Option Data','WeStand');?></label>
             </li>
             <li class="to-field">
                 <textarea id="theme_option_data"  readonly="readonly" onclick="this.select()"><?php echo base64_encode(serialize($cs_theme_option)); ?></textarea>
-              <p>You can copy your current theme data in a text file and import it later by replacing the above text.</p>
+              <p><?php _e('You can copy your current theme data in a text file and import it later by replacing the above text','WeStand');?>.</p>
             </li>
           </ul>
           <ul class="form-elements">
             <li class="to-label">
-              <label>Import Theme Option Data</label>
+              <label><?php _e('Import Theme Option Data','WeStand');?></label>
             </li>
             <li class="to-field">
-                <textarea id="theme_option_data_import" name="theme_option_data_import"></textarea>
-              <p>You can paste theme option backup data.</p>
+              <textarea id="theme_option_data_import" name="theme_option_data_import"></textarea>
+              <p><?php _e('You can paste theme option backup data','WeStand');?>.</p>
               <p><input type="button" value="Import This Data" onclick="cs_to_import_export_option('<?php echo admin_url()?>', '<?php echo get_template_directory_uri()?>')" /></p>
             </li>
           </ul>
@@ -1617,7 +1631,7 @@ function theme_option() {
         <!-- Right Column End --> 
       </div>
       <div class="footer">
-       <input type="button" value="Reset Option" class="bottom_btn_reset" onclick="cs_to_restore_default('<?php echo admin_url()?>', '<?php echo get_template_directory_uri()?>')" />
+       	<input type="button" value="Reset Option" class="bottom_btn_reset" onclick="cs_to_restore_default('<?php echo admin_url()?>', '<?php echo get_template_directory_uri()?>')" />
          
         <input type="submit" id="submit_btn" name="submit_btn" class="bottom_btn_save" value="Save All Settings" />
         <input type="hidden" name="action" value="theme_option_save" />
@@ -1819,7 +1833,7 @@ function theme_option() {
 		}());
     </script>
      <script type="text/javascript">
-			  jQuery(document).ready(function($) {
+			  jQuery(document).ready(function($){
 				jQuery("#colorpickerwrapp span.col-box").live("click",function(event) {
 					var a = jQuery(this).data('color');
 					jQuery("#cs_custom_color_style").val(a);

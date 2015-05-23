@@ -1,3 +1,15 @@
+@media (max-width: 1199px) {
+	#sliderbanner .caption{
+		margin-left:464px;
+	}
+}
+@media (max-width: 990px) {
+	#sliderbanner .caption{
+		margin-left:0;
+		left: 30px;
+		right: auto;
+	}
+}
 /*============		Media 768Px Start	============ */
 @media (min-width: 768px) and (max-width: 991px) {
 	.container{
@@ -49,7 +61,6 @@
 	}
 	#sliderbanner .caption{
 		margin-left:-369px;
-		top:0;
 	}
 	#sliderbanner .caption h2{
 		font-size:19px;
@@ -98,8 +109,14 @@
 	nav.navigation ul li:last-child{
 		border-bottom: none;
 	}
+	.navigation > ul > li{
+		margin:0;
+	}
+	.navigation > #menus > li > a{
+		color: #fff !important;
+	}
 	.navigation > ul > li > a{
-		color: #fff;
+		color: #fff !important;
 		padding: 0px 0px;
 		height: auto;
 		float: left;
@@ -107,6 +124,12 @@
 		border: none;
 		position: relative;
 		font-size: 14px;
+	}
+	::i-block-chrome, .navigation ul li > ul {
+		top: 0px;
+	}
+	.navigation ul ul ul {
+		display: block;
 	}
 	.navigation ul ul{
 		position: inherit;
@@ -223,6 +246,9 @@
 		width:100%;
 		padding:0;
 	}
+	#header.header_fixed{
+		position:static !important;
+	}
 }
 
 /*============		Media 420Px Start	============ */
@@ -242,6 +268,15 @@
 		position: relative !important;
 		background-color: #000;
 	}
+	#header.header_fixed{
+		position:static !important;
+	}
+	.navigation ul ul ul {
+		display: block;
+	}
+	.navigation > ul > li{
+		margin:0;
+	}
 	#header + div{
 		height:  auto !important;
 	}
@@ -258,6 +293,7 @@
 	.right-header{
 		float:none;
 		width:100%;
+		clear: both;
 	}
 	.element_size_67, .element_size_33, .element_size_25, .element_size_50, .element_size_75,
 	.navigation{
@@ -265,6 +301,9 @@
 	}
 	.right-header .btn{
 		width:62%;
+		float:none;
+		display: block;
+		margin: 0 auto;
 	}
 	.right-header .btn{
 		border-radius:4px;
@@ -337,6 +376,9 @@
 	}
 	.team-shortcode article{
 		margin-bottom:4%;
+	}
+	::i-block-chrome, .navigation ul li > ul {
+		top: 0px;
 	}
 	.team-shortcode article .text{
 		min-height:170px;
@@ -583,19 +625,7 @@
 		font-size:20px;
 	}
 	#sliderbanner .caption{
-		display:block;
-	}
-	#sliderbanner .caption h2 {
-	 font-size:12px;
-	 line-height: 18px;
-	 margin-bottom: 8px;
-	}
-	#sliderbanner .caption {
-	 margin-left:-155px;
-	 width: 300px;
-	}
-	#sliderbanner .caption P {
-	 display: none;
+		display:none;
 	}
 	.cs-blog.blog-grid.blog-carousel-view article{
 		margin-left:0;
@@ -675,8 +705,11 @@
 	nav.navigation ul li:last-child{
 		border-bottom: none;
 	}
+	.navigation > #menus > li > a{
+		color: #fff !important;
+	}
 	.navigation > ul > li > a{
-		color: #fff;
+		color: #fff !important;
 		padding: 0px 0px;
 		height: auto;
 		float: left;
@@ -686,22 +719,25 @@
 		font-size: 14px;
 	}
 	.navigation ul ul{
-		position: inherit;
-		left: 0px;
-		top: auto;
-		margin: 0px;
+		position: relative;
+		margin: 0;
 		visibility: visible;
 		opacity: 1;
-		float: left;
 		width: 100%;
-		padding: 0px 0px 0px 20px;
+		padding: 0 0 10px 20px;
+		left:0;
+		top:0;
 		background-color: transparent;
 		box-shadow: none;
-		-webkit-transform: translateY(0);
-		   -moz-transform: translateY(0);
-		    -ms-transform: translateY(0);
-		     -o-transform: translateY(0);
-		        transform: translateY(0);
+		-webkit-transform: none;
+		   -moz-transform: none;
+			-ms-transform: none;
+			 -o-transform: none;
+				transform: none;
+	}
+	.navigation ul li:hover > ul{
+		transform:  none ;
+		margin:0;
 	}
 	.navigation ul ul li a{
 		color: #fff;
@@ -759,7 +795,7 @@
 		margin-left:0px;
 	}
 	.archive-page .blog_text{
-		margin-left:0px;
+		margin:0px;
 		padding-left:10px;
 	}
 	.archive-page article figure{
@@ -865,6 +901,9 @@
 	}
 	.wrapper_boxed .parallax-fullwidth {
 	    width: 133% !important;
+	}
+	div.pp_default .pp_expand{
+		display: none !important;
 	}
 }
 
@@ -1033,13 +1072,15 @@
 	.fc-view.fc-view-month.fc-grid > div {
     	display: none;
 	}
-	#sliderbanner .caption{display: block;}
-	#sliderbanner .caption:before, #sliderbanner .caption:after{
-	
-    width: 270px
-	
+	.navigation > ul > li{
+		margin:0;
 	}
-	
+	.donar-table ul li{ text-align: center ;}
+	.donar-table ul li p, .donar-table ul li p a{
+		 float: none;
+		 display: block;
+		 text-align: center;
+	}
 }
 /*============	   Media 940Px Start	============ */
 @media (min-width: 992px) and (max-width: 1199px){

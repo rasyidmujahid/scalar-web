@@ -21,7 +21,7 @@
         this.getPropertyValue = function(prop) {
           var re = /(\-([a-z]){1})/g;
           if (prop === "float") {
-            prop = "styleFloat";
+            	prop = "styleFloat";
           }
           if (re.test(prop)) {
             prop = prop.replace(re, function () {

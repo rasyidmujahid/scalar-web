@@ -45,7 +45,7 @@ cs_enqueue_validation_script();
     </script>
     <div class="element_size_<?php echo $cs_node->contact_element_size; ?>">
     	<header class="cs-heading-title">
-            <h2 class="cs-section-title">Send us a message</h2>
+            <h2 class="cs-section-title"><?php _e('Send us a message', 'WeStand'); ?></h2>
         </header>
         <div class="inputforms respond">
             <div class="textsection">

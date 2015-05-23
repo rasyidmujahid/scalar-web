@@ -13,21 +13,21 @@ function cs_page_bulider( $post ) {
                 <div class="add-widget">
                     <span class="addwidget">+ Add Page Elements</span>
                     <div class="widgets-list">
-                        <a href="javascript:ajaxSubmit('cs_pb_blog')">Blog</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_cause')">Cause</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_column')">Column</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_team')">Team</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_contact')">Contact</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_event')">Events</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_gallery')">Gallery</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_tabs')">Tabs</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_video')">Video</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_accordion')">Accordion</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_quote')">Quote</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_services')">Services</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_map')">Map</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_slider')">Slider</a>
-                        <a href="javascript:ajaxSubmit('cs_pb_parallax')">FullWidth</a>
+                        <a href="javascript:ajaxSubmit('cs_pb_blog')"><?php _e('Blog','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_cause')"><?php _e('Cause','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_column')"><?php _e('Column','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_team')"><?php _e('Team','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_contact')"><?php _e('Contact','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_event')"><?php _e('Events','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_gallery')"><?php _e('Gallery','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_tabs')"><?php _e('Tabs','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_video')"><?php _e('Video','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_accordion')"><?php _e('Accordion','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_quote')"><?php _e('Quote','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_services')"><?php _e('Services','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_map')"><?php _e('Map','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_slider')"><?php _e('Slider','WeStand');?></a>
+                        <a href="javascript:ajaxSubmit('cs_pb_parallax')"><?php _e('FullWidth','WeStand');?></a>
                      </div>
                 </div>
             </div>
@@ -84,13 +84,13 @@ function cs_page_bulider( $post ) {
             <div class="elementhidden">
                 
                 <ul class="form-elements">
-                    <li class="to-label"><label>Show Page Description</label></li>
+                    <li class="to-label"><label><?php _e('Show Page Description','WeStand');?></label></li>
                     <li class="to-field">
                         <select name="page_content" class="dropdown">
-                            <option value="Yes" <?php if($page_content=="Yes")echo "selected";?> >Yes</option>
-                            <option value="No" <?php if($page_content=="No")echo "selected";?> >No</option>
+                            <option value="Yes" <?php if($page_content=="Yes")echo "selected";?> ><?php _e('Yes','WeStand');?></option>
+                            <option value="No" <?php if($page_content=="No")echo "selected";?> ><?php _e('No','WeStand');?></option>
                         </select>
-                        <p>Show the description of the page.</p>
+                        <p><?php _e('Show the description of the page','WeStand');?></p>
                     </li>
                 </ul>
                 

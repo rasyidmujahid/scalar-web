@@ -1,0 +1,4326 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WeStand v1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-05-08 15:31:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../../../../../../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: functions.php:1913
+#@ WeStand
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: functions.php:1909
+#@ WeStand
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: comments.php:32
+#, php-format
+#@ WeStand
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: %s"
+msgstr "شما می‌توانید از این دستورات <abbr title=\"HyperText Markup Language\">HTML</abbr> استفاده کنید: %s"
+
+#: comments.php:35
+#, php-format
+#@ WeStand
+msgid "Required fields are marked %s"
+msgstr "بخش‌های موردنیاز علامت‌گذاری شده‌اند %s"
+
+#: comments.php:34
+#, php-format
+#@ WeStand
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "وارد شده با نام <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"بیرون رفتن از این حساب کاربری\">بیرون رفتن؟</a>"
+
+#: functions.php:1901
+#, php-format
+#@ WeStand
+msgid "Search Results %1$s %2$s"
+msgstr "نتایج جست‌وجوی %1$s %2$s"
+
+#: include/tgm_plugin_activation.php:1722
+#@ Awaken
+msgid "Source"
+msgstr "منبع"
+
+#: comments.php:74
+#@ WeStand
+msgid "Cancel reply"
+msgstr "لغو پاسخ"
+
+#: 404.php:11
+#@ WeStand
+msgid "Page not found"
+msgstr "برگه پیدا نشد."
+
+#: comments.php:9
+#@ WeStand
+msgid "No Comments"
+msgstr "بدون دیدگاه"
+
+#: functions-theme.php:2105
+#: functions-theme.php:2131
+#@ WeStand
+msgid "(Edit)"
+msgstr "(ویرایش)"
+
+#: comments.php:33
+#, php-format
+#@ WeStand
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "ببخشید، برای نوشتن دیدگاه باید <a href=\"%s\">وارد بشوید</a>"
+
+#: page.php:31
+#: page.php:135
+#: page_blog.php:257
+#: single-cs_cause.php:193
+#: single-events.php:183
+#: single-teams.php:94
+#: single.php:142
+#@ WeStand
+msgid "Pages:"
+msgstr "برگه‌ها :"
+
+#: comments.php:9
+#: page_blog.php:120
+#: page_blog.php:240
+#@ WeStand
+msgid "% Comments"
+msgstr "% دیدگاه"
+
+#: comments.php:9
+#: functions.php:1681
+#: page_blog.php:120
+#: page_blog.php:240
+#: single.php:137
+#@ WeStand
+msgid "1 Comment"
+msgstr "۱ دیدگاه"
+
+#: functions-theme.php:2098
+#@ WeStand
+msgid "Your comment is awaiting moderation."
+msgstr "دیدگاه شما در انتظار بررسی است."
+
+#: functions.php:1526
+#: functions.php:2138
+#@ WeStand
+msgid "No results found."
+msgstr "هیچی پیدا نشد."
+
+#: functions.php:1889
+#@ WeStand
+msgid "Author"
+msgstr "نویسنده"
+
+#: include/cs_cause.php:471
+#: page_contact.php:61
+#: page_contact_submit.php:11
+#@ WeStand
+msgid "Name"
+msgstr "نام"
+
+#: functions.php:1889
+#: functions.php:1893
+#: functions.php:1897
+#: functions.php:1921
+#@ WeStand
+msgid "Archives"
+msgstr "بایگانی"
+
+#: functions.php:1897
+#@ WeStand
+msgid "Categories"
+msgstr "دسته‌ها"
+
+#: comments.php:75
+#: functions.php:1739
+#: include/importer/wordpress-importer.php:286
+#@ WeStand
+msgid "Submit"
+msgstr "بفرست"
+
+#: include/importer/wordpress-importer.php:832
+#@ WeStand
+msgid "Invalid file type"
+msgstr "پرونده‌ی افزونه نادرست است"
+
+#. translators: used between list items, there is a space after the comma 
+#: functions.php:1893
+#: include/cs_cause.php:657
+#: include/event.php:488
+#: include/post_meta.php:182
+#: single-cs_cause.php:230
+#: single-events.php:190
+#: single.php:150
+#@ WeStand
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+#: include/tgm_plugin_activation.php:1743
+#@ Awaken
+msgid "Activate"
+msgstr "فعال کردن"
+
+#: include/tgm_plugin_activation.php:1723
+#@ Awaken
+msgid "Type"
+msgstr "نوع"
+
+#: include/tgm_plugin_activation.php:1721
+#@ Awaken
+msgid "Plugin"
+msgstr "افزونه"
+
+#: include/tgm_plugin_activation.php:1742
+#@ Awaken
+msgid "Install"
+msgstr "نصب"
+
+#: include/tgm_plugin_activation.php:2405
+#: include/tgm_plugin_activation.php:2412
+#@ Awaken
+msgid "Show Details"
+msgstr "نمایش جزییات"
+
+#: include/tgm_plugin_activation.php:2405
+#: include/tgm_plugin_activation.php:2412
+#@ Awaken
+msgid "Hide Details"
+msgstr "پنهان کردن جزییات"
+
+#: functions.php:112
+#: include/tgm_plugin_activation.php:270
+#, php-format
+#@ WeStand
+#@ Awaken
+msgid "Installing Plugin: %s"
+msgstr "در حال نصب افزونه: %s"
+
+#: include/tgm_plugin_activation.php:2260
+#@ Awaken
+msgid "Install package not available."
+msgstr "بسته‌ی نصب در دسترس نیست."
+
+#: include/tgm_plugin_activation.php:2261
+#, php-format
+#@ Awaken
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "در حال دریافت بسته‌ی نصب از <span class=\"code\">%s</span>&#8230;"
+
+#: include/tgm_plugin_activation.php:2262
+#@ Awaken
+msgid "Unpacking the package&#8230;"
+msgstr "گشودن بسته‌ی فشرده شده&#8230;"
+
+#: include/tgm_plugin_activation.php:2263
+#@ Awaken
+msgid "Installing the plugin&#8230;"
+msgstr "در حال نصب افزونه&#8230;"
+
+#: include/tgm_plugin_activation.php:2264
+#@ Awaken
+msgid "Plugin install failed."
+msgstr "مشکل در نصب افزونه."
+
+#: include/tgm_plugin_activation.php:2265
+#@ Awaken
+msgid "Plugin installed successfully."
+msgstr "افزونه به خوبی نصب شد."
+
+#: include/tgm_plugin_activation.php:1724
+#@ Awaken
+msgid "Status"
+msgstr "وضعیت"
+
+#: functions.php:1677
+#: page_blog.php:238
+#: single-cs_cause.php:234
+#: single-events.php:194
+#: single.php:117
+#: single.php:154
+#, php-format
+#@ WeStand
+msgid "%1$s"
+msgstr ""
+
+#: comments.php:16
+#: comments.php:23
+#@ WeStand
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: comments.php:17
+#: comments.php:24
+#@ WeStand
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions-theme.php:2029
+#@ WeStand
+msgid "Primary Sidebar"
+msgstr ""
+
+#: functions-theme.php:2031
+#@ WeStand
+msgid "Main sidebar that appears on the right."
+msgstr ""
+
+#: functions-theme.php:2237
+#: include/theme_option.php:1519
+#@ WeStand
+msgid "Current Page"
+msgstr ""
+
+#: functions.php:110
+#: include/tgm_plugin_activation.php:268
+#@ WeStand
+#@ Awaken
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:111
+#: include/tgm_plugin_activation.php:269
+#@ WeStand
+#@ Awaken
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:113
+#@ WeStand
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:114
+#: include/tgm_plugin_activation.php:273
+#, php-format
+#@ WeStand
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:115
+#: include/tgm_plugin_activation.php:278
+#, php-format
+#@ WeStand
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:116
+#, php-format
+#@ WeStand
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:117
+#: include/tgm_plugin_activation.php:288
+#, php-format
+#@ WeStand
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:118
+#: include/tgm_plugin_activation.php:293
+#, php-format
+#@ WeStand
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:119
+#, php-format
+#@ WeStand
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:120
+#: include/tgm_plugin_activation.php:303
+#, php-format
+#@ WeStand
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:121
+#, php-format
+#@ WeStand
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:122
+#: include/tgm_plugin_activation.php:313
+#@ WeStand
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:123
+#@ WeStand
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:124
+#: include/tgm_plugin_activation.php:322
+#@ WeStand
+#@ Awaken
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:125
+#: include/tgm_plugin_activation.php:324
+#: include/tgm_plugin_activation.php:2277
+#@ WeStand
+#@ Awaken
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:126
+#, php-format
+#@ WeStand
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:1733
+#@ WeStand
+msgid "This post is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: functions.php:1868
+#: include/theme_option.php:1544
+#@ WeStand
+msgid "Featured"
+msgstr ""
+
+#: functions.php:1905
+#, php-format
+#@ WeStand
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: functions.php:1909
+#, php-format
+#@ WeStand
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: functions.php:1913
+#, php-format
+#@ WeStand
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: functions.php:1917
+#@ WeStand
+msgid "Error 404"
+msgstr ""
+
+#: functions.php:1699
+#@ WeStand
+msgid "Main Menu"
+msgstr ""
+
+#: include/theme_option.php:1527
+#: page_event.php:353
+#: page_event.php:355
+#: page_event.php:356
+#: single-events.php:164
+#: single-events.php:167
+#: single-events.php:168
+#@ WeStand
+msgid "Likes"
+msgstr ""
+
+#: functions.php:1681
+#: page_blog.php:120
+#: page_blog.php:240
+#: single.php:137
+#@ WeStand
+msgid "0 Comment"
+msgstr ""
+
+#: include/widgets.php:1000
+#, php-format
+#@ WeStand
+msgid "%d seconds ago"
+msgstr ""
+
+#. gettext fix: duplicate plural forms found, that may be ambiguous! Please check the code!
+#: include/widgets.php:1001
+#, php-format
+#@ WeStand
+msgid "About a Minute Ago"
+msgid_plural "%d Minutes Ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#. gettext fix: duplicate plural forms found, that may be ambiguous! Please check the code!
+#: include/widgets.php:1002
+#: include/widgets.php:1003
+#, php-format
+#@ WeStand
+msgid "About an Hour Ago"
+msgid_plural "%d Hours Ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#. gettext fix: duplicate plural forms found, that may be ambiguous! Please check the code!
+#: include/widgets.php:1004
+#, php-format
+#@ WeStand
+msgid "About a Day Ago"
+msgid_plural "%d Days Ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/widgets.php:1005
+#, php-format
+#@ WeStand
+msgid "About a Week Ago"
+msgid_plural "%d Weeks Ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/widgets.php:1006
+#, php-format
+#@ WeStand
+msgid "About a Month Ago"
+msgid_plural "%d Months Ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/widgets.php:1007
+#, php-format
+#@ WeStand
+msgid "About a year Ago"
+msgid_plural "%d years Ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions-theme.php:2088
+#: page_blog.php:116
+#: page_blog.php:233
+#, php-format
+#@ WeStand
+msgid "%s"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:271
+#@ Awaken
+msgid "Something went wrong."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:318
+#@ WeStand
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/tgm_plugin_activation.php:323
+#@ Awaken
+msgid "Return to the dashboard"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:326
+#, php-format
+#@ Awaken
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:327
+#@ Awaken
+msgid "Dismiss this notice"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:645
+#: include/tgm_plugin_activation.php:2517
+#@ Awaken
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1540
+#@ Awaken
+msgid "Pre-Packaged"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1545
+#@ Awaken
+msgid "WordPress Repository"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1549
+#@ Awaken
+msgid "Required"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1551
+#@ Awaken
+msgid "Recommended"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1555
+#@ Awaken
+msgid "Not Installed"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1557
+#@ Awaken
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1640
+#, php-format
+#@ Awaken
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1659
+#, php-format
+#@ Awaken
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1705
+#, php-format
+#@ Awaken
+msgid "No plugins to install or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1795
+#@ Awaken
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1893
+#@ Awaken
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: include/tgm_plugin_activation.php:1911
+#: include/tgm_plugin_activation.php:325
+#@ Awaken
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/tgm_plugin_activation.php:2276
+#@ Awaken
+msgid "Plugin activation failed."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2399
+#, php-format
+#@ Awaken
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2400
+#, php-format
+#@ Awaken
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2404
+#@ Awaken
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2405
+#, php-format
+#@ Awaken
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2406
+#@ Awaken
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2407
+#, php-format
+#@ Awaken
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2411
+#@ Awaken
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2412
+#, php-format
+#@ Awaken
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2413
+#@ Awaken
+msgid "All installations have been completed."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:2414
+#, php-format
+#@ Awaken
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: include/importer/parsers.php:42
+#: include/importer/parsers.php:63
+#@ WeStand
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: include/importer/parsers.php:43
+#@ WeStand
+msgid "Details are shown above. The importer will now try again with a different parser..."
+msgstr ""
+
+#: include/importer/parsers.php:67
+#: include/importer/parsers.php:72
+#: include/importer/parsers.php:262
+#: include/importer/parsers.php:451
+#@ WeStand
+msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: include/admin_functions.php:4042
+#@ WeStand
+msgid "Error."
+msgstr ""
+
+#: include/admin_functions.php:4046
+#: include/importer/wordpress-importer.php:134
+#: include/importer/wordpress-importer.php:143
+#: include/importer/wordpress-importer.php:194
+#: include/importer/wordpress-importer.php:198
+#: include/importer/wordpress-importer.php:207
+#@ WeStand
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: include/admin_functions.php:4047
+#: include/importer/wordpress-importer.php:135
+#@ WeStand
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:178
+#@ WeStand
+msgid "All done."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:178
+#@ WeStand
+msgid "Have fun!"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:179
+#@ WeStand
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:199
+#, php-format
+#@ WeStand
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:215
+#, php-format
+#@ WeStand
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:240
+#, php-format
+#@ WeStand
+msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:266
+#@ WeStand
+msgid "Assign Authors"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:267
+#@ WeStand
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:269
+#, php-format
+#@ WeStand
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:279
+#@ WeStand
+msgid "Import Attachments"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:282
+#@ WeStand
+msgid "Download and import file attachments"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:299
+#@ WeStand
+msgid "Import author:"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:310
+#@ WeStand
+msgid "or create new user with login name:"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:313
+#@ WeStand
+msgid "as a new user:"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:321
+#@ WeStand
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:323
+#@ WeStand
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:324
+#@ WeStand
+msgid "- Select -"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:374
+#, php-format
+#@ WeStand
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:423
+#, php-format
+#@ WeStand
+msgid "Failed to import category %s"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:461
+#, php-format
+#@ WeStand
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:505
+#: include/importer/wordpress-importer.php:631
+#, php-format
+#@ WeStand
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:527
+#, php-format
+#@ WeStand
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:548
+#, php-format
+#@ WeStand
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:603
+#, php-format
+#@ WeStand
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:749
+#@ WeStand
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:756
+#, php-format
+#@ WeStand
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:819
+#@ WeStand
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:876
+#@ WeStand
+msgid "Remote server did not respond"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:882
+#, php-format
+#@ WeStand
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:889
+#@ WeStand
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:894
+#@ WeStand
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:900
+#, php-format
+#@ WeStand
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:999
+#@ WeStand
+msgid "Import WordPress"
+msgstr ""
+
+#: include/importer/wordpress-importer.php:1006
+#, php-format
+#@ WeStand
+msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:1021
+#@ WeStand
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+
+#: include/importer/wordpress-importer.php:1022
+#@ WeStand
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: 404.php:15
+#: 404.php:19
+#@ WeStand
+msgid "It seems we can not find what you are looking for."
+msgstr ""
+
+#: comments.php:72
+#@ WeStand
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:73
+#, php-format
+#@ WeStand
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: footer.php:55
+#: functions.php:2188
+#: functions.php:2287
+#: include/theme_option.php:1444
+#: page_cause.php:374
+#: page_cause.php:399
+#: single-cs_cause.php:177
+#@ WeStand
+msgid "Donate Now"
+msgstr ""
+
+#: functions-theme.php:98
+#: functions-theme.php:110
+#@ WeStand
+msgid "Top"
+msgstr ""
+
+#: functions-theme.php:782
+#@ WeStand
+msgid "Layout options"
+msgstr ""
+
+#: functions-theme.php:784
+#: include/theme_option.php:92
+#@ WeStand
+msgid "Select Color Scheme"
+msgstr ""
+
+#: functions-theme.php:798
+#@ WeStand
+msgid "Theme Color"
+msgstr ""
+
+#: functions-theme.php:801
+#@ WeStand
+msgid "Choose Your Layout Style"
+msgstr ""
+
+#: functions-theme.php:806
+#@ WeStand
+msgid "Full"
+msgstr ""
+
+#: functions-theme.php:809
+#: include/theme_option.php:130
+#@ WeStand
+msgid "Boxed"
+msgstr ""
+
+#: functions-theme.php:819
+#@ WeStand
+msgid "Pattren Styles"
+msgstr ""
+
+#: functions-theme.php:826
+#@ WeStand
+msgid "Patterns are available in boxed mode"
+msgstr ""
+
+#: functions-theme.php:866
+#@ WeStand
+msgid "Background Images"
+msgstr ""
+
+#: functions-theme.php:1014
+#@ WeStand
+msgid "Support us"
+msgstr ""
+
+#: functions-theme.php:1099
+#@ WeStand
+msgid "Continue Reading"
+msgstr ""
+
+#: functions-theme.php:1560
+#@ WeStand
+msgid "&laquo; Previous"
+msgstr ""
+
+#: functions-theme.php:1596
+#@ WeStand
+msgid "Next &raquo;"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions-theme.php:2094
+#, php-format
+#@ WeStand
+msgid "<time>%1$s</time>"
+msgstr ""
+
+#: functions.php:1681
+#: single.php:137
+#@ WeStand
+msgid "% Comment"
+msgstr ""
+
+#: functions.php:1686
+#: page_blog.php:124
+#: page_blog.php:244
+#@ WeStand
+msgid "<i class=\"fa fa-pencil-square-o\"></i>Edit"
+msgstr ""
+
+#: functions.php:2143
+#, php-format
+#@ WeStand
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: functions.php:2147
+#@ WeStand
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: functions.php:2151
+#@ WeStand
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: functions.php:2199
+#: functions.php:2298
+#@ WeStand
+msgid "Donation via paypal from your visitors"
+msgstr ""
+
+#: functions.php:2295
+#@ WeStand
+msgid "Make Donations"
+msgstr ""
+
+#: include/cs_cause.php:97
+#: include/page_builder.php:17
+#: include/theme_option.php:58
+#: include/theme_option.php:751
+#@ WeStand
+msgid "Cause"
+msgstr ""
+
+#: include/cs_cause.php:99
+#@ WeStand
+msgid "All Causes"
+msgstr ""
+
+#: include/cs_cause.php:101
+#: include/cs_cause.php:107
+#@ WeStand
+msgid "Add New Cause"
+msgstr ""
+
+#: include/cs_cause.php:103
+#@ WeStand
+msgid "Edit Cause"
+msgstr ""
+
+#: include/cs_cause.php:105
+#@ WeStand
+msgid "New Cause Item"
+msgstr ""
+
+#: include/cs_cause.php:109
+#@ WeStand
+msgid "View Cause Item"
+msgstr ""
+
+#: include/cs_cause.php:111
+#@ WeStand
+msgid "Search Cause"
+msgstr ""
+
+#: include/cs_cause.php:113
+#@ WeStand
+msgid "Nothing found"
+msgstr ""
+
+#: include/cs_cause.php:115
+#@ WeStand
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: include/mailchimpapi/chimp_mc_plugin.class.php:71
+#@ WeStand
+msgid "You'll need to set up the MailChimp signup widget plugin options before using it. "
+msgstr ""
+
+#: include/mailchimpapi/chimp_mc_plugin.class.php:71
+#@ WeStand
+msgid "You can make your changes"
+msgstr ""
+
+#: include/admin_functions.php:329
+#: include/mailchimpapi/chimp_mc_plugin.class.php:71
+#: include/team.php:167
+#: include/theme_option.php:736
+#: include/theme_option.php:797
+#: include/theme_option.php:834
+#: include/theme_option.php:870
+#@ WeStand
+msgid "here"
+msgstr ""
+
+#: include/theme_option.php:870
+#@ WeStand
+msgid "Enter a valid MailChimp API key here to get started. Once you've done that, you can use the MailChimp Widget from the Widgets menu. You will need to have at least MailChimp list set up before the using the widget."
+msgstr ""
+
+#: include/theme_option.php:870
+#@ WeStand
+msgid " You can get your mailchimp activation key"
+msgstr ""
+
+#: include/widgets.php:1352
+#: include/widgets.php:2030
+#@ WeStand
+msgid "There was a problem processing your submission."
+msgstr ""
+
+#: include/widgets.php:1354
+#@ WeStand
+msgid "Join now!"
+msgstr ""
+
+#: include/widgets.php:1356
+#@ WeStand
+msgid "Thank you for joining our mailing list. Please check your email for a confirmation link."
+msgstr ""
+
+#: include/widgets.php:1358
+#@ WeStand
+msgid "Sign up for our mailing list."
+msgstr ""
+
+#: include/widgets.php:1360
+#@ WeStand
+msgid "Displays a sign-up form for a MailChimp mailing list."
+msgstr ""
+
+#: include/widgets.php:1362
+#@ WeStand
+msgid "Chimp: MailChimp List Signup"
+msgstr ""
+
+#: include/theme_option.php:18
+#: include/theme_option.php:83
+#: include/widgets.php:1420
+#@ WeStand
+msgid "General Settings"
+msgstr ""
+
+#: include/widgets.php:1424
+#@ WeStand
+msgid "Title :"
+msgstr ""
+
+#: include/widgets.php:1432
+#@ WeStand
+msgid "Select a Mailing List :"
+msgstr ""
+
+#: include/widgets.php:1458
+#@ WeStand
+msgid "Description :"
+msgstr ""
+
+#: include/widgets.php:1468
+#@ WeStand
+msgid "Sign Up Button Text :"
+msgstr ""
+
+#: include/widgets.php:1478
+#@ WeStand
+msgid "Collect first name."
+msgstr ""
+
+#: include/widgets.php:1484
+#@ WeStand
+msgid "Collect last name."
+msgstr ""
+
+#: include/widgets.php:1488
+#@ WeStand
+msgid "Notifications"
+msgstr ""
+
+#: include/widgets.php:1490
+#@ WeStand
+msgid "Use these fields to customize what your visitors see after they submit the form"
+msgstr ""
+
+#: include/widgets.php:1494
+#@ WeStand
+msgid "Success :"
+msgstr ""
+
+#: include/widgets.php:1502
+#@ WeStand
+msgid "Failure :"
+msgstr ""
+
+#: include/widgets.php:1901
+#@ WeStand
+msgid "First Name :"
+msgstr ""
+
+#: include/widgets.php:1911
+#@ WeStand
+msgid "Last Name :"
+msgstr ""
+
+#: include/widgets.php:1923
+#@ WeStand
+msgid "email"
+msgstr ""
+
+#: page_blog.php:235
+#@ WeStand
+msgid "<li><i class=\"fa fa-list\"></i>"
+msgstr ""
+
+#: include/theme_option.php:48
+#: page_blog.php:250
+#: single-cs_cause.php:244
+#: single-teams.php:104
+#: single.php:164
+#@ WeStand
+msgid "Sahre"
+msgstr ""
+
+#: page_blog.php:333
+#, php-format
+#@ WeStand
+msgid "By: %s"
+msgstr ""
+
+#: page_cause.php:173
+#: single-cs_cause.php:123
+#: single-cs_cause.php:129
+#@ WeStand
+msgid "Closed"
+msgstr ""
+
+#: include/theme_option.php:1412
+#: page_cause.php:392
+#: single-cs_cause.php:171
+#@ WeStand
+msgid "Goal"
+msgstr ""
+
+#: include/theme_option.php:1396
+#: page_cause.php:393
+#: single-cs_cause.php:163
+#@ WeStand
+msgid "Raised"
+msgstr ""
+
+#: page_contact.php:48
+#@ WeStand
+msgid "Send us a message"
+msgstr ""
+
+#: page_contact.php:61
+#: page_contact.php:68
+#: page_contact.php:75
+#: page_contact.php:83
+#@ WeStand
+msgid "(required)"
+msgstr ""
+
+#: include/admin_functions.php:684
+#: include/cs_cause.php:485
+#: include/cs_cause.php:575
+#: include/team.php:139
+#: page_contact.php:68
+#: page_contact_submit.php:15
+#@ WeStand
+msgid "Email"
+msgstr ""
+
+#: include/theme_option.php:1479
+#: page_contact.php:75
+#: page_contact_submit.php:19
+#@ WeStand
+msgid "Subject"
+msgstr ""
+
+#: include/theme_option.php:1487
+#: page_contact.php:83
+#: page_contact_submit.php:23
+#@ WeStand
+msgid "Message"
+msgstr ""
+
+#: page_contact_submit.php:27
+#@ WeStand
+msgid "IP Address"
+msgstr ""
+
+#: page_event.php:186
+#@ WeStand
+msgid "View all events"
+msgstr ""
+
+#: page_event.php:204
+#@ WeStand
+msgid "Events Sort By"
+msgstr ""
+
+#: include/admin_functions.php:1875
+#: page_event.php:211
+#: page_event.php:323
+#: page_event.php:450
+#: single-events.php:137
+#@ WeStand
+msgid "All"
+msgstr ""
+
+#: page_event.php:323
+#: page_event.php:450
+#: single-events.php:137
+#, php-format
+#@ WeStand
+msgid "%s day"
+msgstr ""
+
+#: include/event.php:363
+#: include/event.php:377
+#: page_event.php:446
+#@ WeStand
+msgid "To"
+msgstr ""
+
+#: searchform.php:2
+#@ WeStand
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:3
+#@ WeStand
+msgid "Search"
+msgstr ""
+
+#: include/theme_option.php:1428
+#: single-cs_cause.php:202
+#@ WeStand
+msgid "Donors"
+msgstr ""
+
+#: include/theme_option.php:367
+#: include/theme_option.php:1436
+#: single-cs_cause.php:214
+#@ WeStand
+msgid "Donation"
+msgstr ""
+
+#: single-events.php:134
+#@ WeStand
+msgid "Event Time"
+msgstr ""
+
+#: single-events.php:143
+#@ WeStand
+msgid "Location"
+msgstr ""
+
+#: include/theme_option.php:1511
+#: single-events.php:201
+#@ WeStand
+msgid "Share Now"
+msgstr ""
+
+#: functions.php:70
+#@ WeStand
+msgid "Revolution Slider"
+msgstr ""
+
+#: functions.php:80
+#@ WeStand
+msgid "Contact Form 7"
+msgstr ""
+
+#: functions.php:85
+#@ WeStand
+msgid "Woocommerce"
+msgstr ""
+
+#: functions.php:487
+#@ WeStand
+msgid "Latest Posts"
+msgstr ""
+
+#: functions.php:527
+#: functions.php:565
+#: include/admin_functions.php:1499
+#@ WeStand
+msgid "Upcoming Events"
+msgstr ""
+
+#: functions.php:683
+#@ WeStand
+msgid "Our Photos"
+msgstr ""
+
+#: functions.php:871
+#@ WeStand
+msgid "Follow Us"
+msgstr ""
+
+#: functions.php:902
+#@ WeStand
+msgid "Twitter"
+msgstr ""
+
+#: include/admin_functions.php:77
+#@ WeStand
+msgid "Edit Gallery Options"
+msgstr ""
+
+#: include/admin_functions.php:87
+#@ WeStand
+msgid "Gallery Header Title"
+msgstr ""
+
+#: include/admin_functions.php:93
+#@ WeStand
+msgid "Please enter gallery header title"
+msgstr ""
+
+#: include/admin_functions.php:101
+#@ WeStand
+msgid "Choose Gallery Layout"
+msgstr ""
+
+#: include/admin_functions.php:107
+#@ WeStand
+msgid "4 Column"
+msgstr ""
+
+#: include/admin_functions.php:109
+#@ WeStand
+msgid "3 Column"
+msgstr ""
+
+#: include/admin_functions.php:111
+#@ WeStand
+msgid "2 Column"
+msgstr ""
+
+#: include/admin_functions.php:113
+#@ WeStand
+msgid "Masonry"
+msgstr ""
+
+#: include/admin_functions.php:119
+#@ WeStand
+msgid "Select gallery layout, single column, double column, thriple column or four column"
+msgstr ""
+
+#: include/admin_functions.php:127
+#@ WeStand
+msgid "Choose Gallery/Album"
+msgstr ""
+
+#: include/admin_functions.php:133
+#@ WeStand
+msgid "-- Select Gallery --"
+msgstr ""
+
+#: include/admin_functions.php:155
+#@ WeStand
+msgid "Select gallery album to show images"
+msgstr ""
+
+#: include/admin_functions.php:163
+#: include/admin_functions.php:947
+#: include/admin_functions.php:1114
+#: include/admin_functions.php:1651
+#: include/admin_functions.php:1913
+#: include/theme_option.php:1244
+#@ WeStand
+msgid "Pagination"
+msgstr ""
+
+#: include/admin_functions.php:169
+#: include/admin_functions.php:953
+#: include/admin_functions.php:1117
+#: include/admin_functions.php:1657
+#: include/admin_functions.php:1919
+#: include/theme_option.php:1248
+#@ WeStand
+msgid "Show Pagination"
+msgstr ""
+
+#: include/admin_functions.php:171
+#: include/admin_functions.php:955
+#: include/admin_functions.php:1118
+#: include/admin_functions.php:1661
+#: include/admin_functions.php:1921
+#: include/theme_option.php:1249
+#@ WeStand
+msgid "Single Page"
+msgstr ""
+
+#: include/admin_functions.php:181
+#@ WeStand
+msgid "No. of Media Per Page"
+msgstr ""
+
+#: include/admin_functions.php:187
+#: include/admin_functions.php:973
+#: include/admin_functions.php:1126
+#: include/admin_functions.php:1680
+#: include/admin_functions.php:1954
+#@ WeStand
+msgid "To display all the records, leave this field blank"
+msgstr ""
+
+#: include/admin_functions.php:319
+#@ WeStand
+msgid "Service Title"
+msgstr ""
+
+#: include/admin_functions.php:321
+#@ WeStand
+msgid "Service Type"
+msgstr ""
+
+#: include/admin_functions.php:323
+#@ WeStand
+msgid "Type 1"
+msgstr ""
+
+#: include/admin_functions.php:324
+#@ WeStand
+msgid "Type 2"
+msgstr ""
+
+#: include/admin_functions.php:329
+#@ WeStand
+msgid "You can get fontawsome icons from"
+msgstr ""
+
+#: include/admin_functions.php:331
+#@ WeStand
+msgid "Service Bg Image"
+msgstr ""
+
+#: include/admin_functions.php:333
+#@ WeStand
+msgid "Service Link URL"
+msgstr ""
+
+#: include/admin_functions.php:335
+#@ WeStand
+msgid "Service Text"
+msgstr ""
+
+#: include/admin_functions.php:359
+#@ WeStand
+msgid "Add service"
+msgstr ""
+
+#: include/admin_functions.php:479
+#@ WeStand
+msgid "Edit Slider Options"
+msgstr ""
+
+#: include/admin_functions.php:489
+#@ WeStand
+msgid "Slider Header Title"
+msgstr ""
+
+#: include/admin_functions.php:495
+#@ WeStand
+msgid "Please enter slider header title"
+msgstr ""
+
+#: include/admin_functions.php:503
+#: include/theme_option.php:937
+#@ WeStand
+msgid "Choose SliderType"
+msgstr ""
+
+#: include/admin_functions.php:509
+#: include/admin_functions.php:3628
+#: include/theme_option.php:46
+#: include/theme_option.php:407
+#: include/theme_option.php:1047
+#@ WeStand
+msgid "Flex Slider"
+msgstr ""
+
+#: include/admin_functions.php:511
+#: include/admin_functions.php:3629
+#: include/theme_option.php:408
+#: include/theme_option.php:941
+#@ WeStand
+msgid "Custom Slider"
+msgstr ""
+
+#: include/admin_functions.php:521
+#@ WeStand
+msgid "Choose Slider"
+msgstr ""
+
+#: include/admin_functions.php:553
+#@ WeStand
+msgid "Slider View"
+msgstr ""
+
+#: include/admin_functions.php:559
+#@ WeStand
+msgid "content"
+msgstr ""
+
+#: include/admin_functions.php:561
+#@ WeStand
+msgid "header"
+msgstr ""
+
+#: include/admin_functions.php:573
+#@ WeStand
+msgid "Use Short Code"
+msgstr ""
+
+#: include/admin_functions.php:588
+#@ WeStand
+msgid "Please enter the Revolution/Other Slider Short Code like [rev_slider WeStand]"
+msgstr ""
+
+#: include/admin_functions.php:664
+#@ WeStand
+msgid "Edit Donation"
+msgstr ""
+
+#: include/admin_functions.php:674
+#@ WeStand
+msgid "Donar Name"
+msgstr ""
+
+#: include/admin_functions.php:676
+#@ WeStand
+msgid "Put Donar Name"
+msgstr ""
+
+#: include/admin_functions.php:687
+#@ WeStand
+msgid "Put Donor Email"
+msgstr ""
+
+#: include/admin_functions.php:695
+#: include/cs_cause.php:497
+#: include/cs_cause.php:577
+#@ WeStand
+msgid "Amount"
+msgstr ""
+
+#: include/admin_functions.php:697
+#@ WeStand
+msgid "Put Donor Raised Amount"
+msgstr ""
+
+#: include/admin_functions.php:705
+#: include/cs_cause.php:509
+#: include/cs_cause.php:579
+#@ WeStand
+msgid "Transaction ID"
+msgstr ""
+
+#: include/admin_functions.php:708
+#@ WeStand
+msgid "Put Donor Trasaction id"
+msgstr ""
+
+#: include/admin_functions.php:716
+#@ WeStand
+msgid "Donation Date"
+msgstr ""
+
+#: include/admin_functions.php:837
+#@ WeStand
+msgid "Edit Blog Options"
+msgstr ""
+
+#: include/admin_functions.php:847
+#@ WeStand
+msgid "Blog Header Title"
+msgstr ""
+
+#: include/admin_functions.php:853
+#@ WeStand
+msgid "Please enter Blog header title"
+msgstr ""
+
+#: include/admin_functions.php:861
+#: include/admin_functions.php:1073
+#: include/admin_functions.php:1530
+#: include/admin_functions.php:1849
+#@ WeStand
+msgid "Select View"
+msgstr ""
+
+#: include/admin_functions.php:867
+#@ WeStand
+msgid "Large"
+msgstr ""
+
+#: include/admin_functions.php:869
+#@ WeStand
+msgid "Medium"
+msgstr ""
+
+#: include/admin_functions.php:871
+#@ WeStand
+msgid "Grid"
+msgstr ""
+
+#: include/admin_functions.php:873
+#@ WeStand
+msgid "Carousal"
+msgstr ""
+
+#: include/admin_functions.php:883
+#: include/admin_functions.php:1062
+#: include/admin_functions.php:1830
+#@ WeStand
+msgid "Choose Category"
+msgstr ""
+
+#: include/admin_functions.php:889
+#: include/admin_functions.php:1557
+#: include/theme_option.php:955
+#@ WeStand
+msgid "-- Select Category --"
+msgstr ""
+
+#: include/admin_functions.php:895
+#@ WeStand
+msgid "Please select category to show posts. If you dont select category it will display all posts"
+msgstr ""
+
+#: include/admin_functions.php:902
+#: include/admin_functions.php:1091
+#@ WeStand
+msgid "Post Order"
+msgstr ""
+
+#: include/admin_functions.php:905
+#: include/admin_functions.php:1094
+#@ WeStand
+msgid "ASC"
+msgstr ""
+
+#: include/admin_functions.php:906
+#: include/admin_functions.php:1095
+#@ WeStand
+msgid "DESC"
+msgstr ""
+
+#: include/admin_functions.php:913
+#@ WeStand
+msgid "Post Description"
+msgstr ""
+
+#: include/admin_functions.php:919
+#: include/admin_functions.php:1574
+#: include/admin_functions.php:1594
+#: include/admin_functions.php:1641
+#: include/page_builder.php:90
+#@ WeStand
+msgid "Yes"
+msgstr ""
+
+#: include/admin_functions.php:921
+#: include/admin_functions.php:1576
+#: include/admin_functions.php:1596
+#: include/admin_functions.php:1639
+#: include/page_builder.php:91
+#@ WeStand
+msgid "No"
+msgstr ""
+
+#: include/admin_functions.php:933
+#: include/admin_functions.php:1101
+#: include/admin_functions.php:1619
+#: include/admin_functions.php:1934
+#@ WeStand
+msgid "Length of Excerpt"
+msgstr ""
+
+#: include/admin_functions.php:939
+#: include/admin_functions.php:1107
+#: include/admin_functions.php:1625
+#: include/admin_functions.php:1940
+#@ WeStand
+msgid "Enter number of character for short description text"
+msgstr ""
+
+#: include/admin_functions.php:967
+#@ WeStand
+msgid "No. of Post Per Page"
+msgstr ""
+
+#: include/admin_functions.php:1050
+#@ WeStand
+msgid "Edit Album Options"
+msgstr ""
+
+#: include/admin_functions.php:1055
+#@ WeStand
+msgid "Team Title"
+msgstr ""
+
+#: include/admin_functions.php:1058
+#@ WeStand
+msgid "Team Page Title"
+msgstr ""
+
+#: include/admin_functions.php:1065
+#@ WeStand
+msgid "-- All Categories --"
+msgstr ""
+
+#: include/admin_functions.php:1068
+#@ WeStand
+msgid "Choose category to show Team list"
+msgstr ""
+
+#: include/admin_functions.php:1079
+#: include/admin_functions.php:1536
+#: include/admin_functions.php:1855
+#@ WeStand
+msgid "Listing View"
+msgstr ""
+
+#: include/admin_functions.php:1080
+#@ WeStand
+msgid "Large Grid View"
+msgstr ""
+
+#: include/admin_functions.php:1081
+#@ WeStand
+msgid "Small Grid View"
+msgstr ""
+
+#: include/admin_functions.php:1123
+#@ WeStand
+msgid "No. of Team Per Page"
+msgstr ""
+
+#: include/admin_functions.php:1286
+#@ WeStand
+msgid "Edit Parallax Options"
+msgstr ""
+
+#: include/admin_functions.php:1291
+#: include/admin_functions.php:2427
+#: include/admin_functions.php:3136
+#: include/admin_functions.php:3553
+#: include/team.php:157
+#: include/theme_option.php:1137
+#: include/widgets.php:48
+#: include/widgets.php:330
+#: include/widgets.php:427
+#: include/widgets.php:692
+#: include/widgets.php:911
+#@ WeStand
+msgid "Title"
+msgstr ""
+
+#: include/admin_functions.php:1295
+#: include/admin_functions.php:2266
+#: include/theme_option.php:276
+#@ WeStand
+msgid "Height"
+msgstr ""
+
+#: include/admin_functions.php:1299
+#@ WeStand
+msgid "Paddding Top"
+msgstr ""
+
+#: include/admin_functions.php:1301
+#@ WeStand
+msgid "Set the top paddding (In PX)"
+msgstr ""
+
+#: include/admin_functions.php:1305
+#@ WeStand
+msgid "Paddding Bottom"
+msgstr ""
+
+#: include/admin_functions.php:1307
+#@ WeStand
+msgid "Set the bottom Paddding (In PX)"
+msgstr ""
+
+#: include/admin_functions.php:1311
+#: include/admin_functions.php:1317
+#: include/admin_functions.php:2435
+#: include/widgets.php:60
+#: include/widgets.php:439
+#: include/widgets.php:1093
+#: include/widgets.php:1139
+#@ WeStand
+msgid "Button"
+msgstr ""
+
+#: include/admin_functions.php:1313
+#@ WeStand
+msgid "Set the top margin (In PX)"
+msgstr ""
+
+#: include/admin_functions.php:1319
+#@ WeStand
+msgid "Set the bottom margin (In PX)"
+msgstr ""
+
+#: include/admin_functions.php:1325
+#: include/admin_functions.php:3568
+#@ WeStand
+msgid "Text"
+msgstr ""
+
+#: include/admin_functions.php:1329
+#@ WeStand
+msgid "Image Path"
+msgstr ""
+
+#: include/admin_functions.php:1336
+#: include/theme_option.php:234
+#: include/widgets.php:130
+#@ WeStand
+msgid "Background Color"
+msgstr ""
+
+#: include/admin_functions.php:1467
+#@ WeStand
+msgid "Edit Event Options"
+msgstr ""
+
+#: include/admin_functions.php:1477
+#@ WeStand
+msgid "Event Title"
+msgstr ""
+
+#: include/admin_functions.php:1483
+#@ WeStand
+msgid "Event Page Title"
+msgstr ""
+
+#: include/admin_functions.php:1491
+#@ WeStand
+msgid "Event Types"
+msgstr ""
+
+#: include/admin_functions.php:1497
+#@ WeStand
+msgid "All Events"
+msgstr ""
+
+#: include/admin_functions.php:1501
+#@ WeStand
+msgid "Past Events"
+msgstr ""
+
+#: include/admin_functions.php:1505
+#@ WeStand
+msgid "Select event type"
+msgstr ""
+
+#: include/admin_functions.php:1513
+#: include/widgets.php:704
+#@ WeStand
+msgid "Select Category"
+msgstr ""
+
+#: include/admin_functions.php:1519
+#: include/admin_functions.php:1836
+#@ WeStand
+msgid "-- All Categories Posts --"
+msgstr ""
+
+#: include/admin_functions.php:1537
+#: include/admin_functions.php:1856
+#@ WeStand
+msgid "Grid View"
+msgstr ""
+
+#: include/admin_functions.php:1538
+#@ WeStand
+msgid "Calendar View"
+msgstr ""
+
+#: include/admin_functions.php:1539
+#@ WeStand
+msgid "Timeline Listing"
+msgstr ""
+
+#: include/admin_functions.php:1551
+#@ WeStand
+msgid "Featured Event Category"
+msgstr ""
+
+#: include/admin_functions.php:1568
+#@ WeStand
+msgid "Show Thumbnail"
+msgstr ""
+
+#: include/admin_functions.php:1588
+#@ WeStand
+msgid "Show Time"
+msgstr ""
+
+#: include/admin_functions.php:1605
+#@ WeStand
+msgid "View All Events Link"
+msgstr ""
+
+#: include/admin_functions.php:1633
+#@ WeStand
+msgid "Filterables"
+msgstr ""
+
+#: include/admin_functions.php:1665
+#@ WeStand
+msgid "Show navigation only at List View."
+msgstr ""
+
+#: include/admin_functions.php:1674
+#@ WeStand
+msgid "No. of Events Per Page"
+msgstr ""
+
+#: include/admin_functions.php:1806
+#@ WeStand
+msgid "Edit Menu Options"
+msgstr ""
+
+#: include/admin_functions.php:1816
+#@ WeStand
+msgid "Cause Title"
+msgstr ""
+
+#: include/admin_functions.php:1822
+#@ WeStand
+msgid "Cause Section Title"
+msgstr ""
+
+#: include/admin_functions.php:1842
+#@ WeStand
+msgid "Choose category to show Cause list"
+msgstr ""
+
+#: include/admin_functions.php:1869
+#@ WeStand
+msgid "Cause Types"
+msgstr ""
+
+#: include/admin_functions.php:1877
+#@ WeStand
+msgid "Upcoming Causes"
+msgstr ""
+
+#: include/admin_functions.php:1879
+#@ WeStand
+msgid "Past Causes"
+msgstr ""
+
+#: include/admin_functions.php:1881
+#@ WeStand
+msgid "Successfully Funded"
+msgstr ""
+
+#: include/admin_functions.php:1883
+#@ WeStand
+msgid "Last Miles"
+msgstr ""
+
+#: include/admin_functions.php:1895
+#@ WeStand
+msgid "Percentage for last miles"
+msgstr ""
+
+#: include/admin_functions.php:1948
+#@ WeStand
+msgid "No. of record Per Page"
+msgstr ""
+
+#: include/admin_functions.php:2048
+#@ WeStand
+msgid "Edit Contact Form"
+msgstr ""
+
+#: include/admin_functions.php:2058
+#@ WeStand
+msgid "Contact Email"
+msgstr ""
+
+#: include/admin_functions.php:2064
+#@ WeStand
+msgid "Please enter Contact email Address"
+msgstr ""
+
+#: include/admin_functions.php:2072
+#@ WeStand
+msgid "Successful Message"
+msgstr ""
+
+#: include/admin_functions.php:2176
+#@ WeStand
+msgid "Column Text"
+msgstr ""
+
+#: include/admin_functions.php:2182
+#@ WeStand
+msgid "Shortcodes and HTML tags allowed"
+msgstr ""
+
+#: include/admin_functions.php:2250
+#@ WeStand
+msgid "Edit Video Options"
+msgstr ""
+
+#: include/admin_functions.php:2255
+#: include/admin_functions.php:3475
+#@ WeStand
+msgid "Video URL"
+msgstr ""
+
+#: include/admin_functions.php:2258
+#@ WeStand
+msgid "Enter Video URL (Youtube, Vimeo or any other supported by wordpress)"
+msgstr ""
+
+#: include/admin_functions.php:2262
+#: include/theme_option.php:266
+#@ WeStand
+msgid "Width"
+msgstr ""
+
+#: include/admin_functions.php:2417
+#@ WeStand
+msgid "Edit Map Options"
+msgstr ""
+
+#: include/admin_functions.php:2441
+#@ WeStand
+msgid "Info Max Height in PX (Default is 200)"
+msgstr ""
+
+#: include/admin_functions.php:2449
+#@ WeStand
+msgid "Latitude"
+msgstr ""
+
+#: include/admin_functions.php:2455
+#@ WeStand
+msgid "Put Latitude (Default is 0)"
+msgstr ""
+
+#: include/admin_functions.php:2463
+#@ WeStand
+msgid "Longitude"
+msgstr ""
+
+#: include/admin_functions.php:2469
+#@ WeStand
+msgid "Put Longitude (Default is 0)"
+msgstr ""
+
+#: include/admin_functions.php:2477
+#@ WeStand
+msgid "Zoom"
+msgstr ""
+
+#: include/admin_functions.php:2483
+#@ WeStand
+msgid "Put Zoom Level (Default is 11)"
+msgstr ""
+
+#: include/admin_functions.php:2491
+#@ WeStand
+msgid "Map Types"
+msgstr ""
+
+#: include/admin_functions.php:2497
+#@ WeStand
+msgid "ROADMAP"
+msgstr ""
+
+#: include/admin_functions.php:2499
+#@ WeStand
+msgid "HYBRID"
+msgstr ""
+
+#: include/admin_functions.php:2501
+#@ WeStand
+msgid "SATELLITE"
+msgstr ""
+
+#: include/admin_functions.php:2503
+#@ WeStand
+msgid "TERRAIN"
+msgstr ""
+
+#: include/admin_functions.php:2513
+#@ WeStand
+msgid "Info Text"
+msgstr ""
+
+#: include/admin_functions.php:2521
+#@ WeStand
+msgid "Info Max Width"
+msgstr ""
+
+#: include/admin_functions.php:2527
+#@ WeStand
+msgid "Info Max Width in PX (Default is 200)"
+msgstr ""
+
+#: include/admin_functions.php:2535
+#@ WeStand
+msgid "Info Max Height"
+msgstr ""
+
+#: include/admin_functions.php:2541
+#@ WeStand
+msgid "Info Max Height in PX (Default is 100)"
+msgstr ""
+
+#: include/admin_functions.php:2549
+#@ WeStand
+msgid "Marker Icon Path"
+msgstr ""
+
+#: include/admin_functions.php:2563
+#@ WeStand
+msgid "Show Marker"
+msgstr ""
+
+#: include/admin_functions.php:2569
+#: include/admin_functions.php:2589
+#: include/admin_functions.php:2605
+#: include/admin_functions.php:2625
+#@ WeStand
+msgid "On"
+msgstr ""
+
+#: include/admin_functions.php:2571
+#: include/admin_functions.php:2587
+#: include/admin_functions.php:2607
+#: include/admin_functions.php:2627
+#@ WeStand
+msgid "Off"
+msgstr ""
+
+#: include/admin_functions.php:2581
+#@ WeStand
+msgid "Disable Map Controls"
+msgstr ""
+
+#: include/admin_functions.php:2599
+#@ WeStand
+msgid "Draggable"
+msgstr ""
+
+#: include/admin_functions.php:2617
+#@ WeStand
+msgid "Scroll Wheel"
+msgstr ""
+
+#: include/admin_functions.php:2637
+#@ WeStand
+msgid "Map View"
+msgstr ""
+
+#: include/admin_functions.php:2643
+#@ WeStand
+msgid "Boxed View"
+msgstr ""
+
+#: include/admin_functions.php:2645
+#@ WeStand
+msgid "Full View"
+msgstr ""
+
+#: include/admin_functions.php:2713
+#@ WeStand
+msgid "Edit Accordion Options"
+msgstr ""
+
+#: include/admin_functions.php:2739
+#: include/admin_functions.php:2816
+#@ WeStand
+msgid "Add Tab"
+msgstr ""
+
+#: include/admin_functions.php:2790
+#@ WeStand
+msgid "Edit Tabs Options"
+msgstr ""
+
+#: include/admin_functions.php:2868
+#@ WeStand
+msgid "Edit Quote Options"
+msgstr ""
+
+#: include/admin_functions.php:2873
+#@ WeStand
+msgid "Text Color"
+msgstr ""
+
+#: include/admin_functions.php:2876
+#@ WeStand
+msgid "Enter the color code like"
+msgstr ""
+
+#: include/admin_functions.php:2880
+#@ WeStand
+msgid "Align"
+msgstr ""
+
+#: include/admin_functions.php:2883
+#@ WeStand
+msgid "left"
+msgstr ""
+
+#: include/admin_functions.php:2884
+#@ WeStand
+msgid "right"
+msgstr ""
+
+#: include/admin_functions.php:2885
+#@ WeStand
+msgid "center"
+msgstr ""
+
+#: include/admin_functions.php:2890
+#@ WeStand
+msgid "Quote Content"
+msgstr ""
+
+#: include/admin_functions.php:3100
+#: include/theme_option.php:1112
+#: include/theme_option.php:1158
+#: include/theme_option.php:1192
+#@ WeStand
+msgid "Icon Path"
+msgstr ""
+
+#: include/admin_functions.php:3112
+#: include/theme_option.php:1120
+#: include/theme_option.php:1200
+#@ WeStand
+msgid "Awesome Font"
+msgstr ""
+
+#: include/admin_functions.php:3124
+#: include/theme_option.php:810
+#: include/theme_option.php:1129
+#: include/theme_option.php:1159
+#: include/theme_option.php:1208
+#@ WeStand
+msgid "URL"
+msgstr ""
+
+#: include/admin_functions.php:3130
+#: include/theme_option.php:1133
+#: include/theme_option.php:1212
+#@ WeStand
+msgid "Please enter full URL"
+msgstr ""
+
+#: include/admin_functions.php:3142
+#: include/theme_option.php:1141
+#: include/theme_option.php:1220
+#@ WeStand
+msgid "Please enter text for icon tooltip"
+msgstr ""
+
+#: include/admin_functions.php:3293
+#: include/admin_functions.php:3435
+#@ WeStand
+msgid "Edit Options"
+msgstr ""
+
+#: include/admin_functions.php:3305
+#: include/admin_functions.php:3445
+#@ WeStand
+msgid "Image Title"
+msgstr ""
+
+#: include/admin_functions.php:3313
+#@ WeStand
+msgid "Image Description"
+msgstr ""
+
+#: include/admin_functions.php:3321
+#@ WeStand
+msgid "Link"
+msgstr ""
+
+#: include/admin_functions.php:3329
+#@ WeStand
+msgid "Link Target"
+msgstr ""
+
+#: include/admin_functions.php:3341
+#@ WeStand
+msgid "Please select image target"
+msgstr ""
+
+#: include/admin_functions.php:3453
+#@ WeStand
+msgid "Use Image As"
+msgstr ""
+
+#: include/admin_functions.php:3459
+#@ WeStand
+msgid "LightBox to current thumbnail"
+msgstr ""
+
+#: include/admin_functions.php:3461
+#@ WeStand
+msgid "LightBox to Video"
+msgstr ""
+
+#: include/admin_functions.php:3463
+#: include/admin_functions.php:3489
+#@ WeStand
+msgid "Link URL"
+msgstr ""
+
+#: include/admin_functions.php:3467
+#@ WeStand
+msgid "Please select Image link where it will go"
+msgstr ""
+
+#: include/admin_functions.php:3481
+#@ WeStand
+msgid "(Enter Specific Video URL Youtube or Vimeo)"
+msgstr ""
+
+#: include/admin_functions.php:3495
+#@ WeStand
+msgid "(Enter Specific Link URL)"
+msgstr ""
+
+#: include/admin_functions.php:3548
+#@ WeStand
+msgid "Settings"
+msgstr ""
+
+#: include/admin_functions.php:3560
+#@ WeStand
+msgid "icon/image URL"
+msgstr ""
+
+#: include/admin_functions.php:3564
+#@ WeStand
+msgid "Put Fontawsome icon/image url. You can get fontawsome icons from "
+msgstr ""
+
+#: include/admin_functions.php:3616
+#@ WeStand
+msgid "Subheader Options"
+msgstr ""
+
+#: include/admin_functions.php:3622
+#: include/theme_option.php:401
+#@ WeStand
+msgid "Sub Header Style"
+msgstr ""
+
+#: include/admin_functions.php:3625
+#@ WeStand
+msgid "Default Header Style"
+msgstr ""
+
+#: include/admin_functions.php:3626
+#: include/theme_option.php:405
+#@ WeStand
+msgid "Breadcrumbs"
+msgstr ""
+
+#: include/admin_functions.php:3627
+#: include/theme_option.php:406
+#@ WeStand
+msgid "No Subheader"
+msgstr ""
+
+#: include/admin_functions.php:3631
+#@ WeStand
+msgid "Default header Style settings"
+msgstr ""
+
+#: include/admin_functions.php:3631
+#@ WeStand
+msgid "Here"
+msgstr ""
+
+#: include/admin_functions.php:3636
+#: include/theme_option.php:415
+#@ WeStand
+msgid "Sub-Header Background"
+msgstr ""
+
+#: include/admin_functions.php:3640
+#: include/theme_option.php:419
+#@ WeStand
+msgid "Default background can be changed by uploading"
+msgstr ""
+
+#: include/admin_functions.php:3644
+#: include/theme_option.php:423
+#@ WeStand
+msgid "Page Sub Header Color"
+msgstr ""
+
+#: include/admin_functions.php:3650
+#: include/theme_option.php:429
+#@ WeStand
+msgid "Page Sub Title"
+msgstr ""
+
+#: include/admin_functions.php:3658
+#: include/post_meta.php:93
+#: include/post_meta.php:146
+#: include/theme_option.php:437
+#@ WeStand
+msgid "Select Slider"
+msgstr ""
+
+#: include/admin_functions.php:3671
+#: include/theme_option.php:450
+#@ WeStand
+msgid "You can use already created slider OR create new slider"
+msgstr ""
+
+#: include/admin_functions.php:3671
+#: include/admin_functions.php:3815
+#: include/admin_functions.php:3851
+#: include/theme_option.php:450
+#@ WeStand
+msgid "Click Here"
+msgstr ""
+
+#: include/admin_functions.php:3677
+#: include/theme_option.php:456
+#: include/theme_option.php:986
+#@ WeStand
+msgid "Custom Slider Short Code"
+msgstr ""
+
+#: include/admin_functions.php:3681
+#@ WeStand
+msgid "Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from "
+msgstr ""
+
+#: include/admin_functions.php:3681
+#: include/theme_option.php:460
+#: include/theme_option.php:990
+#@ WeStand
+msgid "Codecanyon"
+msgstr ""
+
+#: include/admin_functions.php:3681
+#: include/theme_option.php:460
+#: include/theme_option.php:990
+#@ WeStand
+msgid "But its optional"
+msgstr ""
+
+#: include/admin_functions.php:3717
+#@ WeStand
+msgid "Post/Page Sidebar Settings"
+msgstr ""
+
+#: include/admin_functions.php:3726
+#@ WeStand
+msgid "Select Layout"
+msgstr ""
+
+#: include/admin_functions.php:3786
+#@ WeStand
+msgid "Select Left Sidebar"
+msgstr ""
+
+#: include/admin_functions.php:3815
+#: include/admin_functions.php:3851
+#@ WeStand
+msgid "Add New Sidebar"
+msgstr ""
+
+#: include/admin_functions.php:3824
+#@ WeStand
+msgid "Select Right Sidebar"
+msgstr ""
+
+#: include/admin_functions.php:4001
+#@ WeStand
+msgid "Import Demo Data"
+msgstr ""
+
+#: include/admin_functions.php:4003
+#@ WeStand
+msgid "Importing demo data helps to build site like the demo site by all means. It is the quickest way to setup theme. Following things happen when dummy data is imported"
+msgstr ""
+
+#: include/admin_functions.php:4005
+#@ WeStand
+msgid "All wordpress settings will remain same and intact"
+msgstr ""
+
+#: include/admin_functions.php:4006
+#@ WeStand
+msgid "Posts, pages and dummy images shown in demo will be imported"
+msgstr ""
+
+#: include/admin_functions.php:4007
+#@ WeStand
+msgid "Only dummy images will be imported as all demo images have copy right restriction"
+msgstr ""
+
+#: include/admin_functions.php:4008
+#@ WeStand
+msgid "No existing posts, pages, categories, custom post types or any other data will be deleted or modified"
+msgstr ""
+
+#: include/admin_functions.php:4009
+#@ WeStand
+msgid "To proceed, please click \"Import Demo Data\" and wait for a while"
+msgstr ""
+
+#: include/config_woocommerce/product_meta.php:24
+#@ WeStand
+msgid "Sub Title"
+msgstr ""
+
+#: include/config_woocommerce/product_meta.php:27
+#@ WeStand
+msgid "Put the sub title"
+msgstr ""
+
+#: include/cs_cause.php:161
+#@ WeStand
+msgid "Menu Categories"
+msgstr ""
+
+#: include/cs_cause.php:163
+#@ WeStand
+msgid "Search Cause Categories"
+msgstr ""
+
+#: include/cs_cause.php:165
+#@ WeStand
+msgid "Edit Cause Category"
+msgstr ""
+
+#: include/cs_cause.php:167
+#@ WeStand
+msgid "Update Cause Category"
+msgstr ""
+
+#: include/cs_cause.php:169
+#@ WeStand
+msgid "Add New Category"
+msgstr ""
+
+#: include/cs_cause.php:171
+#@ WeStand
+msgid "Cause Categories"
+msgstr ""
+
+#: include/cs_cause.php:201
+#@ WeStand
+msgid "Cause Tags"
+msgstr ""
+
+#: include/cs_cause.php:400
+#@ WeStand
+msgid "Cause Date, Goal, Email"
+msgstr ""
+
+#: include/cs_cause.php:405
+#@ WeStand
+msgid "Cause End Date"
+msgstr ""
+
+#: include/cs_cause.php:417
+#@ WeStand
+msgid "Goal Amount"
+msgstr ""
+
+#: include/cs_cause.php:429
+#: include/theme_option.php:658
+#@ WeStand
+msgid "Paypal Email"
+msgstr ""
+
+#: include/cs_cause.php:431
+#@ WeStand
+msgid "Please enter your paypal bussiness email for individual Cause. If you dont enter paypal email here. You must enter paypal email at theme options"
+msgstr ""
+
+#: include/cs_cause.php:431
+#@ WeStand
+msgid "that will be used for default for all cuases"
+msgstr ""
+
+#: include/cs_cause.php:439
+#@ WeStand
+msgid "Raised Amount"
+msgstr ""
+
+#: include/cs_cause.php:441
+#@ WeStand
+msgid "Auto Calculated Raised Amount From Donations"
+msgstr ""
+
+#: include/cs_cause.php:461
+#@ WeStand
+msgid "Donor Settings"
+msgstr ""
+
+#: include/cs_cause.php:477
+#@ WeStand
+msgid "Put Name"
+msgstr ""
+
+#: include/cs_cause.php:515
+#@ WeStand
+msgid "Put Transaction ID"
+msgstr ""
+
+#: include/cs_cause.php:523
+#@ WeStand
+msgid "Payment Date"
+msgstr ""
+
+#: include/cs_cause.php:559
+#@ WeStand
+msgid "Cause Donors"
+msgstr ""
+
+#: include/cs_cause.php:561
+#@ WeStand
+msgid "Add Donor"
+msgstr ""
+
+#: include/cs_cause.php:573
+#@ WeStand
+msgid "Donor Name"
+msgstr ""
+
+#: include/cs_cause.php:581
+#@ WeStand
+msgid "Date"
+msgstr ""
+
+#: include/cs_cause.php:583
+#: include/theme_option.php:1024
+#: include/theme_option.php:1160
+#@ WeStand
+msgid "Actions"
+msgstr ""
+
+#: include/cs_cause.php:634
+#: include/event.php:470
+#@ WeStand
+msgid "Other Options"
+msgstr ""
+
+#: include/cs_cause.php:641
+#: include/event.php:481
+#: include/post_meta.php:170
+#: include/team.php:260
+#@ WeStand
+msgid "Social Sharing"
+msgstr ""
+
+#: include/cs_cause.php:650
+#: include/event.php:474
+#: include/post_meta.php:176
+#@ WeStand
+msgid "Post Author"
+msgstr ""
+
+#: include/cs_cause.php:664
+#: include/post_meta.php:189
+#@ WeStand
+msgid "Next Previous Button"
+msgstr ""
+
+#: include/cs_cause.php:672
+#@ WeStand
+msgid "Donors On/Off"
+msgstr ""
+
+#: include/event.php:197
+#@ WeStand
+msgid "Address"
+msgstr ""
+
+#: include/event.php:201
+#@ WeStand
+msgid "City / Town"
+msgstr ""
+
+#: include/event.php:205
+#@ WeStand
+msgid "Post Code"
+msgstr ""
+
+#: include/event.php:209
+#@ WeStand
+msgid "Region"
+msgstr ""
+
+#: include/event.php:213
+#@ WeStand
+msgid "Country"
+msgstr ""
+
+#: include/event.php:228
+#@ WeStand
+msgid "Google Maps"
+msgstr ""
+
+#: include/event.php:342
+#: include/post_meta.php:59
+#@ WeStand
+msgid "Thumbnail View"
+msgstr ""
+
+#: include/event.php:345
+#: include/post_meta.php:62
+#: include/post_meta.php:115
+#@ WeStand
+msgid "Single Image"
+msgstr ""
+
+#: include/event.php:346
+#: include/page_builder.php:28
+#@ WeStand
+msgid "Map"
+msgstr ""
+
+#: include/event.php:353
+#@ WeStand
+msgid "Event Date, Time and Location"
+msgstr ""
+
+#: include/event.php:358
+#@ WeStand
+msgid "Event Date"
+msgstr ""
+
+#: include/event.php:361
+#@ WeStand
+msgid "Start date"
+msgstr ""
+
+#: include/event.php:366
+#@ WeStand
+msgid "End date"
+msgstr ""
+
+#: include/event.php:371
+#@ WeStand
+msgid "Start Time"
+msgstr ""
+
+#: include/event.php:376
+#@ WeStand
+msgid "Start time"
+msgstr ""
+
+#: include/event.php:380
+#@ WeStand
+msgid "End time"
+msgstr ""
+
+#: include/event.php:384
+#@ WeStand
+msgid "All Day"
+msgstr ""
+
+#: include/event.php:392
+#@ WeStand
+msgid "Location / Address"
+msgstr ""
+
+#: include/event.php:402
+#@ WeStand
+msgid "Select Map Location"
+msgstr ""
+
+#: include/event.php:415
+#@ WeStand
+msgid "Show Map"
+msgstr ""
+
+#: include/event.php:422
+#: include/theme_option.php:182
+#@ WeStand
+msgid "Repeat"
+msgstr ""
+
+#: include/event.php:425
+#@ WeStand
+msgid "-- Never Repeat --"
+msgstr ""
+
+#: include/event.php:426
+#@ WeStand
+msgid "Every Day"
+msgstr ""
+
+#: include/event.php:427
+#@ WeStand
+msgid "Every Week"
+msgstr ""
+
+#: include/event.php:428
+#@ WeStand
+msgid "Every Month"
+msgstr ""
+
+#: include/event.php:433
+#@ WeStand
+msgid "Repeat how many time"
+msgstr ""
+
+#: include/event.php:445
+#@ WeStand
+msgid "Ticket Options"
+msgstr ""
+
+#: include/event.php:450
+#@ WeStand
+msgid "Button Title and Price"
+msgstr ""
+
+#: include/event.php:457
+#@ WeStand
+msgid "Buy Now URL"
+msgstr ""
+
+#: include/event.php:463
+#@ WeStand
+msgid "Ticket Button Color"
+msgstr ""
+
+#: include/event.php:495
+#@ WeStand
+msgid "Next Previous button"
+msgstr ""
+
+#: include/event.php:503
+#@ WeStand
+msgid "Add to calendar button"
+msgstr ""
+
+#: include/event.php:509
+#@ WeStand
+msgid "Like Button"
+msgstr ""
+
+#: include/page_builder.php:16
+#@ WeStand
+msgid "Blog"
+msgstr ""
+
+#: include/page_builder.php:18
+#@ WeStand
+msgid "Column"
+msgstr ""
+
+#: include/page_builder.php:19
+#@ WeStand
+msgid "Team"
+msgstr ""
+
+#: include/page_builder.php:20
+#: include/theme_option.php:59
+#@ WeStand
+msgid "Contact"
+msgstr ""
+
+#: include/page_builder.php:21
+#@ WeStand
+msgid "Events"
+msgstr ""
+
+#: include/page_builder.php:22
+#@ WeStand
+msgid "Gallery"
+msgstr ""
+
+#: include/page_builder.php:23
+#@ WeStand
+msgid "Tabs"
+msgstr ""
+
+#: include/page_builder.php:24
+#@ WeStand
+msgid "Video"
+msgstr ""
+
+#: include/page_builder.php:25
+#@ WeStand
+msgid "Accordion"
+msgstr ""
+
+#: include/page_builder.php:26
+#@ WeStand
+msgid "Quote"
+msgstr ""
+
+#: include/page_builder.php:27
+#@ WeStand
+msgid "Services"
+msgstr ""
+
+#: include/page_builder.php:29
+#: include/post_meta.php:65
+#: include/post_meta.php:118
+#: include/theme_option.php:32
+#@ WeStand
+msgid "Slider"
+msgstr ""
+
+#: include/page_builder.php:30
+#@ WeStand
+msgid "FullWidth"
+msgstr ""
+
+#: include/page_builder.php:87
+#@ WeStand
+msgid "Show Page Description"
+msgstr ""
+
+#: include/page_builder.php:93
+#@ WeStand
+msgid "Show the description of the page"
+msgstr ""
+
+#: include/post_meta.php:63
+#: include/post_meta.php:116
+#@ WeStand
+msgid "Audio"
+msgstr ""
+
+#: include/post_meta.php:64
+#: include/post_meta.php:117
+#@ WeStand
+msgid "Video/Soundcloud"
+msgstr ""
+
+#: include/post_meta.php:67
+#: include/post_meta.php:120
+#@ WeStand
+msgid "Use Featured Image as Thumbnail"
+msgstr ""
+
+#: include/post_meta.php:71
+#: include/post_meta.php:124
+#@ WeStand
+msgid "Audio URL"
+msgstr ""
+
+#: include/post_meta.php:75
+#: include/post_meta.php:128
+#@ WeStand
+msgid "Enter Specific Audio URL (Youtube, Vimeo and all otheres wordpress supported)"
+msgstr ""
+
+#: include/post_meta.php:79
+#: include/post_meta.php:132
+#@ WeStand
+msgid "Use featured image as video thumbnail"
+msgstr ""
+
+#: include/post_meta.php:82
+#: include/post_meta.php:135
+#@ WeStand
+msgid "It will work only for self hosted video"
+msgstr ""
+
+#: include/post_meta.php:85
+#: include/post_meta.php:138
+#@ WeStand
+msgid "Thumbnail Video URL"
+msgstr ""
+
+#: include/post_meta.php:89
+#: include/post_meta.php:142
+#@ WeStand
+msgid "Enter Specific Video URL (Youtube, Vimeo and all otheres wordpress supported) OR you can select it from your media library"
+msgstr ""
+
+#: include/post_meta.php:96
+#: include/post_meta.php:149
+#@ WeStand
+msgid "-- Select Slider --"
+msgstr ""
+
+#: include/post_meta.php:112
+#@ WeStand
+msgid "Inside Post Thumbnail View"
+msgstr ""
+
+#: include/post_meta.php:166
+#: include/team.php:256
+#@ WeStand
+msgid "Other Option"
+msgstr ""
+
+#: include/team.php:128
+#@ WeStand
+msgid "About"
+msgstr ""
+
+#: include/team.php:132
+#@ WeStand
+msgid "Expertise"
+msgstr ""
+
+#: include/team.php:152
+#@ WeStand
+msgid "Peronal Information"
+msgstr ""
+
+#: include/team.php:163
+#@ WeStand
+msgid "FontAwsome Icon"
+msgstr ""
+
+#: include/team.php:167
+#@ WeStand
+msgid "Put Fontsome Icon. You can get fontawsome icons from"
+msgstr ""
+
+#: include/team.php:192
+#@ WeStand
+msgid "Peronal Information listings"
+msgstr ""
+
+#: include/team.php:193
+#@ WeStand
+msgid "Add Peronal Information"
+msgstr ""
+
+#: include/team.php:224
+#@ WeStand
+msgid "Social Links"
+msgstr ""
+
+#: include/team.php:228
+#@ WeStand
+msgid "Facebook URL"
+msgstr ""
+
+#: include/team.php:235
+#@ WeStand
+msgid "Twitter URL"
+msgstr ""
+
+#: include/team.php:242
+#@ WeStand
+msgid "Google Plus"
+msgstr ""
+
+#: include/team.php:249
+#@ WeStand
+msgid "linkedin URL"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:283
+#, php-format
+#@ WeStand
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/tgm_plugin_activation.php:298
+#, php-format
+#@ WeStand
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/tgm_plugin_activation.php:308
+#, php-format
+#@ WeStand
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: include/tgm_plugin_activation.php:328
+#@ Awaken
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:719
+#@ Awaken
+msgid "The remote plugin package is does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:719
+#: include/tgm_plugin_activation.php:723
+#@ Awaken
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:723
+#@ Awaken
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:768
+#, php-format
+#@ Awaken
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: include/tgm_plugin_activation.php:893
+#: include/tgm_plugin_activation.php:1907
+#@ Awaken
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: include/tgm_plugin_activation.php:1536
+#@ Awaken
+msgid "External Source"
+msgstr ""
+
+#: include/theme_option.php:20
+#@ WeStand
+msgid "Color and Style"
+msgstr ""
+
+#: include/theme_option.php:21
+#@ WeStand
+msgid "Logo / Fav Icon"
+msgstr ""
+
+#: include/theme_option.php:22
+#: include/theme_option.php:304
+#: include/theme_option.php:307
+#@ WeStand
+msgid "Header Settings"
+msgstr ""
+
+#: include/theme_option.php:23
+#: include/theme_option.php:479
+#: include/theme_option.php:482
+#@ WeStand
+msgid "Footer Settings"
+msgstr ""
+
+#: include/theme_option.php:24
+#@ WeStand
+msgid "Under Constrution"
+msgstr ""
+
+#: include/theme_option.php:25
+#@ WeStand
+msgid "Other Settings"
+msgstr ""
+
+#: include/theme_option.php:27
+#@ WeStand
+msgid "API Settings"
+msgstr ""
+
+#: include/theme_option.php:30
+#@ WeStand
+msgid "Home Page Settings"
+msgstr ""
+
+#: include/theme_option.php:35
+#@ WeStand
+msgid "Donations"
+msgstr ""
+
+#: include/theme_option.php:37
+#@ WeStand
+msgid "Paypal and Payment settings"
+msgstr ""
+
+#: include/theme_option.php:38
+#@ WeStand
+msgid "Model Window Buttons"
+msgstr ""
+
+#: include/theme_option.php:40
+#@ WeStand
+msgid "Side Bars"
+msgstr ""
+
+#: include/theme_option.php:42
+#: include/theme_option.php:999
+#: include/theme_option.php:1002
+#@ WeStand
+msgid "Manage Sidebars"
+msgstr ""
+
+#: include/theme_option.php:44
+#@ WeStand
+msgid "Slider Setting"
+msgstr ""
+
+#: include/theme_option.php:48
+#: include/theme_option.php:1096
+#@ WeStand
+msgid "Social Settings"
+msgstr ""
+
+#: include/theme_option.php:50
+#: include/theme_option.php:578
+#: include/theme_option.php:1099
+#@ WeStand
+msgid "Social Network"
+msgstr ""
+
+#: include/theme_option.php:52
+#@ WeStand
+msgid "Language"
+msgstr ""
+
+#: include/theme_option.php:54
+#@ WeStand
+msgid "Upload New Languages"
+msgstr ""
+
+#: include/theme_option.php:56
+#@ WeStand
+msgid "Translation"
+msgstr ""
+
+#: include/theme_option.php:60
+#@ WeStand
+msgid "Others"
+msgstr ""
+
+#: include/theme_option.php:62
+#: include/theme_option.php:64
+#: include/theme_option.php:1236
+#@ WeStand
+msgid "Default Pages"
+msgstr ""
+
+#: include/theme_option.php:66
+#: include/theme_option.php:1571
+#: include/theme_option.php:1574
+#@ WeStand
+msgid "Backup Options"
+msgstr ""
+
+#: include/theme_option.php:68
+#@ WeStand
+msgid "Theme Options Backup"
+msgstr ""
+
+#: include/theme_option.php:69
+#@ WeStand
+msgid "Restore Default"
+msgstr ""
+
+#: include/theme_option.php:86
+#@ WeStand
+msgid "Color And Styles"
+msgstr ""
+
+#: include/theme_option.php:87
+#@ WeStand
+msgid "Theme color scheme and styling setting"
+msgstr ""
+
+#: include/theme_option.php:112
+#@ WeStand
+msgid "Custom Color Scheme"
+msgstr ""
+
+#: include/theme_option.php:116
+#@ WeStand
+msgid "Pick a custom color for Scheme of the theme"
+msgstr ""
+
+#: include/theme_option.php:121
+#@ WeStand
+msgid "Layout Options"
+msgstr ""
+
+#: include/theme_option.php:126
+#@ WeStand
+msgid "Layout Option"
+msgstr ""
+
+#: include/theme_option.php:132
+#@ WeStand
+msgid "Wide"
+msgstr ""
+
+#: include/theme_option.php:138
+#@ WeStand
+msgid "Background Options"
+msgstr ""
+
+#: include/theme_option.php:143
+#: include/theme_option.php:159
+#@ WeStand
+msgid "Background Image"
+msgstr ""
+
+#: include/theme_option.php:170
+#@ WeStand
+msgid "Position"
+msgstr ""
+
+#: include/theme_option.php:174
+#@ WeStand
+msgid "Left"
+msgstr ""
+
+#: include/theme_option.php:176
+#@ WeStand
+msgid "Center"
+msgstr ""
+
+#: include/theme_option.php:178
+#@ WeStand
+msgid "Right"
+msgstr ""
+
+#: include/theme_option.php:186
+#@ WeStand
+msgid "No Repeat"
+msgstr ""
+
+#: include/theme_option.php:188
+#@ WeStand
+msgid "Tile"
+msgstr ""
+
+#: include/theme_option.php:190
+#@ WeStand
+msgid "Tile Horizontally"
+msgstr ""
+
+#: include/theme_option.php:192
+#@ WeStand
+msgid "Tile Vertically"
+msgstr ""
+
+#: include/theme_option.php:196
+#@ WeStand
+msgid "Attachment"
+msgstr ""
+
+#: include/theme_option.php:202
+#@ WeStand
+msgid "Fixed"
+msgstr ""
+
+#: include/theme_option.php:207
+#: include/theme_option.php:223
+#@ WeStand
+msgid "Background Pattern"
+msgstr ""
+
+#: include/theme_option.php:246
+#: include/theme_option.php:249
+#@ WeStand
+msgid "Logo / Fav Icon Settings"
+msgstr ""
+
+#: include/theme_option.php:250
+#@ WeStand
+msgid "Add your logo and fav icon"
+msgstr ""
+
+#: include/theme_option.php:254
+#@ WeStand
+msgid "Upload Logo"
+msgstr ""
+
+#: include/theme_option.php:271
+#: include/theme_option.php:281
+#@ WeStand
+msgid "Please enter the required size"
+msgstr ""
+
+#: include/theme_option.php:287
+#@ WeStand
+msgid "FAV Icon"
+msgstr ""
+
+#: include/theme_option.php:292
+#@ WeStand
+msgid "Browse a small fav icon, only .ICO or .PNG format allowed"
+msgstr ""
+
+#: include/theme_option.php:308
+#@ WeStand
+msgid "Modify your header settings"
+msgstr ""
+
+#: include/theme_option.php:312
+#@ WeStand
+msgid "Menu Background Color"
+msgstr ""
+
+#: include/theme_option.php:320
+#@ WeStand
+msgid "Menu Font Color"
+msgstr ""
+
+#: include/theme_option.php:337
+#@ WeStand
+msgid "Header Languages"
+msgstr ""
+
+#: include/theme_option.php:352
+#@ WeStand
+msgid "Cart Count"
+msgstr ""
+
+#: include/theme_option.php:376
+#: include/theme_option.php:724
+#@ WeStand
+msgid "Donation Title"
+msgstr ""
+
+#: include/theme_option.php:410
+#@ WeStand
+msgid "These settings will apply to all those pages or post where you select the Default Header Style"
+msgstr ""
+
+#: include/theme_option.php:460
+#: include/theme_option.php:990
+#@ WeStand
+msgid "Please enter the short code for Layer Slider OR Revolution Slider if already included in package. Otherwise buy Sliders from"
+msgstr ""
+
+#: include/theme_option.php:466
+#@ WeStand
+msgid "Header Code"
+msgstr ""
+
+#: include/theme_option.php:470
+#@ WeStand
+msgid "Paste your Html or Css Code here"
+msgstr ""
+
+#: include/theme_option.php:483
+#@ WeStand
+msgid "Add footer setting detail"
+msgstr ""
+
+#: include/theme_option.php:487
+#@ WeStand
+msgid "Footer Widget Background Color"
+msgstr ""
+
+#: include/theme_option.php:495
+#@ WeStand
+msgid "Footer Background Color"
+msgstr ""
+
+#: include/theme_option.php:503
+#@ WeStand
+msgid "Custom Copyright"
+msgstr ""
+
+#: include/theme_option.php:511
+#@ WeStand
+msgid "Powered By Text"
+msgstr ""
+
+#: include/theme_option.php:519
+#@ WeStand
+msgid "Analytics Code"
+msgstr ""
+
+#: include/theme_option.php:523
+#@ WeStand
+msgid "Paste your Google Analytics (or other) tracking code here"
+msgstr ""
+
+#: include/theme_option.php:524
+#@ WeStand
+msgid "This will be added into the footer template of your theme"
+msgstr ""
+
+#: include/theme_option.php:532
+#: include/theme_option.php:535
+#@ WeStand
+msgid "Maintenance Page Settings"
+msgstr ""
+
+#: include/theme_option.php:536
+#@ WeStand
+msgid "Add maintenance page setting detail"
+msgstr ""
+
+#: include/theme_option.php:540
+#@ WeStand
+msgid "Maintenance Page"
+msgstr ""
+
+#: include/theme_option.php:545
+#@ WeStand
+msgid "Set the maintenance page On/Off"
+msgstr ""
+
+#: include/theme_option.php:550
+#@ WeStand
+msgid "Show Logo"
+msgstr ""
+
+#: include/theme_option.php:555
+#@ WeStand
+msgid "Set show logo On/Off"
+msgstr ""
+
+#: include/theme_option.php:560
+#@ WeStand
+msgid "Maintenance Text"
+msgstr ""
+
+#: include/theme_option.php:569
+#@ WeStand
+msgid "Launch Date"
+msgstr ""
+
+#: include/theme_option.php:583
+#@ WeStand
+msgid "Set social network On/Off"
+msgstr ""
+
+#: include/theme_option.php:591
+#: include/theme_option.php:594
+#@ WeStand
+msgid "Other Setting"
+msgstr ""
+
+#: include/theme_option.php:598
+#@ WeStand
+msgid "Sticky Menu"
+msgstr ""
+
+#: include/theme_option.php:603
+#@ WeStand
+msgid "Set the Main Navigation Sticky On/Off"
+msgstr ""
+
+#: include/theme_option.php:609
+#@ WeStand
+msgid "Responsive"
+msgstr ""
+
+#: include/theme_option.php:614
+#@ WeStand
+msgid "Set the responsive On/Off"
+msgstr ""
+
+#: include/theme_option.php:619
+#@ WeStand
+msgid "Right to Left(RTL)"
+msgstr ""
+
+#: include/theme_option.php:624
+#@ WeStand
+msgid "Set the theme styl\"Right to Left (RTL)\""
+msgstr ""
+
+#: include/theme_option.php:629
+#@ WeStand
+msgid "Color Switcher"
+msgstr ""
+
+#: include/theme_option.php:634
+#@ WeStand
+msgid "Set the color switcher for user demo"
+msgstr ""
+
+#: include/theme_option.php:639
+#@ WeStand
+msgid "Translation Switcher"
+msgstr ""
+
+#: include/theme_option.php:644
+#@ WeStand
+msgid "Set the translation switcher for user demo"
+msgstr ""
+
+#: include/theme_option.php:651
+#@ WeStand
+msgid "Paypal & Payments"
+msgstr ""
+
+#: include/theme_option.php:654
+#@ WeStand
+msgid "Paypal & Payments Setting"
+msgstr ""
+
+#: include/theme_option.php:666
+#@ WeStand
+msgid "Paypal Ipn URL"
+msgstr ""
+
+#: include/theme_option.php:674
+#@ WeStand
+msgid "Currency"
+msgstr ""
+
+#: include/theme_option.php:687
+#@ WeStand
+msgid "Currency Sign"
+msgstr ""
+
+#: include/theme_option.php:691
+#@ WeStand
+msgid "Use Currency Sign"
+msgstr ""
+
+#: include/theme_option.php:696
+#@ WeStand
+msgid "Paypal Payments"
+msgstr ""
+
+#: include/theme_option.php:700
+#@ WeStand
+msgid "Please enter payments by comma seperated"
+msgstr ""
+
+#: include/theme_option.php:705
+#@ WeStand
+msgid "Model Window Heading"
+msgstr ""
+
+#: include/theme_option.php:716
+#@ WeStand
+msgid "Support Buttons"
+msgstr ""
+
+#: include/theme_option.php:720
+#@ WeStand
+msgid "Tab 1"
+msgstr ""
+
+#: include/theme_option.php:732
+#: include/theme_option.php:793
+#: include/theme_option.php:830
+#@ WeStand
+msgid "Fontawsome Icon"
+msgstr ""
+
+#: include/theme_option.php:736
+#: include/theme_option.php:797
+#@ WeStand
+msgid "Put Fontawsome icon url. You can get fontawsome icons from"
+msgstr ""
+
+#: include/theme_option.php:742
+#: include/theme_option.php:802
+#: include/theme_option.php:839
+#@ WeStand
+msgid "Button Text"
+msgstr ""
+
+#: include/theme_option.php:781
+#@ WeStand
+msgid "Tab 2"
+msgstr ""
+
+#: include/theme_option.php:785
+#@ WeStand
+msgid "Join Our Movement Title"
+msgstr ""
+
+#: include/theme_option.php:818
+#@ WeStand
+msgid "Tab 3"
+msgstr ""
+
+#: include/theme_option.php:822
+#@ WeStand
+msgid "Become Volunteer Title"
+msgstr ""
+
+#: include/theme_option.php:834
+#@ WeStand
+msgid "Put Fontawsome icon url. You can get fontawsome icons from "
+msgstr ""
+
+#: include/theme_option.php:847
+#@ WeStand
+msgid "Button URL"
+msgstr ""
+
+#: include/theme_option.php:859
+#: include/theme_option.php:862
+#@ WeStand
+msgid "API Setting"
+msgstr ""
+
+#: include/theme_option.php:866
+#@ WeStand
+msgid "MailChimp Key"
+msgstr ""
+
+#: include/theme_option.php:876
+#@ WeStand
+msgid "Twitter API Setting"
+msgstr ""
+
+#: include/theme_option.php:880
+#@ WeStand
+msgid "Consumer Key"
+msgstr ""
+
+#: include/theme_option.php:889
+#@ WeStand
+msgid "Consumer Secret"
+msgstr ""
+
+#: include/theme_option.php:898
+#@ WeStand
+msgid "Access Token"
+msgstr ""
+
+#: include/theme_option.php:907
+#@ WeStand
+msgid "Access Token Secret"
+msgstr ""
+
+#: include/theme_option.php:920
+#: include/theme_option.php:923
+#@ WeStand
+msgid "Home Page Slider"
+msgstr ""
+
+#: include/theme_option.php:924
+#@ WeStand
+msgid "Edit home page slider settings"
+msgstr ""
+
+#: include/theme_option.php:928
+#@ WeStand
+msgid "Show Slider"
+msgstr ""
+
+#: include/theme_option.php:933
+#@ WeStand
+msgid "Switch it on if you want to show slider at home page. If you switch it off it will not show slider at home page"
+msgstr ""
+
+#: include/theme_option.php:940
+#@ WeStand
+msgid "Post Slider"
+msgstr ""
+
+#: include/theme_option.php:950
+#@ WeStand
+msgid "Select Post Category For posts"
+msgstr ""
+
+#: include/theme_option.php:965
+#@ WeStand
+msgid "No of Posts"
+msgstr ""
+
+#: include/theme_option.php:973
+#@ WeStand
+msgid "Show Slider Pagination"
+msgstr ""
+
+#: include/theme_option.php:978
+#@ WeStand
+msgid "Switch it on if you want to show slider pagination at home page. If you switch it off it will not show slider at home page"
+msgstr ""
+
+#: include/theme_option.php:1006
+#@ WeStand
+msgid "Sidebar Name"
+msgstr ""
+
+#: include/theme_option.php:1011
+#@ WeStand
+msgid "Please enter the desired title of sidebar"
+msgstr ""
+
+#: include/theme_option.php:1016
+#@ WeStand
+msgid "Already Added Sidebars"
+msgstr ""
+
+#: include/theme_option.php:1023
+#@ WeStand
+msgid "Sider Bar Name"
+msgstr ""
+
+#: include/theme_option.php:1050
+#@ WeStand
+msgid "Flex Slider Options"
+msgstr ""
+
+#: include/theme_option.php:1051
+#@ WeStand
+msgid "Configure Flex Slider setting"
+msgstr ""
+
+#: include/theme_option.php:1055
+#@ WeStand
+msgid "Effects"
+msgstr ""
+
+#: include/theme_option.php:1059
+#@ WeStand
+msgid "Fade"
+msgstr ""
+
+#: include/theme_option.php:1060
+#@ WeStand
+msgid "Slide"
+msgstr ""
+
+#: include/theme_option.php:1062
+#@ WeStand
+msgid "Please select Effect for flex Slider"
+msgstr ""
+
+#: include/theme_option.php:1067
+#@ WeStand
+msgid "Auto Play"
+msgstr ""
+
+#: include/theme_option.php:1072
+#@ WeStand
+msgid "If true, the slideshow will start running on page load"
+msgstr ""
+
+#: include/theme_option.php:1077
+#@ WeStand
+msgid "Animation Speed"
+msgstr ""
+
+#: include/theme_option.php:1081
+#@ WeStand
+msgid "How long the slideshow transition takes (in milliseconds)"
+msgstr ""
+
+#: include/theme_option.php:1086
+#@ WeStand
+msgid "Pause Time"
+msgstr ""
+
+#: include/theme_option.php:1090
+#@ WeStand
+msgid "Resume slideshow after user interaction (in milliseconds)"
+msgstr ""
+
+#: include/theme_option.php:1100
+#@ WeStand
+msgid "Edit Social Network"
+msgstr ""
+
+#: include/theme_option.php:1104
+#@ WeStand
+msgid "Section Title"
+msgstr ""
+
+#: include/theme_option.php:1124
+#@ WeStand
+msgid "Put Awesome Font Code like \"icon-facebook\"."
+msgstr ""
+
+#: include/theme_option.php:1151
+#@ WeStand
+msgid "Already Added Social Icons"
+msgstr ""
+
+#: include/theme_option.php:1204
+#@ WeStand
+msgid "Put Awesome Font Code like \"icon-flag\"."
+msgstr ""
+
+#: include/theme_option.php:1239
+#@ WeStand
+msgid "Default Pages Settings"
+msgstr ""
+
+#: include/theme_option.php:1240
+#@ WeStand
+msgid "Manage Default Pages (Archive, Search, Categories, Tags and Author Pages)"
+msgstr ""
+
+#: include/theme_option.php:1255
+#@ WeStand
+msgid "Exerpt Length"
+msgstr ""
+
+#: include/theme_option.php:1299
+#: include/theme_option.php:1302
+#@ WeStand
+msgid "Upload New Language"
+msgstr ""
+
+#: include/theme_option.php:1306
+#@ WeStand
+msgid "Upload Language (MO File)"
+msgstr ""
+
+#: include/theme_option.php:1313
+#@ WeStand
+msgid "Browse"
+msgstr ""
+
+#: include/theme_option.php:1316
+#@ WeStand
+msgid "Please upload new language file (MO format only). It will be uploaded in your themes languages folder."
+msgstr ""
+
+#: include/theme_option.php:1317
+#@ WeStand
+msgid "Download MO files from"
+msgstr ""
+
+#: include/theme_option.php:1319
+#@ WeStand
+msgid "Upload Files!"
+msgstr ""
+
+#: include/theme_option.php:1327
+#@ WeStand
+msgid "Already Uploaded Languages"
+msgstr ""
+
+#: include/theme_option.php:1340
+#@ WeStand
+msgid "Please copy the language name, open config.php file, find WPLANG constant and set its value by replacing the language name."
+msgstr ""
+
+#: include/theme_option.php:1342
+#@ WeStand
+msgid "Language Translations"
+msgstr ""
+
+#: include/theme_option.php:1342
+#@ WeStand
+msgid "All of our Themes are able to be translated into any language. The process of translating the theme is a user responsibility. The following instructions are given as guidance."
+msgstr ""
+
+#: include/theme_option.php:1346
+#@ WeStand
+msgid "1. Open wp-config.php and replace this: define"
+msgstr ""
+
+#: include/theme_option.php:1346
+#@ WeStand
+msgid "with this (subsitute the language string (bg_BG) with your own!): define"
+msgstr ""
+
+#: include/theme_option.php:1352
+#@ WeStand
+msgid "2. Download and install POEDIT"
+msgstr ""
+
+#: include/theme_option.php:1355
+#@ WeStand
+msgid "3. Connect to your site -> open your theme/languages directory"
+msgstr ""
+
+#: include/theme_option.php:1358
+#@ WeStand
+msgid "4. Download the default.po file and open it with POEDIT."
+msgstr ""
+
+#: include/theme_option.php:1361
+#@ WeStand
+msgid "5. Translate file and save it as bg_BG (the file name must match with the string you inserted into wp-config.php)"
+msgstr ""
+
+#: include/theme_option.php:1364
+#@ WeStand
+msgid "6. Two files will be generated after save. bg_BG.po and bg_BG.mo"
+msgstr ""
+
+#: include/theme_option.php:1367
+#@ WeStand
+msgid " 7. Upload the .mo and .po files into wp-content/themes/your-theme/languages folder"
+msgstr ""
+
+#: include/theme_option.php:1379
+#@ WeStand
+msgid "Manage Languages"
+msgstr ""
+
+#: include/theme_option.php:1382
+#@ WeStand
+msgid "Upload Languages"
+msgstr ""
+
+#: include/theme_option.php:1383
+#@ WeStand
+msgid "Upload new language"
+msgstr ""
+
+#: include/theme_option.php:1389
+#: include/theme_option.php:1392
+#@ WeStand
+msgid "Cause Translation"
+msgstr ""
+
+#: include/theme_option.php:1404
+#@ WeStand
+msgid "End Date"
+msgstr ""
+
+#: include/theme_option.php:1420
+#@ WeStand
+msgid "Close"
+msgstr ""
+
+#: include/theme_option.php:1456
+#: include/theme_option.php:1459
+#@ WeStand
+msgid "Contact Translation"
+msgstr ""
+
+#: include/theme_option.php:1463
+#@ WeStand
+msgid "First Name"
+msgstr ""
+
+#: include/theme_option.php:1471
+#@ WeStand
+msgid "Last Name"
+msgstr ""
+
+#: include/theme_option.php:1496
+#: include/theme_option.php:1499
+#@ WeStand
+msgid "Other Translation"
+msgstr ""
+
+#: include/theme_option.php:1503
+#@ WeStand
+msgid "404 Content"
+msgstr ""
+
+#: include/theme_option.php:1536
+#@ WeStand
+msgid "Sort By"
+msgstr ""
+
+#: include/theme_option.php:1552
+#@ WeStand
+msgid "Read More"
+msgstr ""
+
+#: include/theme_option.php:1560
+#@ WeStand
+msgid "View All"
+msgstr ""
+
+#: include/theme_option.php:1575
+#@ WeStand
+msgid "Theme Options Backup and restore settings"
+msgstr ""
+
+#: include/theme_option.php:1579
+#@ WeStand
+msgid "Last Backup Taken on"
+msgstr ""
+
+#: include/theme_option.php:1591
+#@ WeStand
+msgid "Take Backup"
+msgstr ""
+
+#: include/theme_option.php:1595
+#@ WeStand
+msgid "Take the Backup of your current theme options, it will replace the old backup if you have already taken"
+msgstr ""
+
+#: include/theme_option.php:1599
+#@ WeStand
+msgid "Restore Backup"
+msgstr ""
+
+#: include/theme_option.php:1603
+#@ WeStand
+msgid "Restore your last backup taken (It will be replaced on your curernt theme options)"
+msgstr ""
+
+#: include/theme_option.php:1608
+#@ WeStand
+msgid "Current Theme Option Data"
+msgstr ""
+
+#: include/theme_option.php:1612
+#@ WeStand
+msgid "You can copy your current theme data in a text file and import it later by replacing the above text"
+msgstr ""
+
+#: include/theme_option.php:1617
+#@ WeStand
+msgid "Import Theme Option Data"
+msgstr ""
+
+#: include/theme_option.php:1621
+#@ WeStand
+msgid "You can paste theme option backup data"
+msgstr ""
+
+#: include/widgets.php:66
+#@ WeStand
+msgid "Please enter your page or User profile url example:"
+msgstr ""
+
+#: include/widgets.php:82
+#@ WeStand
+msgid "Show Faces"
+msgstr ""
+
+#: include/widgets.php:94
+#@ WeStand
+msgid "Show Stream"
+msgstr ""
+
+#: include/widgets.php:118
+#@ WeStand
+msgid "Like Box Height"
+msgstr ""
+
+#: include/widgets.php:489
+#@ WeStand
+msgid "Number of Images"
+msgstr ""
+
+#: include/widgets.php:732
+#@ WeStand
+msgid "Number of Posts To Display"
+msgstr ""
+
+#: include/widgets.php:744
+#@ WeStand
+msgid "Display Thumbinals"
+msgstr ""
+
+#: include/widgets.php:917
+#@ WeStand
+msgid "Num of Tweets"
+msgstr ""
+
+#: include/widgets.php:1770
+#@ WeStand
+msgid "Invalid API key"
+msgstr ""
+

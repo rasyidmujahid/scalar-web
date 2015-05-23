@@ -56,16 +56,19 @@ function cs_shortcode_pb_tabs($atts, $content = "") {
     global $cs_node, $tab_counter;
     if (!isset($atts['style'])){ $atts['style'] = '';}
     $tab_counter++;
-    $content = str_replace("&Acirc;&nbsp;", "", htmlentities($content));
-	$content = html_entity_decode($content);
-	$content = htmlspecialchars($content, ENT_NOQUOTES, "UTF-8");
+    
     $content = str_replace("[tab_item", "<tab_item", $content);
     $content = str_replace("[/tab_item]", "</tab_item>", $content);
     $content = str_replace('tabs="tabs"]', ">", $content);
+	$content = str_replace(']', ">", $content);
     $content = str_replace("<br />", "", $content);
     $content = str_replace("<p>", "", $content);
     $content = str_replace("</p>", "", $content);
     $content = "<tab>" . $content . "</tab>";
+	
+	$content = htmlspecialchars(stripslashes($content));
+	$content = str_replace('&', '', $content);
+	$content = str_replace(array('amp;#8221;', 'amp;#8243;', 'lt;', 'gt;'), array('"', '"', '<', '>'), $content);
 
 	$cs_node = new stdClass();
 	$cs_node->tabs_element_size = "";
@@ -79,16 +82,21 @@ add_shortcode('tab', 'cs_shortcode_pb_tabs');
 // adding accordion start
 function cs_shortcode_pb_accordion($atts, $content = "") {
     global $cs_node, $acc_counter;
-    $content = str_replace("&Acirc;&nbsp;", "", htmlentities($content));
-	$content = html_entity_decode($content);
-	$content = htmlspecialchars($content, ENT_NOQUOTES, "UTF-8");
+    
     $content = str_replace("[accordion_item", "<accordion_item", $content);
     $content = str_replace("[/accordion_item]", "</accordion_item>", $content);
     $content = str_replace('accordion="accordion"]', ">", $content);
+	$content = str_replace(']', ">", $content);
     $content = str_replace("<br />", "", $content);
     $content = str_replace("<p>", "", $content);
     $content = str_replace("</p>", "", $content);
     $content = "<accordion>" . $content . "</accordion>";
+	
+	$content = htmlspecialchars(stripslashes($content));
+	
+	$content = str_replace('&', '', $content);
+	$content = str_replace(array('amp;#8221;', 'lt;', 'gt;'), array('"', '<', '>'), $content);
+
 
 	$cs_node = new stdClass();
 	$cs_node->accordion_element_size = "";
@@ -207,6 +215,7 @@ function cs_shortcode_pb_message_box($atts, $content = "") {
 	}
 	$msg_clz_btn = "";
 	if(isset($atts['align']) and $atts['align'] == "right"){
+
 		$msg_clz_btn = "style='left: 10px !important;'";
 		$allign_class = "align-right";
 	}
@@ -492,6 +501,7 @@ function cs_shortcode_pb_map($atts, $content = "") {
 	$cs_node->map_marker_icon = $atts['marker_icon_url'];
 	$cs_node->map_show_marker = $atts['marker'];
 	$cs_node->map_draggable = $atts['draggable'];
+
 	$cs_node->map_controls = $atts['disable_controls'];
 	$cs_node->map_scrollwheel = $atts['scrollwheel'];
 	$cs_node->map_view = $atts['map_view'];
@@ -514,13 +524,13 @@ add_shortcode('code', 'cs_shortcode_pb_code');
 
 //Services Shortcode
 function cs_shortcode_pb_services($atts, $content = "") {
-	$content = html_entity_decode($content);
-	$content = htmlspecialchars($content, ENT_NOQUOTES, "UTF-8");
-    $content = str_replace(']', ">", $content);
+	
+	
     $content = str_replace("[service-item", "<service-item", $content);
     $content = str_replace("[/service-item", "</service-item", $content);
     $content = str_replace("[content", "<content", $content);
     $content = str_replace("[/content", "</content", $content);
+	$content = str_replace(']', ">", $content);
     $content = str_replace("<br />", "", $content);
     $content = str_replace('&nbsp;=""', "", $content);
     $content = str_replace("<p>", "", $content);
@@ -528,6 +538,12 @@ function cs_shortcode_pb_services($atts, $content = "") {
     $content = "<services>" . $content . "</services>";
     
 	$html = "";
+	$content = htmlspecialchars(stripslashes($content));
+	
+	$content = str_replace('&', '', $content);
+	
+	$content = str_replace(array('quot;', 'amp;#8221;', 'amp;#8243;', 'lt;', 'gt;'), array('"', '"', '"', '<', '>'), $content);
+	
     $cs_xmlObject = simplexml_load_string($content);
     $services_count = 0;
 

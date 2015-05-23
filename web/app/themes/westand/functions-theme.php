@@ -154,10 +154,17 @@ if ( ! function_exists( 'cs_column_page' ) ) {
 if ( ! function_exists( 'cs_tabs_page' ) ) {
 	function cs_tabs_page(){
 		global $cs_node, $tab_counter;
+		
+		$tabs_content = htmlspecialchars($cs_node->tabs_content);
+		
+		$tabs_content = html_entity_decode($tabs_content);
+		
+		$tabs_content = str_replace(array('quot;', 'amp;#8221;', 'amp;#8243;', 'lt;', 'gt;'), array('"', '"', '"', '<', '>'), $tabs_content);
+		
 		$html = "";
 		if ( $cs_node->tabs_element_size == "" ) {
 			$html .= '<ul class="nav nav-tabs" id="myTab">';
-			$xmlObject = simplexml_load_string($cs_node->tabs_content);
+			$xmlObject = simplexml_load_string($tabs_content);
 			$tabs_count = 0;
 			foreach ($xmlObject as $val) {
 				if (!isset($val["icon"])){ $val["icon"] = '';}
@@ -224,12 +231,17 @@ if ( ! function_exists( 'cs_accordions_page' ) ) {
 		$acc_counter = rand(5, 15);
 		$acc_counter++;
 		$accordion_count = 0;
+		$accordion_content = htmlspecialchars($cs_node->accordion_content);
+		
+		$accordion_content = html_entity_decode($accordion_content);
+		
+		$accordion_content = str_replace(array('quot;', 'amp;#8221;', 'amp;#8243;', 'lt;', 'gt;'), array('"', '"', '"', '<', '>'), $accordion_content);
 		$html = "";
 		if ( $cs_node->accordion_element_size == "" ) {
 
 			$html .= '<div class="panel-group" id="accordion-' . $acc_counter . '">';
 
-			$cs_xmlObject = new SimpleXMLElement( $cs_node->accordion_content );
+			$cs_xmlObject = new SimpleXMLElement( $accordion_content );
 
 			foreach ($cs_xmlObject as $cs_node) {
 
@@ -266,6 +278,7 @@ if ( ! function_exists( 'cs_accordions_page' ) ) {
 					
 
 				}
+				
 
 				$html .= '<div class="panel panel-default"><div class="panel-heading">';
 
@@ -766,9 +779,9 @@ var bc ='.cs-bgcolr,.cs-bgcolrhvr:hover,.navigation ul ul li:hover > a,.cycle-pa
 
                 	<aside class="rowside">
 
-      					<header><h4>Layout options</h4></header>
+      					<header><h4><?php _e('Layout options', 'WeStand'); ?></h4></header>
                         <div class="switcher-inn">
-                            <h5>Select Color Scheme</h5>
+                            <h5><?php _e('Select Color Scheme', 'WeStand'); ?></h5>
                             <div id="colorpickerwrapp">
                                 <?php $cs_color_array= array('#45b363','#339a74', '#1d7f5b', '#3fb0c3', '#2293a6', '#137d8f', '#9374ae', '#775b8f', '#dca13a', '#c46d32', '#c44732', '#c44d55', '#425660', '#292f32');
                                 foreach($cs_color_array as $colors){
@@ -782,18 +795,18 @@ var bc ='.cs-bgcolr,.cs-bgcolrhvr:hover,.navigation ul ul li:hover > a,.cycle-pa
     
                             <img src="<?php echo $theme_path?>/images/admin/img-colorpan.png" alt="">
     
-                            <h5>Theme Color</h5>
+                            <h5><?php _e('Theme Color', 'WeStand'); ?></h5>
     
                             <input id="bgcolor" name="style_sheet" type="text" class="bg_color" value="<?php echo $_SESSION['wssess_style_sheet'];?>" /></label>
-                            <h5>Choose Your Layout Style</h5>
+                            <h5><?php _e('Choose Your Layout Style', 'WeStand'); ?></h5>
     
                             <ul class="layoutoption selectradio">
                                
                                 <li><label class="full-view <?php if($_SESSION['wssess_layout_option']=="wrapper")echo "active";?> ">
-                                <span>Full</span>
+                                <span><?php _e('Full', 'WeStand'); ?></span>
                                 <i class="fa fa-arrows-h"></i><input type="radio" name="layout_option" value="wrapper" ></label></li>
                                  <li><label class="label_radio <?php if($_SESSION['wssess_layout_option']=="wrapper_boxed")echo "active";?> ">
-                                <span>Boxed</span>
+                                <span><?php _e('Boxed', 'WeStand'); ?></span>
                                 <i class="fa fa-columns"></i><input type="radio" name="layout_option" value="wrapper_boxed" ></label></li>
                             </ul>
 						</div>
@@ -803,14 +816,14 @@ var bc ='.cs-bgcolr,.cs-bgcolrhvr:hover,.navigation ul ul li:hover > a,.cycle-pa
 
                     <aside class="rowside">
 
-                      <header>  <h4>Pattren Styles</h4></header>
+                      <header>  <h4><?php _e('Pattren Styles', 'WeStand'); ?></h4></header>
 
                       <div class="innertext">
 
                       
 
                         <div id="pattstyles" class="itemstyles selectradio">
-							<span>Patterns are available in boxed mode</span>
+							<span><?php _e('Patterns are available in boxed mode', 'WeStand'); ?></span>
                             <ul>
 
                                 <li><label <?php if($_SESSION['wssess_custome_pattern']=="1")echo "class='active'";?> ><img src="<?php echo $theme_path?>/images/pattern/pattern1.png" alt=""><input type="radio" name="custome_pattern" value="1"></label></li>
@@ -850,7 +863,7 @@ var bc ='.cs-bgcolr,.cs-bgcolrhvr:hover,.navigation ul ul li:hover > a,.cycle-pa
 
                     <aside class="rowside">
 
-                        <header><h4>Background Images</h4></header>
+                        <header><h4><?php _e('Background Images', 'WeStand'); ?></h4></header>
 
                         <div class="innertext">
 
@@ -1529,6 +1542,7 @@ if ( ! function_exists( 'cs_pagination' ) ) {
 
 		else if ($_GET['page_id_all'] >= $total_page - 1) {
 
+
 			if ($total_page < 5)
 
 				$loop_start = 1;
@@ -1718,7 +1732,7 @@ if ( ! function_exists( 'cs_social_network_widget' ) ) {
 
 function cs_attachment_image_src($attachment_id, $width, $height) {
 
-    $image_url = wp_get_attachment_image_src($attachment_id, array($width, $height), true);
+    $image_url = wp_get_attachment_image_src((int)$attachment_id, array($width, $height), true);
 
      if ($image_url[1] == $width and $image_url[2] == $height)
 
@@ -1726,7 +1740,7 @@ function cs_attachment_image_src($attachment_id, $width, $height) {
 
     else
 
-        $image_url = wp_get_attachment_image_src($attachment_id, "full", true);
+        $image_url = wp_get_attachment_image_src((int)$attachment_id, "full", true);
 
     	$parts = explode('/uploads/',$image_url[0]);
 
@@ -1742,7 +1756,7 @@ function cs_get_post_img_src($post_id, $width, $height) {
 
 		$image_id = get_post_thumbnail_id($post_id);
 
-		$image_url = wp_get_attachment_image_src($image_id, array($width, $height), true);
+		$image_url = wp_get_attachment_image_src((int)$image_id, array($width, $height), true);
 
 		if ($image_url[1] == $width and $image_url[2] == $height) {
 
@@ -1750,7 +1764,7 @@ function cs_get_post_img_src($post_id, $width, $height) {
 
 		} else {
 
-			$image_url = wp_get_attachment_image_src($image_id, "full", true);
+			$image_url = wp_get_attachment_image_src((int)$image_id, "full", true);
 
 			return $image_url[0];
 
@@ -1766,7 +1780,7 @@ function cs_get_post_img($post_id, $width, $height) {
 
     $image_id = get_post_thumbnail_id($post_id);
 
-    $image_url = wp_get_attachment_image_src($image_id, array($width, $height), true);
+    $image_url = wp_get_attachment_image_src((int)$image_id, array($width, $height), true);
 
     if ($image_url[1] == $width and $image_url[2] == $height) {
 
@@ -2012,9 +2026,9 @@ register_sidebar( array(
 ) );
 //primary widget
 register_sidebar( array(
-		'name'          => __( 'Primary Sidebar', 'Faith' ),
+		'name'          => __( 'Primary Sidebar', 'WeStand' ),
 		'id'            => 'sidebar-1',
-		'description'   => __( 'Main sidebar that appears on the right.', 'Faith' ),
+		'description'   => __( 'Main sidebar that appears on the right.', 'WeStand' ),
   		'before_widget' => '<div class="widget %2$s">',
  		'after_widget' => '</div>',
  		'before_title' => '<header class="cs-heading-title"><h2 class="cs-section-title">',
@@ -2136,93 +2150,48 @@ if ( ! function_exists( 'cs_under_construction' ) ) {
 		global $cs_theme_option, $post;
 
 		if(isset($post)){ $post_name = $post->post_name;  }else{ $post_name = ''; }
-
 		if ( ($cs_theme_option['under-construction'] == "on" and !(is_user_logged_in())) or $post_name == "pf-under-construction") { 
-
 		?>
-
-		<div id="wrappermain-pix" class="wrapper wrapper_boxed undercunst-box">		
-
+		<div id="wrappermain-pix" class="wrapper wrapper_boxed undercunst-box">
 		<div class="bottom_strip">
-
 				<div class="container">
-
 					<div class="logo">
-
 						<?php if(isset($cs_theme_option['showlogo']) and $cs_theme_option['showlogo'] == "on"){ cs_logo(); }?>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		<div id="undercontruction">
 		<div id="midarea">
-
 			<?php echo '<p>'.htmlspecialchars_decode($cs_theme_option['under_construction_text']).'</p>';
 				 $launch_date = $cs_theme_option['launch_date'];
-
 				 $year = date_i18n("Y", strtotime($launch_date));
-
 				 $month = date_i18n("m", strtotime($launch_date));
-
-				 $month_event_c = date_i18n("M", strtotime($launch_date));							
-
+				 $month_event_c = date_i18n("M", strtotime($launch_date));
 				 $day = date_i18n("d", strtotime($launch_date));
-
-				 $time_left = date_i18n("H,i,s", strtotime($launch_date));
-
-				
-
+				 $time_left = date_i18n("H,i,s", strtotime($launch_date));			
 			?>
-
 			<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/scripts/frontend/jquery.countdown.js"></script>
-
 			 <script type="text/javascript">
-
 				//Countdown callback function
-
 				jQuery(function () {
-
 					var austDay = new Date();
-
 					austDay = new Date(<?php echo $year; ?>,<?php echo $month; ?>-1,<?php echo $day; ?>);
-
-					jQuery('#defaultCountdown').countdown({until: austDay});
-					
+					jQuery('#defaultCountdown').countdown({until: austDay});					
 					jQuery('#year').text(austDay.getFullYear());
 
 				});
-
-
-
 				</script>
-
 			<div class="countdown styled"></div>
-
 			<div class="countdownit">
-
 				<div id="defaultCountdown"></div>
-
 			</div>
-			
-
 		</div>
-
 		</div>
-
-			
-
 		<!-- Footer Widgets Start -->
-
 		<footer>
-
 			<!-- Container Start -->
-
 				 <!-- Social Network Start -->
-
-				<?php if($cs_theme_option['socialnetwork'] == "on"){  
+				<?php if($cs_theme_option['socialnetwork'] == "on"){ 
 
 					cs_social_network();
 
@@ -2303,7 +2272,7 @@ if ( ! function_exists( 'cs_breadcrumbs' ) ) {
 				if ( get_post_type() != 'post' ) {
 					$post_type = get_post_type_object(get_post_type());
 					$slug = $post_type->rewrite;
-					printf($link, $homeLink . '/' . $slug['slug'] . '/', $post_type->labels->singular_name);
+					printf($link, $homeLink .  $slug['slug'] . '/', $post_type->labels->singular_name);
 					//if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
 					if ($showCurrent == 1) echo $delimiter . $before . $current_page . $after;
 				} else {

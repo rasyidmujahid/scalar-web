@@ -125,18 +125,18 @@
                     <div class="opt-conts">
                     	<div class="clear"></div>
                     	<div class="theme-help">
-                            <h4 style="padding-bottom:0px;">About</h4>
+                            <h4 style="padding-bottom:0px;"><?php _e('About','WeStand');?></h4>
                             <div class="clear"></div>
                         </div>
 				        <ul class="form-elements noborder">
-                            <li class="to-label"><label>Expertise</label></li>
+                            <li class="to-label"><label><?php _e('Expertise','WeStand');?></label></li>
                             <li class="to-field">
                                 <input type="text" name="var_cp_expertise" value="<?php echo htmlspecialchars($var_cp_expertise)?>"/>
                             </li>
                         </ul>
                         
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Email</label></li>
+                            <li class="to-label"><label><?php _e('Email','WeStand');?></label></li>
                             <li class="to-field">
                                 <input type="text" name="var_cp_email" value="<?php echo htmlspecialchars($var_cp_email)?>"/>
                             </li>
@@ -149,22 +149,22 @@
                 <div class="boxes tracklists">
                 	<div id="add_track" class="poped-up">
                         <div class="opt-head">
-                            <h5>Peronal Information</h5>
+                            <h5><?php _e('Peronal Information','WeStand');?></h5>
                             <a href="javascript:closepopedup('add_track')" class="closeit">&nbsp;</a>
                             <div class="clear"></div>
                         </div>
                         <ul class="form-elements">
-                            <li class="to-label"><label>Title</label></li>
+                            <li class="to-label"><label><?php _e('Title','WeStand');?></label></li>
                             <li class="to-field">
                             	<input type="text" id="var_cp_title" name="var_cp_title" value="Title" />
                             </li>
                         </ul>
                         <ul class="form-elements">
-                            <li class="to-label"><label>FontAwsome Icon</label></li>
+                            <li class="to-label"><label><?php _e('FontAwsome Icon','WeStand');?></label></li>
                             <li class="to-field">
 								<input id="var_cp_image_url" name="var_cp_image_url" value="" type="text" class="small" />
 								<input id="var_cp_image_url" name="var_cp_image_url" type="button" class="uploadfile left" value="Browse"/>
-                                <p>Put Fontsome Icon. You can get fontawsome icons from <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
+                                <p><?php _e('Put Fontsome Icon. You can get fontawsome icons from','WeStand');?> <a href="http://fortawesome.github.io/Font-Awesome/icons/"><?php _e('here','WeStand');?></a></p>
                             </li>
                         </ul>
                         
@@ -189,8 +189,8 @@
 						});
 					</script>
                     <div class="opt-head">
-                        <h4 style="padding-top:12px;">Peronal Information listings</h4>
-                        <a href="javascript:openpopedup('add_track')" class="button">Add Peronal Information</a>
+                        <h4 style="padding-top:12px;"><?php _e('Peronal Information listings','WeStand');?></h4>
+                        <a href="javascript:openpopedup('add_track')" class="button"><?php _e('Add Peronal Information','WeStand');?></a>
                         <div class="clear"></div>
                     </div>
                     <table class="to-table" border="0" cellspacing="0">
@@ -221,43 +221,43 @@
                 </div>
                 	<div class="clear"></div>
                  		<div class="theme-help">
-                          <h4 style="padding-bottom:0px;">Social Links</h4>
+                          <h4 style="padding-bottom:0px;"><?php _e('Social Links','WeStand');?></h4>
                           <div class="clear"></div>
                         </div>
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Facebook URL</label></li>
+                            <li class="to-label"><label><?php _e('Facebook URL','WeStand');?></label></li>
                             <li class="to-field">
                             	<input type="text" name="facebook" value="<?php if ( isset($facebook) ) echo $facebook ?>" />
                                
                             </li>
                         </ul>
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Twitter URL</label></li>
+                            <li class="to-label"><label><?php _e('Twitter URL','WeStand');?></label></li>
                             <li class="to-field">
                             	<input type="text" name="twitter" value="<?php if ( isset($twitter) ) echo $twitter ?>" />
                                
                             </li>
                         </ul>
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>Google Plus</label></li>
+                            <li class="to-label"><label><?php _e('Google Plus','WeStand');?></label></li>
                             <li class="to-field">
                             	<input type="text" name="google_plus" value="<?php if ( isset($google_plus) ) echo $google_plus ?>" />
                                
                             </li>
                         </ul>
                         <ul class="form-elements noborder">
-                            <li class="to-label"><label>linkedin URL</label></li>
+                            <li class="to-label"><label><?php _e('linkedin URL','WeStand');?></label></li>
                             <li class="to-field">
                             	<input type="text" name="linkedin" value="<?php if ( isset($linkedin) ) echo $linkedin ?>" />
                                
                             </li>
                         </ul>
                         <div class="opt-head">
-                          <h4>Other Option</h4>
+                          <h4><?php _e('Other Option','WeStand');?></h4>
                           <div class="clear"></div>
                         </div>
                         <ul class="form-elements">
-                            <li class="to-label"><label>Social Sharing</label></li>
+                            <li class="to-label"><label><?php _e('Social Sharing','WeStand');?></label></li>
                             <li class="to-field">
                                 <div class="on-off"><input type="checkbox" name="team_social_sharing" value="on" class="myClass" <?php if($team_social_sharing=='on')echo "checked"?> /></div>
                            

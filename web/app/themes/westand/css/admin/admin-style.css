@@ -440,11 +440,15 @@
 /*	Form Elements
 ==================================================*/
 .form-elements {
-	width:100%;
+	/*width:100%;*/
 	float:left;
-	padding:20px 0;
+	padding:20px;
 	position:relative;
 	border-bottom:#eaeaea solid 1px;
+	width: 100%; 
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
 }
 .form-elements li {
 	float:left;
@@ -461,6 +465,7 @@
 	width:72%;
 	float:left;
 }
+.form-elements p{ clear: both; }
 .opt-conts .form-elements li.to-field {
 }
 .opt-conts .form-elements li.to-field {
@@ -1967,7 +1972,7 @@ Color Pickers
 	float: right;
 	padding: 8px 10px;
 	border: none;
-	margin: 14px 14px 0px 0px;
+	margin: 0 14px 0px 0px;
 	color: #fff;
 	cursor: pointer;
 }
@@ -2038,6 +2043,7 @@ li.to-field .cs-left-sec select.vsmall{
 	line-height: 22px;
 	padding: 5px 0px;
 	font-size: 13px;
+	float: none;
 }
 .form-elements.donation-button-theme-options.noborder,
 .form-elements.noborder.header-bg{
@@ -2081,3 +2087,72 @@ li.to-field .cs-left-sec select.vsmall{
 .cs-demo-data form #submit_btn{
 	border-radius: 5px;
 }
+
+/*--------------------------------------------
+Backend Rtl Styling 
+--------------------------------------------*/
+
+.rtl .form-elements li.to-label label, .rtl .column-in .button, .rtl #add_page_builder_item a.decrement, .rtl #add_page_builder_item a.increment, .rtl .column-in .button i, .rtl .cs-feature-list input, .rtl #tab-directory-options li.to-field label, .rtl li.to-field .button, .rtl .cs-heading-area .button, .rtl li.to-field button, .rtl li.to-field input[type="submit"], .rtl li.to-field input[type="reset"], .rtl li.to-field input[type="button"], .rtl .add_services,
+.rtl .form-elements li.to-label label, .rtl .form-elements li.to-field, .rtl .pb-item-container .pbwp-form-rows .pbwp-form-sub-fields, .rtl .reports-tabs, .rtl .reports-tabs li, .rtl .reports-content, .rtl .reports-content .form-elements li.to-field, .rtl .woocommerce_options_panel input[type="email"], .rtl .woocommerce_options_panel input[type="number"], .rtl .woocommerce_options_panel input[type="text"],
+.rtl #woocommerce-coupon-data ul.wc-tabs, .rtl #woocommerce-product-data ul.wc-tabs, .rtl .woocommerce ul.wc-tabs, .rtl .woocommerce_options_panel select, .rtl #woocommerce-product-data input.dp-applied, .rtl .woocommerce_options_panel .select2-container, .rtl .inn-text, .rtl li.to-field label,
+.rtl .form-elements li.to-label, .rtl .shortnav .footer, .rtl .horizontal_tabs ul li, .rtl .meta-input.pattern .radio-image-wrapper, .rtl .btn-group .cs-icon-wrap, .rtl li.to-field p, .rtl .iconpicker .iconpicker-item,
+.rtl .cs-drag-slider.ui-slider-horizontal, .rtl .cs-icon-wrap .lead, .rtl .bcevent_title li .input-sec, .rtl #price_remove{
+	float: right !important;
+}
+.rtl #add_page_builder_item a.options, .rtl #add_page_builder_item a.delete-it, .rtl .form-elements li.to-button,
+.rtl .multiselect-holder li.categories select, .rtl .cs-shortcode-wrapp header h4, .rtl .footer #submit_btn.bottom_btn_save, .rtl .footer .bottom_btn_reset, .rtl li.to-field input.cs-range-input[type="text"],
+.rtl .cs-icon-wrap .del-icon {
+	float: left!important;
+}
+.rtl .to-table thead th, .rtl .to-table th, .rtl .to-table td, .rtl .admin-navigtion ul .sub-menu li a, .rtl table.wp-list-table .column-featured, .rtl table.wp-list-table .column-product_type, .rtl .admin-navigtion ul li a, .rtl .cs-form-element.column-input.has-border .cs-opening-hours, .rtl #add_sermon_listings .cs-heading-area h5,
+.rtl .iconpicker-popover.popover, .rtl .cs-heading-area h5{
+	text-align: right!important;
+}
+{
+	text-align: left!important;
+}
+.rtl .select-style:after{left: 2px; right: auto;}
+.rtl .col2 #add_page_builder_item a.options, .rtl #add_page_builder_item a.delete-it{margin: 6px 0px 0 7px}
+.rtl .column-in .button i{margin: 5px 0 0 5px;}
+.rtl .check-list{left: auto; right: 0; margin: -4px 5px 0 0;}
+.rtl .admin-navigtion ul > li.parentIcon > a::after{left: 20px; right: auto;}
+.rtl .admin-navigtion ul li a i{margin: 0 0 0 8px;}
+.rtl .col2 .select-style::after{left: 0px; right: auto;}
+.rtl .pb-item-container .pbwp-form-rows .pbwp-form-sub-fields .pbwp-option-label-value span{margin-right: 5%;}
+.rtl .pb-item-container .pbwp-form-rows .pbwp-form-sub-fields{width: 65%;}
+.rtl .postbox img.help_tip{margin: -4px 6px 0 0;}
+.rtl .woocommerce_options_panel .description{margin: 0 7px 0 0;}
+.rtl table.wp-list-table .column-featured, .rtl table.wp-list-table .column-product_type{text-align: inherit!important;}
+.rtl .icons-selector .selector-search i{right: auto; left: 10px;}
+.rtl .cs-pbwp-options.theme-wrap .directory-type-setting .form-elements li.to-label { width: 50%; }
+.rtl .cs-pbwp-options.theme-wrap .directory-type-setting .input-option { float: right; }
+.rtl .user-openings input { border: medium none;width: 100%;}
+.rtl #add_page_builder_item a.options, .rtl #add_page_builder_item a.delete-it{margin: 6px 0px 0 7px}
+.rtl .user-openings { display: inline-block; }
+.rtl  a.deleteit_node{top: 15px;}
+.rtl .cs-form-element.column-input.has-border .cs-opening-hours{padding: 0 15px;}
+.rtl li.to-field label.pbwp-checkbox  {padding: 5px 0 0 20px !important;}
+.rtl .iris-picker .iris-square {margin-right: 9.555%;}
+.rtl .iris-picker .iris-slider.iris-strip {height: 100%!important;}
+.rtl .cs-btnclose {right: auto; left: 0;}
+.rtl .form-elements li.to-label {padding: 0 0 0 10px;}
+.rtl #submit_btn.bottom_btn_save {margin: 0 14px 0 0;}
+.rtl .theme-wrap .nomargin {padding: 10px 10px 0 0;}
+.rtl li.to-field label.browse-icon {padding: 8px 0 0;}
+.rtl .horizontal_tabs {padding: 1em 1.8em 0 0;}
+.rtl .horizontal_tabs ul li {margin: 0 0 0 10px;}
+.rtl .meta-input.pattern .radio-image-wrapper {padding: 0 10px 0 0;}
+.rtl .cs-icon-wrap:before {left: 20px; right: auto;}
+.rtl .cs-heading-area {padding: 3px 20px 3px 5px;}
+.rtl li.to-field label {padding: 0 0 8px 20px;}
+.rtl .cs-main-btn i {margin: 0 0 0 5px;}
+.rtl a.deleteit_node i {margin: 0 0 0 6px;}
+.rtl .cs-shortcode-wrapp header h4 i {margin: 0 0 0 8px;}
+.rtl li.to-field p {padding: 0 0 0 15px;}
+.rtl .cs-icon-wrap .del-icon {margin: -5px 0 0 -5px;}
+.rtl .cs-icon-wrap.hideicon input[type="text"] {padding: 0 45px 0 30px !important;}
+.rtl .bcevent_title li .input-sec {margin: 0 0 0 10px;}
+.rtl #price_remove {padding: 8px 10px 0 0;}
+.rtl .widget.widget_search form label input[type="submit"] {}
+.rtl li.to-field p{ float: right; text-align: right; margin: 0 0 8px ;}
+.rtl li.to-field .fakefile{ width: 544px; }

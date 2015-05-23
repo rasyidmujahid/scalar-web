@@ -68,7 +68,7 @@ class CHIMP_MC_Plugin {
 
 		$notice = '<p>';
 
-		$notice .= __('You\'ll need to set up the MailChimp signup widget plugin options before using it. ', 'Statfort') . __('You can make your changes', 'Statfort') . ' <a href="' . get_admin_url() . 'themes.php?page=cs_theme_options#tab-api-key-show">' . __('here', 'Statfort') . '.</a>';
+		$notice .= __('You\'ll need to set up the MailChimp signup widget plugin options before using it. ', 'WeStand') . __('You can make your changes', 'WeStand') . ' <a href="' . get_admin_url() . 'themes.php?page=cs_theme_options#tab-api-key-show">' . __('here', 'WeStand') . '.</a>';
 
 		$notice .= '</p>';
 

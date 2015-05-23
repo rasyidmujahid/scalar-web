@@ -57,79 +57,77 @@ function cs_theme_setup() {
 }
 
 // tgm class for (internal and WordPress repository) plugin activation start
-require_once dirname( __FILE__ ) . '/include/class-tgm-plugin-activation.php';
+require_once dirname( __FILE__ ) . '/include/tgm_plugin_activation.php';
 add_action( 'tgmpa_register', 'cs_register_required_plugins' );
 function cs_register_required_plugins() {
-	/**
-	 * Array of plugin arrays. Required keys are name and slug.
-	 * If the source is NOT from the .org repo, then source is also required.
-	 */
-	$plugins = array(
-		// This is an example of how to include a plugin from the WordPress Plugin Repository
-		
+    /**
+     * Array of plugin arrays. Required keys are name and slug.
+     * If the source is NOT from the .org repo, then source is also required.
+     */
+    $plugins = array(
+        // This is an example of how to include a plugin from the WordPress Plugin Repository
+        array(
+            'name'                     => __('Revolution Slider','WeStand'),
+            'slug'                     => 'revslider',
+            'source'                   => get_template_directory_uri() . '/include/plugins/revslider.zip', 
+            'required'                 => true, 
+            'version'                  => '',
+            'force_activation'         => false,
+            'force_deactivation'       => false,
+            'external_url'             => '',
+        ),
+        array(
+            'name'         =>__('Contact Form 7','WeStand'),
+            'slug'         => 'contact-form-7',
+            'required'     => false,
+        ),
 		array(
-			'name'     				=> 'Revolution Slider',
-			'slug'     				=> 'revslider',
-			'source'   				=> get_stylesheet_directory() . '/include/plugins/revslider.zip', 
-			'required' 				=> false, 
-			'version' 				=> '',
-			'force_activation' 		=> false,
-			'force_deactivation' 	=> false,
-			'external_url' 			=> '',
-		),
-		array(
-			'name' 		=> 'Contact Form 7',
-			'slug' 		=> 'contact-form-7',
-			'required' 	=> false,
-		),
-		array(
-			'name' 		=> 'Woocommerce',
+			'name' 		=>__('Woocommerce','WeStand'),
 			'slug' 		=> 'woocommerce',
 			'required' 	=> false,
 		),
-		
 
-	);
-	// Change this to your theme text domain, used for internationalising strings
-	$theme_text_domain = 'WeStand';
-	/**
-	 * Array of configuration settings. Amend each line as needed.
-	 * If you want the default strings to be available under your own theme domain,
-	 * leave the strings uncommented.
-	 * Some of the strings are added into a sprintf, so see the comments at the
-	 * end of each line for what each argument will be.
-	 */
-	$config = array(
-		'domain'       		=> 'WeStand',         	// Text domain - likely want to be the same as your theme.
-		'default_path' 		=> '',                         	// Default absolute path to pre-packaged plugins
-		'parent_menu_slug' 	=> 'themes.php', 				// Default parent menu slug
-		'parent_url_slug' 	=> 'themes.php', 				// Default parent URL slug
-		'menu'         		=> 'install-required-plugins', 	// Menu slug
-		'has_notices'      	=> true,                       	// Show admin notices or not
-		'is_automatic'    	=> true,					   	// Automatically activate plugins after installation or not
-		'message' 			=> '',							// Message to output right before the plugins table
-		'strings'      		=> array(
-			'page_title'                       			=> __( 'Install Required Plugins', 'WeStand' ),
-			'menu_title'                       			=> __( 'Install Plugins', 'WeStand' ),
-			'installing'                       			=> __( 'Installing Plugin: %s', 'WeStand' ), // %1$s = plugin name
-			'oops'                             			=> __( 'Something went wrong with the plugin API.', 'WeStand' ),
-			'notice_can_install_required'     			=> _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ), // %1$s = plugin name(s)
-			'notice_can_install_recommended'			=> _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ), // %1$s = plugin name(s)
-			'notice_cannot_install'  					=> _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ), // %1$s = plugin name(s)
-			'notice_can_activate_required'    			=> _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
-			'notice_can_activate_recommended'			=> _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
-			'notice_cannot_activate' 					=> _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ), // %1$s = plugin name(s)
-			'notice_ask_to_update' 						=> _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ), // %1$s = plugin name(s)
-			'notice_cannot_update' 						=> _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ), // %1$s = plugin name(s)
-			'install_link' 					  			=> _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
-			'activate_link' 				  			=> _n_noop( 'Activate installed plugin', 'Activate installed plugins' ),
-			'return'                           			=> __( 'Return to Required Plugins Installer', 'WeStand' ),
-			'plugin_activated'                 			=> __( 'Plugin activated successfully.', 'WeStand' ),
-			'complete' 									=> __( 'All plugins installed and activated successfully. %s', 'WeStand' ), // %1$s = dashboard link
-			'nag_type'									=> 'updated' // Determines admin notice type - can only be 'updated' or 'error'
-		)
-	);
-	tgmpa( $plugins, $config );
+    );
+    // Change this to your theme text domain, used for internationalising strings
+    $theme_text_domain = 'WeStand';
+    /**
+     * Array of configuration settings. Amend each line as needed.
+     * If you want the default strings to be available under your own theme domain,
+     * leave the strings uncommented.
+     * Some of the strings are added into a sprintf, so see the comments at the
+     * end of each line for what each argument will be.
+     */
+    $config = array(
+        'domain'               => 'WeStand',             // Text domain - likely want to be the same as your theme.
+        'default_path'         => '',                             // Default absolute path to pre-packaged plugins
+        'parent_menu_slug'     => 'themes.php',                 // Default parent menu slug
+        'parent_url_slug'     => 'themes.php',                 // Default parent URL slug
+        'menu'                 => 'install-required-plugins',     // Menu slug
+        'has_notices'          => true,                           // Show admin notices or not
+        'is_automatic'        => true,                           // Automatically activate plugins after installation or not
+        'message'             => '',                            // Message to output right before the plugins table
+        'strings'              => array(
+            'page_title'                                   => __( 'Install Required Plugins', 'WeStand' ),
+            'menu_title'                                   => __( 'Install Plugins', 'WeStand' ),
+            'installing'                                   => __( 'Installing Plugin: %s', 'WeStand' ), // %1$s = plugin name
+            'oops'                                         => __( 'Something went wrong with the plugin API.', 'WeStand' ),
+            'notice_can_install_required'                 => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ), // %1$s = plugin name(s)
+            'notice_can_install_recommended'            => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ), // %1$s = plugin name(s)
+            'notice_cannot_install'                      => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ), // %1$s = plugin name(s)
+            'notice_can_activate_required'                => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
+            'notice_can_activate_recommended'            => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
+            'notice_cannot_activate'                     => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ), // %1$s = plugin name(s)
+            'notice_ask_to_update'                         => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ), // %1$s = plugin name(s)
+            'notice_cannot_update'                         => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ), // %1$s = plugin name(s)
+            'install_link'			=> _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
+            'activate_link'			=> _n_noop( 'Activate installed plugin', 'Activate installed plugins' ),
+            'return'				=> __( 'Return to Required Plugins Installer', 'WeStand' ),
+            'plugin_activated'		=> __( 'Plugin activated successfully.', 'WeStand' ),
+            'complete'				=> __( 'All plugins installed and activated successfully. %s', 'WeStand' ), // %1$s = dashboard link
+            'nag_type'				=> 'updated' // Determines admin notice type - can only be 'updated' or 'error'
+        )
+    );
+    tgmpa( $plugins, $config );
 }
 // tgm class for (internal and WordPress repository) plugin activation end
 
@@ -486,7 +484,7 @@ function cs_get_countries() {
 
 		$recent_post_widget2[2] = array(
 
-		"title"		=>	'Latest Posts',
+		"title"		=>__('Latest Posts','WeStand'),
 
 		"select_category" 	=> 'blog',
 
@@ -526,7 +524,7 @@ function cs_get_countries() {
 
 		$upcoming_events_widget[1] = array(
 
-		"title"		=>	'Upcoming Events',
+		"title"		=>__('Upcoming Events','WeStand'),
 
 		"get_post_slug" 	=> 'event',
 
@@ -564,7 +562,7 @@ function cs_get_countries() {
 
 		$upcoming_events_countdown_widget[1] = array(
 
-		"title"		=>	'Upcoming Events',
+		"title"		=>__('Upcoming Events','WeStand'),
 
 		"get_post_slug" 	=> 'event',
 
@@ -682,7 +680,7 @@ function cs_get_countries() {
 
 		$cs_gallery[1] = array(
 
-			'title' => 'Our Photos',
+			'title' =>__( 'Our Photos','WeStand'),
 
 			'get_names_gallery' => 'photo-gallery',
 
@@ -870,7 +868,7 @@ function cs_get_countries() {
 
 		$cs_social_network_widget [1] = array(
 
-		"title"		=>	'Follow Us',
+		"title"		=>__('Follow Us','WeStand'),
 
 		);						
 
@@ -901,7 +899,7 @@ function cs_get_countries() {
 		// ---- twitter widget setting---
 		$cs_twitter_widget = array();
 		$cs_twitter_widget[1] = array(
-		"title"		=>	'Twitter',
+		"title"		=>__('Twitter','WeStand'),
 		"username" 	=>	"envato",
 		"numoftweets" => "2",
 		 );						
@@ -2142,15 +2140,15 @@ if ( ! function_exists( 'fnc_no_result_found' ) ) {
                 <div class="password_protected">
                     <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
                     
-                    <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'twentyfourteen' ), admin_url( 'post-new.php' ) ); ?></p>
+                    <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'WeStand' ), admin_url( 'post-new.php' ) ); ?></p>
                     
                     <?php elseif ( is_search() ) : ?>
                     
-                    <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyfourteen' ); ?></p>
+                    <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'WeStand' ); ?></p>
                     <?php get_search_form(); ?>
                     
                     <?php else : ?>
-                         <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyfourteen' ); ?></p>
+                         <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'WeStand' ); ?></p>
                     <?php get_search_form(); ?>
                      
                     <?php endif; ?> 
