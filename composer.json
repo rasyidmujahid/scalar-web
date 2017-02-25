@@ -27,12 +27,6 @@
     "preferred-install": "dist",
     "generate-salts": true
   },
-  "autoload": {
-    "psr-0": {"Roots\\Bedrock\\Installer": "scripts"}
-  },
-  "scripts": {
-    "post-root-package-install": ["Roots\\Bedrock\\Installer::addSalts"]
-  },
   "repositories": [
     {
       "type": "composer",
