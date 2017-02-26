@@ -2,14 +2,17 @@
 $root_dir = dirname(__DIR__);
 $webroot_dir = $root_dir . '/web';
 
+// BUG: http://stackoverflow.com/questions/30645324/dotenv-requires-env-file-on-production
+$dotenv = new Dotenv\Dotenv(__DIR__);
+
 /**
  * Use Dotenv to set required environment variables and load .env file in root
  */
 if (file_exists($root_dir . '/.env')) {
-  Dotenv::load($root_dir);
+  $dotenv->load($root_dir);
 }
 
-Dotenv::required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
+$dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
 
 /**
  * Set up our global environment constant and load its config first
