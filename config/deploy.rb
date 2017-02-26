@@ -15,8 +15,7 @@ SSHKit.config.command_map[:composer] = "php /var/local/composer/composer.phar"
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
 # set :linked_files, %w{.env web/.htaccess}
-set :linked_files, %w{.env}
-set :linked_files, %w{config/.env}
+set :linked_files, %w{.env config/.env}
 set :linked_dirs, %w{web/app/uploads}
 
 namespace :deploy do
